@@ -1,0 +1,39 @@
+header {
+    position: fixed;
+    min-height: $headerMinHeight;
+    width: 100%;
+    padding: $contentPadding;
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .navoptions {
+        display: none;
+    }
+
+    .mobileOptions {
+        svg {
+            height: 1/2*$headerMinHeight;
+
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:#{$tablet}) {}
+
+@media screen and (min-width:#{$desktop}) {
+    header {
+        .navoptions {
+            @include flex;
+        }
+
+        .mobileOptions {
+            display: none;
+        }
+    }
+}
