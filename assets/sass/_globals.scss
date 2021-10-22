@@ -34,6 +34,7 @@ $desktop: 1024px;
 }
 a{
     margin-left: $anchorMargin;
+    border-radius: 10px;
 }
 
 @mixin flex ($justify:space-between, $align: center, $dir:row) {

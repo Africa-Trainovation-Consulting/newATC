@@ -17,6 +17,7 @@
 
 a {
   margin-left: 1.5vw;
+  border-radius: 10px;
 }
 
 .flex {
@@ -51,7 +52,23 @@ header .logo {
 }
 
 header .navoptions {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
 }
 
 header .mobileOptions svg {
@@ -77,6 +94,12 @@ header .mobileOptions svg:nth-child(2) {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    position: static;
+    width: auto;
+  }
+  header .navoptions a:last-child {
+    outline: 1px solid #150C21;
+    padding: 2.5px 20px;
   }
   header .mobileOptions {
     display: none;

@@ -9,7 +9,12 @@ header {
     }
 
     .navoptions {
-        display: none;
+        // display: none;
+        @include flex($justify:center, $align:center, $dir:column);
+        position: absolute;
+        top: $headerMinHeight;
+        left: 0;
+        width: 100%;
     }
 
     .mobileOptions {
@@ -30,6 +35,13 @@ header {
     header {
         .navoptions {
             @include flex;
+            position: static;
+            width: auto;
+
+            a:last-child {
+                outline: 1px solid $black;
+                padding: 2.5px 20px;
+            }
         }
 
         .mobileOptions {
