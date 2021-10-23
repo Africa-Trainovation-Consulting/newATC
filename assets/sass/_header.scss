@@ -9,8 +9,8 @@ header {
     }
 
     .navoptions {
-        // display: none;
         @include flex($justify:center, $align:center, $dir:column);
+        display: none;
         position: absolute;
         top: $headerMinHeight;
         left: 0;

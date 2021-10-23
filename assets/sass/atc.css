@@ -65,6 +65,7 @@ header .navoptions {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: none;
   position: absolute;
   top: 75px;
   left: 0;
