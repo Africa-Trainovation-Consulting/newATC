@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  box-sizing: border-box;
+  color: $black;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+
+  font: {
+      family: $fontFamily;
+      weight: 400;
+  }
+}
+
+
+html {
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  color: $black;
+  font: {
+    /*family: Roboto;*/
+    style: normal;
+  }
+
+  background-position: center;
+  width: 100%;
+}
+
+::selection {
+  color: #fff;
+  background-color: #1207ab;
+}
+
+hr {
+  width: 40%;
+  height: 0.5vh;
+  margin: 2vh 2vw 0;
+  background-color: gray;
+}
+
+a,
+a:hover,
+button {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+a:hover,
+.droprog:hover {
+  opacity: 0.5;
+}
+
+a.button {
+  display: inline-block;
+}
+
+button {
+  margin-top: 1.5vh;
+  padding: 5px;
+  background-color: $black;
+  color: #fff;
+  line-height: 1.71;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  transition: all 0.3s ease-in-out;
+  border-radius: 7px;
+  font-size: 1rem;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  //vertical-align: middle;
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+sup,
+.error {
+  color: red;
+}

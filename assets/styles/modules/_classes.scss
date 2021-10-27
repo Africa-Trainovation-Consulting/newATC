@@ -1,0 +1,110 @@
+.blue {
+  color: $black;
+}
+.link {
+  background-color: $black;
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding: 5px;
+  border-radius: 7px;
+}
+.mover {
+  animation: mover 1s infinite alternate;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+.flex {
+  @include flex(column);
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  img {
+    max-width: 80%;
+  }
+
+  button {
+    font-size: 3vw;
+    &:first-child:hover {
+      background-color: #1ba33c;
+      opacity: 1;
+    }
+  }
+  > div {
+    margin-top: 5vh;
+  }
+  $column: & + _c;
+  $row: & + _r;
+  @at-root #{$column} {
+    @include flex(column);
+    @at-root &r {
+      @extend #{$column};
+      @include media($tablet) {
+        flex-direction: row;
+      }
+    }
+    @at-root &R {
+      @extend #{$column};
+      @include media($tablet) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  @at-root #{$row} {
+    @include flex(row);
+    @at-root &c {
+      @extend #{$row};
+      @include media($tablet) {
+        flex-direction: column;
+      }
+    }
+    @at-root &C {
+      @extend #{$row};
+      @include media($tablet) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+  @media #{$tablet} {
+    flex-direction: row;
+    img {
+      width: 50%;
+    }
+  }
+}
+
+.back-to-top {
+  height: 36px;
+  width: 36px;
+  bottom: 50px;
+  right: 30px;
+  padding: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  color: #fff;
+  background-color: #2f55d4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: rotate(45deg);
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    svg {
+      transform: rotate(-45deg);
+    }
+  }
+  svg {
+    transition: all 0.5s ease;
+  }
+}
