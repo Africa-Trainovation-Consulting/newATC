@@ -1,0 +1,45 @@
+section {
+    padding: $contentPadding;
+
+    &.laptopWoman {
+        padding-top: $headerHeight;
+
+        img {
+            @include srcset;
+            width: 100%;
+
+            @include media {
+                width: 52.5%;
+            }
+        }
+
+        a {
+            background-color: $black;
+            color: #fff;
+            display: block;
+            text-align: center;
+            width: 100%;
+
+            @include media {
+                width: 50%;
+            }
+        }
+
+        @include media($tablet) {
+            flex-direction: column;
+        }
+
+        @include media {
+            flex-direction: row;
+
+            background: {
+                image: url(/assets/img/circleBackground.svg);
+                repeat: no-repeat;
+                position: 200% -100%;
+                size: 75% 75%;
+            }
+
+            padding-top: 0.5*$headerHeight;
+        }
+    }
+}

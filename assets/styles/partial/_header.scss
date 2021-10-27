@@ -10,17 +10,7 @@ header {
 
   a {
     svg {
-      @include media {
-        display: none;
-      }
-
-      &:last-child() {
-        display: none;
-
-        @include media {
-          display: block;
-        }
-      }
+      @include srcset;
     }
 
     img {

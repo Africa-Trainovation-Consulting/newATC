@@ -433,6 +433,77 @@ header span.icon svg:last-child {
   }
 }
 
+section {
+  padding: 0 5vw;
+}
+
+section.laptopWoman {
+  padding-top: 75px;
+}
+
+section.laptopWoman img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  section.laptopWoman img {
+    display: none;
+  }
+}
+
+section.laptopWoman img:last-child {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  section.laptopWoman img:last-child {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.laptopWoman img {
+    width: 52.5%;
+  }
+}
+
+section.laptopWoman a {
+  background-color: #150C21;
+  color: #fff;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  section.laptopWoman a {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.laptopWoman {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.laptopWoman {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-image: url(/assets/img/circleBackground.svg);
+    background-repeat: no-repeat;
+    background-position: 200% -100%;
+    background-size: 75% 75%;
+    padding-top: 37.5px;
+  }
+}
+
 footer {
   padding: 0 5vw;
   background-color: #000;

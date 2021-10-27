@@ -6,7 +6,21 @@
 }
 
 @mixin media($device:$laptop) {
-  @media #{$device}{
+  @media #{$device} {
     @content;
+  }
+}
+
+@mixin srcset {
+  @include media {
+    display: none;
+  }
+
+  &:last-child() {
+    display: none;
+
+    @include media {
+      display: block;
+    }
   }
 }
