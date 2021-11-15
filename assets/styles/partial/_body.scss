@@ -42,4 +42,10 @@ section {
             padding-top: 0.5*$headerHeight;
         }
     }
+    &.QHSE{
+        background-color: $QHSEBlue;
+        img{
+            width: 100%;
+        }
+    }
 }

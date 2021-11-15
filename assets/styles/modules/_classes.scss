@@ -1,13 +1,17 @@
-.blue {
-  color: $black;
+.black {
+  color: $black !important;
 }
-.link {
-  background-color: $black;
+.blue {
+  color: $QHSEBlue !important;
+}
+.linkButton {
   color: #fff;
   text-align: center;
   display: block;
   padding: 5px;
   border-radius: 7px;
+  border: 1px solid $black;
+  //further classify buttons based on width and Color
 }
 .mover {
   animation: mover 1s infinite alternate;
@@ -18,6 +22,35 @@
   }
   100% {
     transform: translateY(5px);
+  }
+}
+.none {
+  display: none;
+}
+.w {
+  $widths: 25, 33, 50, 75, 100;
+  @each $width in $widths {
+    @at-root &#{$width} {
+      width: $width#{"%"};
+    }
+    $devices: (
+      tablet: $tablet,
+      laptop: $laptop,
+    );
+    @each $device, $type in $devices {
+      @at-root .#{$device} {
+        @include media($type) {
+          display: flex;
+          @at-root &#{$width} {
+            width: $width#{"%"};
+            margin: {
+              left: auto;
+              right: auto;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
