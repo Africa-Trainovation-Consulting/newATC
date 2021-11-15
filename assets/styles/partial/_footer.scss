@@ -1,8 +1,10 @@
 footer {
     padding: $contentPadding;
-    background-color: #000;
-    .socials{
-        flex-direction: row;
+    padding-top: 2*$headerHeight;
+    background-color: $black;
+    *{
+        color: $footerColor;
+        text-align: left;
     }
   }
   
