@@ -114,12 +114,54 @@
 }
 // display using flexbox
 .flex {
-  $break: 320, 375, 425, 768, 1024, 1440, 2560;
-  $dir: c, C, r, R;
-  /* justify content, align item, direction
-  fs
-
-*/
+  $dirs: (
+    c: column,
+    C: column-reverse,
+    r: row,
+    R: row-reverse,
+  );
+  $justify: (
+    fs: flex-start,
+    fe: flex-end,
+    cc: center,
+    sb: space-between,
+    sa: space-around,
+    se: space-evenly,
+  );
+  $align: (
+    fs: flex-start,
+    fe: flex-end,
+    cc: center,
+    bl: baseline,
+    st: stretch,
+  );
+  $breaks: 320, 375;//, 425, 768, 1024, 1440, 2560;
+  /* direction, justify content, align item
+  */
+  @each $di, $dir in $dirs {
+    @at-root &#{$di} {
+      @each $jus, $just in $justify {
+        @at-root &_#{$jus} {
+          @each $al, $ali in $align {
+            @at-root &_#{$al} {
+              @each $break in $breaks {
+                @include media("screen and (min-width: #{$break}px)") {
+                  display: flex;
+                  flex-direction: $dir;
+                  justify-content: $just;
+                  align-items: $ali;
+                }
+                display: flex;
+                flex-direction: $dir;
+                justify-content: $just;
+                align-items: $ali;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 //font-weight
 .fw {
