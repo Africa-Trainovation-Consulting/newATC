@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand:wght@700&display=swap');
+$font-stack: 'Poppins'sans-serif;
+$backdrop-background_color:rgba(21, 12, 33, 0.81);
+$btn_background-color : #5D5FEF;
+$text-color:#423A4B;
+$alt-text-color:white;
+$label-color:rgba(0, 0, 0, 0.5);
+$font-size :18px;
+$border-color:#DFDFDF;
+$input-bg-color:#F5F7FA;
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin backdrop {
+    @include flex();
+    width: 100%;
+    height: 100vh;
+    background-color: $backdrop-background_color;
+}
+
+@mixin modals {
+    @include flex2();
+    background-color: $alt-text-color;
+    width: 80%;
+    max-width: 600px;
+    font-size: $font-size;
+    border-radius: 15px;
+    padding: 2em 0;
+}
+
+@mixin flex_btn {
+    width: 90%;
+    @include flex();
+    justify-content: space-between;
+}
+
+@mixin flex_btn2 {
+    @include flex_btn();
+    width: 70%;
+}
+
+@mixin btn {
+    border-radius: 5px;
+    width: 47%;
+    height: 5vh;
+    cursor: pointer;
+}
+
+@mixin btn2 {
+    @include btn();
+    width: 40%;
+    height: 6vh;
+}
+
+@mixin active-btn {
+    background-color: $btn_background-color;
+    color: $alt-text-color;
+}
+
+@mixin form {
+    @include flex2();
+    width: 90%;
+    margin-top: 1em;
+}
+
+@mixin form2 {
+    @include form();
+    width: 70%;
+}
+
+@mixin label {
+    font: {
+        size: 16px;
+        weight: 900;
+    }
+
+    line-height: 1.8;
+    color: $label-color;
+    display: block;
+}
+
+@mixin input {
+    width: 100%;
+    border: 1px solid $border-color;
+    background-color: $input-bg-color;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+@mixin input2 {
+    @include input();
+    margin-bottom: 0.5em;
+    padding: 10px;
+}
+
+@mixin continue_btn {
+    width: 100%;
+    border: none;
+    @include active-btn();
+    @include btn();
+}
+
+@mixin continue_btn2 {
+    @include continue_btn();
+    @include btn2();
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: 1px solid $text-color;
+    color: $text-color;
+    font-weight: 700;
+    background-color: $alt-text-color;
+}
+
+html {
+    font: {
+        family: $font-stack;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    font: {
+        family: $font-stack;
+    }
+
+    color: $text-color;
+    list-style-type: none;
+}
+
+.backdrop {
+    @include backdrop();
+}
+
+.modal {
+    @include modals();
+}
+
+.flex_btn {
+    @include flex_btn();
+}
+
+button {
+    @include btn();
+}
+
+.active {
+    border: none;
+    @include active-btn();
+}
+
+form {
+    @include form();
+
+
+.form-group {
+    width: 100%;
+}
+
+label {
+    @include label();
+}
+
+input {
+    @include input();
+}
+
+button {
+    @include continue_btn();
+}
+}
+@media screen and (min-width:800px) {
+    .flex_btn {
+        @include flex_btn2();
+    }
+
+    button {
+        @include btn2();
+    }
+    
+    form {
+        @include form2();
+        input {
+                @include input2();
+            }
+            button {
+                @include continue_btn2();
+            }
+        }
+    }
+
+        
+    
