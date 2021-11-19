@@ -112,7 +112,31 @@
     }
   }
 }
+// display using flexbox
+.flex {
+  $break: 320, 375, 425, 768, 1024, 1440, 2560;
+  $dir: c, C, r, R;
+  /* justify content, align item, direction
+  fs
 
+*/
+}
+//font-weight
+.fw {
+  $fontW: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+  $text-align: left, justify, right;
+  @each $fw in $fontW {
+    @at-root &#{$fw} {
+      @each $ta in $text-align {
+        @at-root &_#{$ta} {
+          font-weight: $fw;
+          text-align: $ta;
+        }
+      }
+      font-weight: $fw;
+    }
+  }
+}
 .back-to-top {
   height: 36px;
   width: 36px;
