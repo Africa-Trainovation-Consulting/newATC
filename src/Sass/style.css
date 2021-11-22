@@ -44,7 +44,7 @@ body {
   background-color: rgba(21, 12, 33, 0.81);
 }
 
-.backdrop .modal {
+.modal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,7 +66,7 @@ body {
   padding: 2em 0;
 }
 
-.backdrop .modal .flex_btn {
+.flex_btn {
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,24 +82,117 @@ body {
           justify-content: space-between;
 }
 
-.backdrop .modal .flex_btn button {
+button {
   border-radius: 5px;
   width: 47%;
   height: 5vh;
+  cursor: pointer;
 }
 
-.backdrop .modal .flex_btn :active {
-  background-color: #5D5FEF;
-  color: white;
-}
-
-.backdrop .modal .flex_btn .active {
+.active {
   border: none;
   background-color: #5D5FEF;
   color: white;
 }
 
-.backdrop .modal form {
+p {
+  font-size: 14px;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.Or {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+}
+
+.empty {
+  width: 35%;
+}
+
+.imageUpload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+  background: #F5F7FA;
+  border: 1px solid #DFDFDF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  height: 200px;
+  width: 50%;
+}
+
+.cancel_btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.imageUpload::before {
+  color: #939393;
+  width: 60%;
+  line-height: 1.5;
+  text-align: center;
+  content: 'Click here to upload from file';
+}
+
+.inputImage {
+  display: none;
+}
+
+.upload::before {
+  content: 'Upload file';
+}
+
+.upload {
+  background: #F5F7FA;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin: 1em 0;
+  width: 40%;
+  padding: 0.2em 0;
+  text-align: center;
+}
+
+.takePicture {
+  background: #F5F7FA;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin: 1em 0;
+  width: 40%;
+  padding: 0.2em 0;
+  text-align: center;
+}
+
+.takePicture::before {
+  content: 'Take picture';
+}
+
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,11 +210,11 @@ body {
   margin-top: 1em;
 }
 
-.backdrop .modal form .form-group {
+form .form-group {
   width: 100%;
 }
 
-.backdrop .modal form .form-group label {
+form label {
   font-size: 16px;
   font-weight: 900;
   line-height: 1.8;
@@ -129,7 +222,7 @@ body {
   display: block;
 }
 
-.backdrop .modal form .form-group input {
+form input {
   width: 100%;
   border: 1px solid #DFDFDF;
   background-color: #F5F7FA;
@@ -140,7 +233,7 @@ body {
   margin-bottom: 1em;
 }
 
-.backdrop .modal form button {
+form button {
   width: 100%;
   border: none;
   background-color: #5D5FEF;
@@ -148,10 +241,11 @@ body {
   border-radius: 5px;
   width: 47%;
   height: 5vh;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 800px) {
-  .backdrop .modal .flex_btn {
+  .flex_btn {
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -167,14 +261,15 @@ body {
             justify-content: space-between;
     width: 70%;
   }
-  .backdrop .modal .flex_btn button {
+  button {
     border-radius: 5px;
     width: 47%;
     height: 5vh;
+    cursor: pointer;
     width: 40%;
     height: 6vh;
   }
-  .backdrop .modal form {
+  form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -192,7 +287,7 @@ body {
     margin-top: 1em;
     width: 70%;
   }
-  .backdrop .modal form .form-group input {
+  form input {
     width: 100%;
     border: 1px solid #DFDFDF;
     background-color: #F5F7FA;
@@ -204,7 +299,7 @@ body {
     margin-bottom: 0.5em;
     padding: 10px;
   }
-  .backdrop .modal form button {
+  form button {
     width: 100%;
     border: none;
     background-color: #5D5FEF;
@@ -212,9 +307,11 @@ body {
     border-radius: 5px;
     width: 47%;
     height: 5vh;
+    cursor: pointer;
     border-radius: 5px;
     width: 47%;
     height: 5vh;
+    cursor: pointer;
     width: 40%;
     height: 6vh;
   }
