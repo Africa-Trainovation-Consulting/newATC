@@ -1,11 +1,11 @@
 import React from 'react'
-import Backshadow from './../layouts/Backdrop'
-let Backdrop = (BasicComponent) => class extends React.Components {
+let Backdrop = (BasicComponent) => class extends React.Component {
 render() {
-    <section className='backdrop'>
-        
+    return <section className='backdrop'>
+        <div className='modal'>
             <BasicComponent />
+        </div>
     </section>
 }
 }
-export default Backdrop;
+export default Backdrop

@@ -1,13 +1,13 @@
 import React from "react";
+import Backdrop from './HOC'
 function CreateNewpassword(props) {
     function continueHandler(event) {
         event.stopPropagation();
         event.preventDefault();
       }
-    return (
-        <div ClassName='modal'>
+    return (<>
             <span className='flex_btn'>
-                <h1>
+                <h1 style={{textAlign:'center'}}>
                 CREATE NEW PASSWORD
                 </h1>
             </span>
@@ -22,7 +22,7 @@ function CreateNewpassword(props) {
             </form>
             {/* 
       <ForgotPassword label='Email' title='FORGOT PASSWORD'/> */}
-        </div>
+      </>
     )
 }  
-export default CreateNewpassword;
+export default Backdrop(CreateNewpassword)

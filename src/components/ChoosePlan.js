@@ -1,6 +1,6 @@
 import React from 'react';
-import HOC from
-let ChoosePlan = Backdrop(ChoosePlan) {
+import Backdrop from './HOC'
+function ChoosePlan(props) {
     function continueHandler(event) {
         event.stopPropagation();
         event.preventDefault();
@@ -9,7 +9,7 @@ let ChoosePlan = Backdrop(ChoosePlan) {
         borderTop:'1px solid rgba(0, 0, 0, 0.2)'
     }
     return (
-        <div className="modal">
+        <>
             <span className="cancel_btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
                     <path d="M19 0C8.52369 0 0 8.52369 0 19C0 29.4763 8.52369 38 19 38C29.4763 38 38 29.4763 38 19C38 8.52369 29.4763 0 19 0ZM19 2.92308C27.8964 2.92308 35.0769 10.1036 35.0769 19C35.0769 27.8964 27.8964 35.0769 19 35.0769C10.1036 35.0769 2.92308 27.8964 2.92308 19C2.92308 10.1036 10.1036 2.92308 19 2.92308ZM13.4754 11.3708L11.3708 13.4754L16.9012 19L11.3737 24.5246L13.4783 26.6292L19 21.1002L24.5246 26.6248L26.6292 24.5246L21.1002 19L26.6248 13.4754L24.5246 11.3708L19 16.9012L13.4754 11.3737V11.3708Z" fill="#5D5FEF" />
@@ -48,7 +48,7 @@ let ChoosePlan = Backdrop(ChoosePlan) {
                     <path d="M35.5 10H2M35.5 10L27.5 18.5M35.5 10L27.5 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                 </svg></button>
             </form>
-        </div>
+        </>
     )
 }
-export default ChoosePlan;
+export default Backdrop(ChoosePlan);
