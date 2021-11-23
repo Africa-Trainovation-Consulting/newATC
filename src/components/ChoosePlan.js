@@ -1,5 +1,6 @@
 import React from 'react';
-function ChoosePlan(props) {
+import HOC from
+let ChoosePlan = Backdrop(ChoosePlan) {
     function continueHandler(event) {
         event.stopPropagation();
         event.preventDefault();
