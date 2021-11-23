@@ -13,10 +13,6 @@ function CreateNewpassword(props) {
             </span>
             <form action='post'>
                 <span className="form-group">
-                    <label for="Password"> Create new password </label>
-                    <input type="password" name="newPassword" placeholder="Enter your new password" />
-                </span>
-                <span className="form-group">
                     <label for="Password"> Confirm new password </label>
                     <input type="Password" name="confirmPassword" placeholder="Confirm Password" />
                 </span>
