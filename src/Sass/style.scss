@@ -239,16 +239,7 @@ p {
 .takePicture::before {
     content: 'Take picture';
 }
-select {
-    border: 1px solid #A9A9A9;
-    box-sizing: border-box;
-    padding: 0 0 0 3px;
-    border-radius: 5px;
-    min-height: 50px;
-    max-height: 60px;
-    width: 100%;
-    max-width: 100%;
-
+select {@include input();
     &:invalid {
         color: gray;
     }
@@ -256,7 +247,9 @@ select {
     #selected {
         font-weight: normal;
         color: #B4B4B4;
-
+    }
+    option{
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
     }
 }
 form {
@@ -288,7 +281,17 @@ form {
     button {
         @include btn2();
     }
-
+    select {@include input2();
+        &:invalid {
+            color: gray;
+        }
+    
+        #selected {
+            font-weight: normal;
+            color: #B4B4B4;
+    
+        }
+    }
     form {
         @include form2();
 
