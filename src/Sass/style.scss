@@ -199,9 +199,12 @@ p {
     height: 200px;
     width: 50%;
 }
-
+.cancelButton{
+    margin: auto;
+}
 .cancel_btn {
     align-self: flex-end;
+    width: 10%;
 }
 
 .imageUpload::before {
@@ -211,7 +214,11 @@ p {
     text-align: center;
     content: 'Click here to upload from file';
 }
-
+a{
+    width: 100%;
+    align-self: center;
+    text-align: center;
+}
 .inputImage {
     display: none;
 }

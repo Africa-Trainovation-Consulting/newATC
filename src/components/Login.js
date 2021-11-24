@@ -1,11 +1,13 @@
 import React from 'react';
+import Backdrop from './HOC'
+import { Link } from 'react-router-dom'
 function Login(props) {
     function continueHandler(event) {
         event.stopPropagation();
         event.preventDefault();
     }
     return (
-        <div className="modal">
+        <>
             <span className="flex_btn">
                 <button className="login active">
                     Login to continue
@@ -24,7 +26,7 @@ function Login(props) {
             <div className='Or'>
                 <svg className='empty' xmlns="http://www.w3.org/2000/svg" width="259" height="2" viewBox="0 0 259 2" fill="none">
                     <path d="M0 1L259 1.00002" stroke="#B3B3B3" stroke-width="2" />
-                </svg>OR<svg  className='empty' xmlns="http://www.w3.org/2000/svg" width="259" height="2" viewBox="0 0 259 2" fill="none">
+                </svg>OR<svg className='empty' xmlns="http://www.w3.org/2000/svg" width="259" height="2" viewBox="0 0 259 2" fill="none">
                     <path d="M0 1L259 1.00002" stroke="#B3B3B3" stroke-width="2" />
                 </svg>
             </div>
@@ -37,12 +39,14 @@ function Login(props) {
                     <label for="password"> Password </label>
                     <input type="password" name="password" placeholder="Enter password" />
                 </span>
-                <button type="submit" onClick={continueHandler}> Continue <svg xmlns="http://www.w3.org/2000/svg" width="27" height="10" viewBox="0 0 37 20" fill="none">
-                    <path d="M35.5 10H2M35.5 10L27.5 18.5M35.5 10L27.5 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                </svg></button>
+                <Link to='/choosePlan'>
+                    <button type="submit" onClick={continueHandler}> Continue <svg xmlns="http://www.w3.org/2000/svg" width="27" height="10" viewBox="0 0 37 20" fill="none">
+                        <path d="M35.5 10H2M35.5 10L27.5 18.5M35.5 10L27.5 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></button>
+                </Link>
             </form>
-            <a href='google' style={{ color: '#262B33', marginTop:'1em' }}>Forgot Password?</a>
-        </div>
+            <a href='google' style={{ color: '#262B33', marginTop: '1em' }}>Forgot Password?</a>
+        </>
     )
 }
-export default Login;
+export default Backdrop(Login);

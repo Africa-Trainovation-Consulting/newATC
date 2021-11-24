@@ -1,11 +1,9 @@
-import Backdrop from './Backdrop'
 function Modal(props) {
   function continueHandler(event) {
     event.stopPropagation();
     event.preventDefault();
   }
   return (
-  <Backdrop >
     <div className="modal">
       <span className="flex_btn">
         <button className="login">
@@ -45,7 +43,6 @@ function Modal(props) {
         </svg></button>
       </form>
     </div>
-    </Backdrop>
   );
 }
 export default Modal;
