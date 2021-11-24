@@ -91,13 +91,22 @@ $input-bg-color:#F5F7FA;
 }
 
 @mixin input {
-    width: 100%;
+    /*  width: 100%;
     border: 1px solid $border-color;
-    background-color: $input-bg-color;
     box-sizing: border-box;
     padding: 20px 10px;
     border-radius: 5px;
+    */
     margin-bottom: 1em;
+    background-color: $input-bg-color;
+    border: 1px solid #A9A9A9;
+    box-sizing: border-box;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    min-height: 50px;
+    max-height: 60px;
+    width: 100%;
+    max-width: 100%;
 }
 
 @mixin input2 {
@@ -199,9 +208,11 @@ p {
     height: 200px;
     width: 50%;
 }
-.cancelButton{
+
+.cancelButton {
     margin: auto;
 }
+
 .cancel_btn {
     align-self: flex-end;
     width: 10%;
@@ -214,11 +225,13 @@ p {
     text-align: center;
     content: 'Click here to upload from file';
 }
-a{
+
+a {
     width: 100%;
     align-self: center;
     text-align: center;
 }
+
 .inputImage {
     display: none;
 }
@@ -226,27 +239,33 @@ a{
 .upload::before {
     content: 'Upload file';
 }
-@mixin upload{
+
+@mixin upload {
     background: #F5F7FA;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     margin: 1em 0;
-    width: 40%; 
+    width: 40%;
     padding: 0.2em 0;
     text-align: center;
 }
+
 .upload {
     @include upload();
 }
+
 .takePicture {
     @include upload();
- 
+
 }
 
 .takePicture::before {
     content: 'Take picture';
 }
-select {@include input();
+
+select {
+    @include input();
+
     &:invalid {
         color: gray;
     }
@@ -255,10 +274,12 @@ select {@include input();
         font-weight: normal;
         color: #B4B4B4;
     }
-    option{
+
+    option {
         border-top: 1px solid rgba(0, 0, 0, 0.2);
     }
 }
+
 form {
     @include form();
 
@@ -288,17 +309,21 @@ form {
     button {
         @include btn2();
     }
-    select {@include input2();
+
+    select {
+        @include input2();
+
         &:invalid {
             color: gray;
         }
-    
+
         #selected {
             font-weight: normal;
             color: #B4B4B4;
-    
+
         }
     }
+
     form {
         @include form2();
 

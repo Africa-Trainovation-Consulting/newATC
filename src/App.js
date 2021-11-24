@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path='/login' element={<Login />}>
+        <Route path='/' exact element={<Login />}>
           <Login />
         </Route>
         <Route path='/signUp' element={<SignUp />}>
