@@ -9,7 +9,7 @@ function PasswordChanged(props) {
     return (
         <>
             <span className='flex_btn'>
-                <p>
+                <p className='lead'>
                     Password changed <br /> successfuly
                 </p>
             </span>
