@@ -320,7 +320,17 @@ form {
         text-align: center;
         align-self: center;
     }
-
+    .spanning{
+       .cancel_btn{
+           h1{
+               display: none;
+           }
+           .Madbtn{
+               display: flex;
+               align-self: flex-end;
+           }
+       }
+    }
     .flex_btn {
         @include flex_btn2();
     }
