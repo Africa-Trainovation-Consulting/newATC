@@ -183,6 +183,8 @@ button {
 }
 
 .continueWith {
+    width: 80%;
+    align-items: center;
     p {
         font-size: 12px;
         text-align: center;
@@ -219,10 +221,10 @@ h1{
 .Or {
     @include flex();
     justify-content: space-evenly;
-    width: 80%;
+    width: 90%;
 
     .empty {
-        width: 100%;
+        width: 40%;
     }
 }
 
@@ -347,7 +349,6 @@ form {
     button {
         @include btn2();
     }
-
     select {
         @include input2();
 
@@ -361,13 +362,20 @@ form {
 
         }
     }
+    .Or {
+        @include flex();
+        width: 70%;
+    justify-content: space-between;
+        .empty {
+            width: 40%;
+        }
+    }
     form {
         @include form2();
 
         input {
             @include input2();
         }
-
         button {
             @include continue_btn2();
             width: 70%;
