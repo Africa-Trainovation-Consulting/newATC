@@ -9,7 +9,7 @@ function Upload(props) {
     }
     return (
         <>
-           <Spanning />
+           <Spanning heading='Upload Picture' />
             <h1>Upload Picture</h1>
             <form action="post">
                 <label className='imageUpload'>

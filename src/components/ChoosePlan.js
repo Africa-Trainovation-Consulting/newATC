@@ -12,12 +12,12 @@ function ChoosePlan(props) {
     }
     return (
         <>
-          <Spanning />
+          <Spanning heading='Choose a Plan' />
             <h1>Choose a Plan</h1>
             <form action="post">
                 <span className="form-group">
                     <label for="inputPaymentType"> Choose a Package </label>
-                    <select id="courses" name="paymentType" placeholder="Freelancer">
+                    <select  name="paymentType" placeholder="Freelancer">
                         <option value="" disabled invalid selected hidden id="selected"
                             style={{ fontWeight: 'lighter', fontSize: '5px', color: '#b4b4b4' }}>
                             Freelancer
