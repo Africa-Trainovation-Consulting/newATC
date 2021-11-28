@@ -40,7 +40,7 @@ $input-bg-color:#F5F7FA;
 }
 
 @mixin flex_btn {
-    width: 90%;
+    width: 85%;
     @include flex();
     justify-content: space-between;
 }
