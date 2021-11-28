@@ -2,11 +2,8 @@ import React from 'react';
 import Backdrop from './HOC'
 import { Link } from 'react-router-dom'
 import Formgroup from '../layouts/FormGroup';
+import ContinueBtn from "../layouts/ContinueBtn";
 function Login(props) {
-    function continueHandler(event) {
-        event.stopPropagation();
-        event.preventDefault();
-    }
     return (
         <>
             <span className="flex_btn">
@@ -34,13 +31,9 @@ function Login(props) {
             <form action="post">
                 <Formgroup label='Email' htmlFor='Email' type='email' name='email' placeholder='Enter your email'/>
                 <Formgroup label='Password' htmlFor='password' type='password' name='password' placeholder='Enter password'/>
-                <Link to='/choosePlan'>
-                    <button type="submit" onClick={continueHandler}> Continue <svg xmlns="http://www.w3.org/2000/svg" width="27" height="10" viewBox="0 0 37 20" fill="none">
-                        <path d="M35.5 10H2M35.5 10L27.5 18.5M35.5 10L27.5 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></button>
-                </Link>
+                <ContinueBtn to='signup' />
             </form>
-            <a href='google' style={{ color: '#262B33', marginTop: '1em' }}>Forgot Password?</a>
+            <Link to='/forgotpassword' style={{ color: '#262B33', marginTop: '1em' }}>Forgot Password?</Link>
         </>
     )
 }

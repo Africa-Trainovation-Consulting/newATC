@@ -3,11 +3,11 @@ import { Route, Switch} from 'react-router-dom'
 import "./Sass/style.scss";
 import Login from "./components/Login";
 import SignUp from './components/SignUp'
+import Upload from './components/Upload';
+import ChoosePlan from './components/ChoosePlan';
 import ForgotPassword from './components/ForgotPassword'
 import CreateNewpassword from "./components/CreateNewpassword";
 import PasswordChanged from "./components/PasswordChanged";
-import Upload from './components/Upload';
-import ChoosePlan from './components/ChoosePlan';
 function App() {
   return (
     <div className="App">

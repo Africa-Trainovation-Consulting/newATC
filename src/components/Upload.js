@@ -1,12 +1,8 @@
 import React from 'react';
 import Backdrop from './HOC';
-import { Link } from 'react-router-dom'
 import Spanning from '../layouts/Spanning';
+import ContinueBtn from "../layouts/ContinueBtn";
 function Upload(props) {
-    function continueHandler(event) {
-        event.stopPropagation();
-        event.preventDefault();
-    }
     return (
         <>
            <Spanning heading='Upload Picture' />
@@ -25,11 +21,7 @@ function Upload(props) {
                         <input type='file' capture='user' accept="image/*" className='inputImage' />
                     </label>
                 </span>
-                <Link to='/chooseplan'>
-                    <button type="submit" onClick={continueHandler}> Continue <svg xmlns="http://www.w3.org/2000/svg" width="27" height="10" viewBox="0 0 37 20" fill="none">
-                        <path d="M35.5 10H2M35.5 10L27.5 18.5M35.5 10L27.5 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></button>
-                </Link>
+                <ContinueBtn to='/chooseplan' />
             </form>
         </>
     )
