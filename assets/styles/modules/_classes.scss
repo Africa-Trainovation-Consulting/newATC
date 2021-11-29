@@ -1,3 +1,4 @@
+@use "sass:string";
 .black {
   color: $black !important;
 }
@@ -31,7 +32,7 @@
   $widths: 25, 33, 50, 75, 100;
   @each $width in $widths {
     @at-root &#{$width} {
-      width: $width#{"%"};
+      width: $width+#{"%"};
     }
     $devices: (
       tablet: $tablet,
@@ -42,7 +43,7 @@
         @include media($type) {
           display: flex;
           @at-root &#{$width} {
-            width: $width#{"%"};
+            width: $width+#{"%"};
             margin: {
               left: auto;
               right: auto;
@@ -113,7 +114,7 @@
   }
 }
 // display using flexbox
-.flex {
+/* .flex {
   $dirs: (
     c: column,
     C: column-reverse,
@@ -136,11 +137,10 @@
     st: stretch,
   );
   $breaks: "", 320, 375, 425, 768, 1024, 1440, 2560;
-  /* direction, justify content, align item
-  */
+  //direction, justify content, align item
   @each $break in $breaks {
     @include media("screen and (min-width: #{$break}px)") {
-      display: flex;     
+      display: flex;
       @each $di, $dir in $dirs {
         @at-root &#{$di} {
           @each $jus, $just in $justify {
@@ -161,16 +161,16 @@
       }
     }
   }
-}
+} */
 //font-weight
 .fw {
   $fontW: 100, 200, 300, 400, 500, 600, 700, 800, 900;
   $text-align: left, justify, right;
-  @each $fw in $fontW {
-    @at-root &#{$fw} {
+  @each $fw in $fontW {$bb:#{&+$fw};
+    @at-root #{$bb} {
       @each $ta in $text-align {
         @at-root &_#{$ta} {
-          font-weight: $fw;
+          @extend #{$bb};
           text-align: $ta;
         }
       }
@@ -179,6 +179,18 @@
   }
 }
 
+/* 
+.fw {
+  $fontW: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+  $text-align: left, justify, right;
+  &100 {
+    font-weight: 200;
+  }
+  &left{
+    text-align: left;
+  }
+}
+ */
 .back-to-top {
   height: 36px;
   width: 36px;
