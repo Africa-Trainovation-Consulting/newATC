@@ -135,28 +135,27 @@
     bl: baseline,
     st: stretch,
   );
-  $breaks: 320, 375;//, 425, 768, 1024, 1440, 2560;
+  $breaks: "", 320, 375, 425, 768, 1024, 1440, 2560;
   /* direction, justify content, align item
   */
-  @each $di, $dir in $dirs {
-    @at-root &#{$di} {
-      @each $jus, $just in $justify {
-        @at-root &_#{$jus} {
-          @each $al, $ali in $align {
-            @at-root &_#{$al} {
-              @each $break in $breaks {
-                @include media("screen and (min-width: #{$break}px)") {
-                  display: flex;
+  @each $break in $breaks {
+    @include media("screen and (min-width: #{$break}px)") {
+      display: flex;     
+      @each $di, $dir in $dirs {
+        @at-root &#{$di} {
+          @each $jus, $just in $justify {
+            @at-root &_#{$jus} {
+              @each $al, $ali in $align {
+                @at-root &_#{$al} {
                   flex-direction: $dir;
                   justify-content: $just;
                   align-items: $ali;
                 }
-                display: flex;
                 flex-direction: $dir;
                 justify-content: $just;
-                align-items: $ali;
               }
             }
+            flex-direction: $dir;
           }
         }
       }
