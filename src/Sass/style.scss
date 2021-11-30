@@ -103,8 +103,8 @@ $input-bg-color:#F5F7FA;
     box-sizing: border-box;
     padding: 0 5px 0 5px;
     border-radius: 5px;
-    min-height: 50px;
-    max-height: 60px;
+    min-height: 45px;
+    max-height: 30px;
     width: 100%;
     max-width: 100%;
 }
@@ -183,6 +183,7 @@ button {
 }
 
 .continueWith {
+    margin: 1em 0;
     width: 80%;
     align-items: center;
     p {

@@ -16,9 +16,9 @@ function Login(props) {
             </span>
             <span className="flex_btn continueWith">
                 <p className="goggle">
-                    CONTINUE WITH <span style={{ color: 'blue' }}>G</span><span style={{ color: 'red' }}>o</span><span style={{ color: 'yellow' }}>o</span><span style={{ color: 'blue' }}>g</span><span style={{ color: 'green' }}>l</span><span style={{ color: 'red' }}>e </span></p>
+                Login with <span style={{ color: 'blue', fontSize:'18px' }}>G</span><span style={{ color: 'red', fontSize:'18px' }}>o</span><span style={{ color: 'yellow',fontSize:'18px' }}>o</span><span style={{ color: 'blue', fontSize:'18px' }}>g</span><span style={{ color: 'green',fontSize:'18px' }}>l</span><span style={{ color: 'red', fontSize:'18px' }}>e </span></p>
                 <p className="facebook " >
-                    CONTINUE WITH <span style={{ color: 'blue' }}> Facebook </span>
+                Login with <span style={{ color: 'blue', fontSize:'18px' }}> Facebook </span>
                 </p>
             </span>
             <div className='Or'>
