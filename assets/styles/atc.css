@@ -832,6 +832,7 @@ section.laptopWoman a {
 
 section.students div.tablet img {
   width: 24%;
+  border-radius: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -933,6 +934,17 @@ footer div.flex_c, footer div.flex_cr, footer div.flex_cR {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .socials {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
 }
 
 body {

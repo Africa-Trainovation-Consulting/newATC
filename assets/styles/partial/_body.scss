@@ -47,6 +47,7 @@ section {
       &.tablet {
         img {
           width: 24%;
+          border-radius: $borderRadius;
         }
       }
       &.note {

@@ -1,22 +1,27 @@
 footer {
-    padding: $contentPadding;
-    padding-top: 2*$headerHeight;
-    background-color: $black;
-    *{
-        color: $footerColor;
-        text-align: left !important;
+  padding: $contentPadding;
+  padding-top: 2 * $headerHeight;
+  background-color: $black;
+  * {
+    color: $footerColor;
+    text-align: left !important;
+  }
+  span {
+    color: $white;
+  }
+  .links {
+    @include media {
+      justify-content: space-between;
     }
-    span{
-        color: $white;
-    }
-    .links{
-        @include media{
-            justify-content: space-between;
-        }
-        align-items: flex-start;
-    }
-    div.flex_c{
-        align-items: flex-start;
+    align-items: flex-start;
+  }
+  div.flex_c {
+    align-items: flex-start;
+  }
+  .socials {
+    @include media {
+      justify-content: space-between;
+      display: flex !important;
     }
   }
-  
+}
