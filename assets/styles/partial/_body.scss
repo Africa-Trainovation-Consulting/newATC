@@ -77,21 +77,27 @@ section {
     }
   }
   &.workstation {
-    div:first-child{
-      img{
-@include media($tablet){
-  width: 50%;
-}
+    padding: 0;
+    > div {
+      padding: $contentPadding;
+      &:first-child {
+        img {
+          @include media($tablet) {
+            width: 50%;
+          }
+        }
       }
-
-    }
-    .contactUs {
-      background-color: $contactUsBlue;
-      border-radius: 10px;
-    }
-    @include media {
-      .contactUs {
-        transform: translateY(12.5%);
+      &.contactUs {
+        background-color: $contactUsBlue;
+        border-top: {
+          left-radius: 10px;
+          right-radius: 10px;
+        }
+        @include media {
+          margin: $contentPadding;
+          transform: translateY(50%);
+          border-radius: 10px;
+        }
       }
     }
   }

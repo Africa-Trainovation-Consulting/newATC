@@ -844,21 +844,32 @@ section.QHSE a {
   }
 }
 
+section.workstation {
+  padding: 0;
+}
+
+section.workstation > div {
+  padding: 0 5vw;
+}
+
 @media only screen and (min-width: 768px) {
-  section.workstation div:first-child img {
+  section.workstation > div:first-child img {
     width: 50%;
   }
 }
 
-section.workstation .contactUs {
+section.workstation > div.contactUs {
   background-color: #5D5FEF;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 @media only screen and (min-width: 768px) {
-  section.workstation .contactUs {
-    -webkit-transform: translateY(12.5%);
-            transform: translateY(12.5%);
+  section.workstation > div.contactUs {
+    margin: 0 5vw;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    border-radius: 10px;
   }
 }
 
