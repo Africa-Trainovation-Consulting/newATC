@@ -844,6 +844,12 @@ section.QHSE a {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  section.workstation div:first-child img {
+    width: 50%;
+  }
+}
+
 section.workstation .contactUs {
   background-color: #5D5FEF;
   border-radius: 10px;

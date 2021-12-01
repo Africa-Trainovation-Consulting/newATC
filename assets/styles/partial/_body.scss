@@ -77,6 +77,14 @@ section {
     }
   }
   &.workstation {
+    div:first-child{
+      img{
+@include media($tablet){
+  width: 50%;
+}
+      }
+
+    }
     .contactUs {
       background-color: $contactUsBlue;
       border-radius: 10px;
