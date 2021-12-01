@@ -24,6 +24,10 @@
     transform: translateY(5px);
   }
 }
+.none {
+  display: none;
+}
+
 .w {
   $widths: 25, 33, 50, 75, 100;
   @each $width in $widths {
@@ -113,7 +117,7 @@
 //font-weight
 .fw {
   $fontW: 100, 200, 300, 400, 500, 600, 700, 800, 900;
-  $text-align: left, justify, right;
+  $text-align: left, center, right;
   @each $fw in $fontW {$bb:#{&+$fw};
     @at-root #{$bb} {
       @each $ta in $text-align {
@@ -125,10 +129,6 @@
       font-weight: $fw;
     }
   }
-}
-
-.none {
-  display: none;
 }
 
 .back-to-top {

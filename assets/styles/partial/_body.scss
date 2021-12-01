@@ -42,10 +42,28 @@ section {
       padding-top: 0.5 * $headerHeight;
     }
   }
+  &.students {
+    div {
+      &.tablet {
+        img {
+          width: 24%;
+        }
+      }
+      &.note {
+        @include media {
+          width: 70%;
+          text-align: center;
+        }
+        @include media($laptop) {
+          width: 50%;
+        }
+      }
+    }
+  }
   &.QHSE {
     background-color: $QHSEBlue;
     * {
-      color: #fff !important;
+      color: #fff;
     }
     a {
       background-color: $QHSEButtonBackground;
@@ -54,21 +72,21 @@ section {
     @include media {
       img {
         transform: translateY(-12.5%);
+        width: 50%;
       }
     }
   }
-  &.workstation{
-      .contactUs{
-          background-color: $contactUsBlue;  
-          border-radius: 10px;        
+  &.workstation {
+    .contactUs {
+      background-color: $contactUsBlue;
+      border-radius: 10px;
+    }
+    @include media {
+      .contactUs {
+        transform: translateY(12.5%);
       }
-      @include media{
-          .contactUs{
-            transform: translateY(12.5%);
-          }
-      }
-
+    }
   }
-  &.stem{
+  &.stem {
   }
 }
