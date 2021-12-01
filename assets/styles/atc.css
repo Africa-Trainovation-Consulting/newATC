@@ -936,14 +936,28 @@ footer div.flex_c, footer div.flex_cr, footer div.flex_cR {
           align-items: flex-start;
 }
 
+footer .socials {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 @media only screen and (min-width: 768px) {
   footer .socials {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .socials .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .socials .logo svg:first-child {
+    margin-right: 8px;
   }
 }
 

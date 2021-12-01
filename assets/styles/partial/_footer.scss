@@ -19,9 +19,16 @@ footer {
     align-items: flex-start;
   }
   .socials {
+    align-items: flex-start;
     @include media {
       justify-content: space-between;
-      display: flex !important;
+      align-items: center;
+      .logo {
+        display: flex;
+        svg:first-child{
+margin-right: 2*$smallpadding;
+        }
+      }
     }
   }
 }
