@@ -837,6 +837,11 @@ section.students div.tablet img {
   border-radius: 10px;
 }
 
+section.students div.tablet img:hover {
+  -webkit-transform: scaleY(1.1);
+          transform: scaleY(1.1);
+}
+
 @media only screen and (min-width: 768px) {
   section.students div.note {
     width: 70%;
@@ -877,6 +882,11 @@ section.workstation {
 
 section.workstation > div {
   padding: 0 5vw;
+}
+
+section.workstation > div:first-child img {
+  -webkit-transform: translateX(-12.5%);
+          transform: translateX(-12.5%);
 }
 
 @media only screen and (min-width: 768px) {
@@ -942,6 +952,10 @@ footer .socials {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+footer .socials .follow a {
+  margin-right: 12px;
 }
 
 @media only screen and (min-width: 768px) {

@@ -20,13 +20,19 @@ footer {
   }
   .socials {
     align-items: flex-start;
+    .follow{
+      a{
+        margin-right: 3*$smallpadding;
+      }
+    }
+
     @include media {
       justify-content: space-between;
       align-items: center;
       .logo {
         display: flex;
-        svg:first-child{
-margin-right: 2*$smallpadding;
+        svg:first-child {
+          margin-right: 2 * $smallpadding;
         }
       }
     }

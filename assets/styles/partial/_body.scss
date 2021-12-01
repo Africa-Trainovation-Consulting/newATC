@@ -50,8 +50,7 @@ section {
           object-fit: cover;
           border-radius: $borderRadius;
           &:hover {
-            //position: absolute;
-            //transform:scale(0,225%,0);
+            transform: scaleY(1.1);
           }
         }
       }
@@ -88,6 +87,7 @@ section {
       padding: $contentPadding;
       &:first-child {
         img {
+          transform:translateX(-12.5%);
           @include media($tablet) {
             width: 50%;
           }
