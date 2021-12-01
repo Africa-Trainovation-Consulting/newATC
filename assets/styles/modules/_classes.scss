@@ -1,4 +1,3 @@
-@use "sass:string";
 .black {
   color: $black !important;
 }
@@ -25,14 +24,11 @@
     transform: translateY(5px);
   }
 }
-.none {
-  display: none;
-}
 .w {
   $widths: 25, 33, 50, 75, 100;
   @each $width in $widths {
     @at-root &#{$width} {
-      width: $width+#{"%"};
+      width: $width#{"%"};
     }
     $devices: (
       tablet: $tablet,
@@ -43,7 +39,7 @@
         @include media($type) {
           display: flex;
           @at-root &#{$width} {
-            width: $width+#{"%"};
+            width: $width#{"%"};
             margin: {
               left: auto;
               right: auto;
@@ -106,7 +102,7 @@
       }
     }
   }
-  @media #{$tablet} {
+  @include media($tablet) {
     flex-direction: row;
     img {
       width: 50%;
@@ -114,54 +110,6 @@
   }
 }
 // display using flexbox
-/* .flex {
-  $dirs: (
-    c: column,
-    C: column-reverse,
-    r: row,
-    R: row-reverse,
-  );
-  $justify: (
-    fs: flex-start,
-    fe: flex-end,
-    cc: center,
-    sb: space-between,
-    sa: space-around,
-    se: space-evenly,
-  );
-  $align: (
-    fs: flex-start,
-    fe: flex-end,
-    cc: center,
-    bl: baseline,
-    st: stretch,
-  );
-  $breaks: "", 320, 375, 425, 768, 1024, 1440, 2560;
-  //direction, justify content, align item
-  @each $break in $breaks {
-    @include media("screen and (min-width: #{$break}px)") {
-      display: flex;
-      @each $di, $dir in $dirs {
-        @at-root &#{$di} {
-          @each $jus, $just in $justify {
-            @at-root &_#{$jus} {
-              @each $al, $ali in $align {
-                @at-root &_#{$al} {
-                  flex-direction: $dir;
-                  justify-content: $just;
-                  align-items: $ali;
-                }
-                flex-direction: $dir;
-                justify-content: $just;
-              }
-            }
-            flex-direction: $dir;
-          }
-        }
-      }
-    }
-  }
-} */
 //font-weight
 .fw {
   $fontW: 100, 200, 300, 400, 500, 600, 700, 800, 900;
@@ -179,18 +127,10 @@
   }
 }
 
-/* 
-.fw {
-  $fontW: 100, 200, 300, 400, 500, 600, 700, 800, 900;
-  $text-align: left, justify, right;
-  &100 {
-    font-weight: 200;
-  }
-  &left{
-    text-align: left;
-  }
+.none {
+  display: none;
 }
- */
+
 .back-to-top {
   height: 36px;
   width: 36px;

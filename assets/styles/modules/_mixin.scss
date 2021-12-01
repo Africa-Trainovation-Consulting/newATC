@@ -5,22 +5,23 @@
   flex-direction: $direction;
 }
 
-@mixin media($device:$laptop) {
-  @media #{$device} {
+@mixin media($device:$tablet) {
+  @media only screen and (min-width: #{$device}) {
     @content;
   }
 }
 
-@mixin srcset {
-  @include media {
-    display: none;
-  }
-
+@mixin srcset($device:$tablet) {
+ 
   &:last-child() {
     display: none;
 
-    @include media {
+    @include media($device) {
       display: block;
     }
   }
+  @include media($device) {
+    display: none;
+  }
+
 }

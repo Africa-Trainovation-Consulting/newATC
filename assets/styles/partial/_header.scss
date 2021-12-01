@@ -10,8 +10,8 @@ header {
 
   a {
     svg {
-      @include srcset;
-    }
+      @include srcset($tablet);
+      }
 
     img {
       width: 80%;
@@ -46,11 +46,11 @@ header {
           font-weight: 600;
           border: 1px solid $black;
           border-radius: 10px;
-          padding: $smallpadding (2*$smallpadding);
+          padding: $smallpadding (2 * $smallpadding);
           display: none;
 
           @include media {
-            display: block
+            display: block;
           }
         }
       }
@@ -68,6 +68,7 @@ header {
 
     &.icon {
       color: $black;
+      width: 26px;
       align-self: center;
 
       svg:last-child {
