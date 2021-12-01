@@ -1,8 +1,20 @@
 .black {
   color: $black !important;
 }
+.bgBlack {
+  background-color: $black !important;
+}
+.purple {
+  color: $purple !important;
+}
+.bgPurple {
+  background-color: $purple !important;
+}
 .blue {
-  color: $QHSEBlue !important;
+  color: $deepBlue !important;
+}
+.bgBlue {
+  background-color: $deepBlue !important;
 }
 .linkButton {
   color: #fff;
@@ -118,7 +130,8 @@
 .fw {
   $fontW: 100, 200, 300, 400, 500, 600, 700, 800, 900;
   $text-align: left, center, right;
-  @each $fw in $fontW {$bb:#{&+$fw};
+  @each $fw in $fontW {
+    $bb: #{& + $fw};
     @at-root #{$bb} {
       @each $ta in $text-align {
         @at-root &_#{$ta} {

@@ -106,8 +106,24 @@ sup,
   color: #150C21 !important;
 }
 
+.bgBlack {
+  background-color: #150C21 !important;
+}
+
+.purple {
+  color: #5D5FEF !important;
+}
+
+.bgPurple {
+  background-color: #5D5FEF !important;
+}
+
 .blue {
   color: #0E088D !important;
+}
+
+.bgBlue {
+  background-color: #0E088D !important;
 }
 
 .linkButton {
@@ -859,7 +875,6 @@ section.workstation > div {
 }
 
 section.workstation > div.contactUs {
-  background-color: #5D5FEF;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
