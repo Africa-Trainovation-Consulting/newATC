@@ -9,9 +9,12 @@ header {
   @include flex(row, space-between, center);
 
   a {
-    svg {
-      @include srcset($tablet);
+    svg:nth-child(2) {
+      display: none;
+      @include media {
+        display: inline;
       }
+    }
 
     img {
       width: 80%;
@@ -68,11 +71,13 @@ header {
 
     &.icon {
       color: $black;
-      width: 26px;
       align-self: center;
+      svg {
+        font-size: 24px;
 
-      svg:last-child {
-        display: none;
+        &:last-child {
+          display: none;
+        }
       }
 
       @include media {

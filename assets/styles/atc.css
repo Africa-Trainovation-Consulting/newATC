@@ -650,19 +650,13 @@ header {
           flex-direction: row;
 }
 
-header a svg:last-child {
+header a svg:nth-child(2) {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  header a svg:last-child {
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  header a svg {
-    display: none;
+  header a svg:nth-child(2) {
+    display: inline;
   }
 }
 
@@ -743,10 +737,13 @@ header span.navLinks a:last-child {
 
 header span.icon {
   color: #150C21;
-  width: 26px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+header span.icon svg {
+  font-size: 24px;
 }
 
 header span.icon svg:last-child {
@@ -830,8 +827,13 @@ section.laptopWoman a {
   }
 }
 
+section.students div.tablet {
+  position: relative;
+}
+
 section.students div.tablet img {
-  width: 24%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 
