@@ -4,7 +4,19 @@ footer {
     background-color: $black;
     *{
         color: $footerColor;
-        text-align: left;
+        text-align: left !important;
+    }
+    span{
+        color: $white;
+    }
+    .links{
+        @include media{
+            justify-content: space-between;
+        }
+        align-items: flex-start;
+    }
+    div.flex_c{
+        align-items: flex-start;
     }
   }
   

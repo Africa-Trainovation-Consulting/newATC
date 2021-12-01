@@ -110,6 +110,14 @@ sup,
   background-color: #150C21 !important;
 }
 
+.white {
+  color: #fff !important;
+}
+
+.bgWhite {
+  background-color: #fff !important;
+}
+
 .purple {
   color: #5D5FEF !important;
 }
@@ -896,7 +904,31 @@ footer {
 
 footer * {
   color: #A4A4A4;
-  text-align: left;
+  text-align: left !important;
+}
+
+footer span {
+  color: #fff;
+}
+
+footer .links {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .links {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+footer div.flex_c, footer div.flex_cr, footer div.flex_cR {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 body {
