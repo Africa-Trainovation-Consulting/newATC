@@ -49,6 +49,7 @@ section {
         img {
           object-fit: cover;
           border-radius: $borderRadius;
+          image-rendering: pixelated;
           &:hover {
             transform: scaleY(1.1);
           }
@@ -87,6 +88,7 @@ section {
       padding: $contentPadding;
       &:first-child {
         img {
+          image-rendering: pixelated;
           transform:translateX(-12.5%);
           @include media($tablet) {
             width: 50%;

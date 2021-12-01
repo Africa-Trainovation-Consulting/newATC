@@ -835,6 +835,11 @@ section.students div.tablet img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
 }
 
 section.students div.tablet img:hover {
@@ -885,6 +890,11 @@ section.workstation > div {
 }
 
 section.workstation > div:first-child img {
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
   -webkit-transform: translateX(-12.5%);
           transform: translateX(-12.5%);
 }
