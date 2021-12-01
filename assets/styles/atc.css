@@ -896,6 +896,10 @@ section.workstation > div.contactUs {
   }
 }
 
+section.workstation > div.contactUs h2 {
+  color: #a6efff;
+}
+
 footer {
   padding: 0 5vw;
   padding-top: 150px;
