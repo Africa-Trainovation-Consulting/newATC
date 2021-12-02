@@ -666,7 +666,6 @@ header a img {
 }
 
 header span.navLinks {
-  display: none;
   position: absolute;
   right: 0;
   top: 75px;
