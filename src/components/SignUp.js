@@ -14,6 +14,7 @@ function SignUp(props) {
                 </button>
             </span>
             <form action="post">
+            <h3 className='title'>SIGN UP</h3>
                 <Formgroup label='Full Name' htmlFor='name' type='text' name='name' placeholder='Enter your full name' />
                 <Formgroup label='Email' htmlFor='Email' type='email' name='email' placeholder='Enter your email' />
                 <Formgroup label='Home Address' htmlFor='Address' type='address' name='address' placeholder='Enter your home address' />

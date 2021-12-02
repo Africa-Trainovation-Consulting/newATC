@@ -38,14 +38,15 @@ $input-bg-color:#F5F7FA;
     max-width: 600px;
     font-size: $font-size;
     border-radius: 15px;
-    padding: 4em 0;
+    padding: 2em 0;
     margin: 4vh 0;
 }
 
 @mixin flex_btn {
-    width: 85%;
+    width: 90%;
     @include flex();
     justify-content: space-between;
+    margin-bottom:1em;
 }
 
 @mixin flex_btn2 {
@@ -54,8 +55,10 @@ $input-bg-color:#F5F7FA;
 }
 
 @mixin btn {
+    background:none;
     border-radius: 5px;
-    width: 47%;
+    border: 1px solid #423A4B;
+    width: 45%;
     height: 5vh;
     cursor: pointer;
 }
@@ -73,7 +76,7 @@ $input-bg-color:#F5F7FA;
 
 @mixin form {
     @include flex2();
-    width: 85%;
+    width: 90%;
     margin-top: 1em;
 }
 
@@ -100,7 +103,7 @@ $input-bg-color:#F5F7FA;
     border-radius: 5px;
     */
     box-sizing: border-box;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
     background-color: $input-bg-color;
     border: 1px solid #A9A9A9;
     box-sizing: border-box;
@@ -114,13 +117,12 @@ $input-bg-color:#F5F7FA;
 
 @mixin input2 {
     @include input();
-    margin-bottom: 0.5em;
     padding: 10px;
 }
 
 @mixin continue_btn {
-    @include active-btn();
     @include btn();
+    @include active-btn();
     border: none;
     width: 100%;
     font-size: 18px;
@@ -132,8 +134,8 @@ $input-bg-color:#F5F7FA;
 }
 
 @mixin continue_btn2 {
-    @include continue_btn();
     @include btn2();
+    @include continue_btn();
 }
 
 * {
@@ -199,7 +201,7 @@ button {
 .spanning {
     @include flex();
     justify-content: space-between;
-    width: 85%;
+    width: 90%;
     h1 {
         font-size: 20px;
         margin-bottom: 1em;
@@ -219,7 +221,18 @@ h1{
     display: flex;
     width: 100%;
 }
-
+.dont_{
+    width:90%;
+    display:grid;
+    grid-template-columns:40% 15% 40%;
+    margin-bottom:1em;
+        .dont{
+            grid-column:3/span 3;
+            justify-self:end;
+            font-size:13px;
+            text-decoration:none;
+    }
+}
 .Madbtn {
     display: flex;
     justify-content: space-between;
@@ -230,8 +243,9 @@ h1{
     justify-content: space-evenly;
     width: 90%;
 
-    .empty {
+p {
         width: 40%;
+        font-size:15px;
     }
 }
 
@@ -313,6 +327,10 @@ select {
         size: 30px;
     }
 }
+.title{
+    align-self:flex-start;
+    margin-bottom:1.2em;
+}
 form {
     @include form();
 
@@ -341,7 +359,14 @@ form {
         align-self: center;
         display: block;
     }
-
+    .dont_{
+        grid-template-columns:40% 8% 40%;
+        border:none;
+        .dont{
+                border:none;
+                font-size:16px;
+        }
+    }
     .spanning {
         display: grid;
         grid-template-columns: auto;
@@ -374,6 +399,7 @@ form {
 
         }
     }
+    
     .Or {
         @include flex();
         width: 70%;
