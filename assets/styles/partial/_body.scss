@@ -45,8 +45,8 @@ section {
   &.students {
     div {
       &.tablet {
-        position: relative;
         img {
+          width: 23%;
           object-fit: cover;
           border-radius: $borderRadius;
           image-rendering: pixelated;

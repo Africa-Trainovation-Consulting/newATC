@@ -827,11 +827,8 @@ section.laptopWoman a {
   }
 }
 
-section.students div.tablet {
-  position: relative;
-}
-
 section.students div.tablet img {
+  width: 23%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
