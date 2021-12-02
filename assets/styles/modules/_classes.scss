@@ -42,37 +42,6 @@
     transform: translateY(5px);
   }
 }
-.none {
-  display: none;
-}
-
-.w {
-  $widths: 25, 33, 50, 75, 100;
-  @each $width in $widths {
-    @at-root &#{$width} {
-      width: $width#{"%"};
-    }
-    $devices: (
-      tablet: $tablet,
-      laptop: $laptop,
-    );
-    @each $device, $type in $devices {
-      @at-root .#{$device} {
-        @include media($type) {
-          display: flex;
-          @at-root &#{$width} {
-            width: $width#{"%"};
-            margin: {
-              left: auto;
-              right: auto;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 .flex {
   @include flex(column);
   max-width: 100%;
@@ -132,6 +101,38 @@
   }
 }
 // display using flexbox
+
+.none {
+  display: none;
+}
+
+.w {
+  $widths: 25, 33, 50, 75, 100;
+  @each $width in $widths {
+    @at-root &#{$width} {
+      width: $width#{"%"};
+    }
+    $devices: (
+      tablet: $tablet,
+      laptop: $laptop,
+    );
+    @each $device, $type in $devices {
+      @at-root .#{$device} {
+        @include media($type) {
+          display: flex;
+          @at-root &#{$width} {
+            width: $width#{"%"};
+            margin: {
+              left: auto;
+              right: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 //font-weight
 .fw {
   $fontW: 100, 200, 300, 400, 500, 600, 700, 800, 900;
