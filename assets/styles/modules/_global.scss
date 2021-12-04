@@ -12,6 +12,7 @@
   color: $black;
   list-style: none;
   text-decoration: none;
+  text-size-adjust: 100%; 
 }
 
 :root {
@@ -88,36 +89,62 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
-@mixin font($s, $w) {
-  font: {
-    size: $s;
-    weight: $w;
-  }
-}
 h1 {
-  @include font(12vw, 500);
-  padding: 6vh 0 1.5vh;
-  @include media {
-    @include font(3.2em, 500);
-    padding: 12vh 0 0;
+  font: {
+    size: 9.3vw;
+    weight: 500;
   }
-}
-h2 {
-  @include font(2.5em, 500);
+  //padding: 6vh 0 1.5vh;
+
+  @include media(540px) {
+    font-size: 8.6vw;
+    //padding: 3vh 0 0;
+  }
+  @include media {
+    font-size: 5.1vw;
+  }
+  @include media($laptop) {
+    font-size: 3.2em;
+  }
 }
 h3 {
-  @include font(1.5em, 500);
+  font: {
+    size: 1.4em;
+    weight: 300;
+  }
+//  padding: 6vh 0 1.5vh;
+
+  @include media(540px) {
+    font-size: 6.0vw;
+//    padding: 3vh 0 0;
+  }
+  @include media {
+    font-size: 1.7em;
+  }
+  @include media($laptop) {
+    font-size: 2.4em;
+  }
 }
-h5 {
-  @include font(1.2em, 400);
+div,p {
+  font: {
+    size: 1em;
+    weight: 300;
+  }
   color: rgba($color: $black, $alpha: 0.59);
+  //padding: 1.5vh 0 4.5vh;
+
+  @include media(425px) {
+    font-size: 3.6vw;
+    //padding: 3vh 0 0;
+  }
+  @include media {
+    font-size: 2.5vw;
+  }
+  @include media($laptop) {
+    font-size: 1.2em;
+  }
 }
 
-div,
-p {
-  @extend h5;
-  padding: 1.5vh 0 4.5vh;
-}
 li {
   list-style-type: none;
 }

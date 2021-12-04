@@ -110,7 +110,7 @@
 }
 
 .w {
-  $widths: 25, 33, 50, 75, 100;
+  $widths: 25, 33, 50,60, 75, 100;
   @each $width in $widths {
     @at-root &#{$width} {
       width: $width#{"%"};

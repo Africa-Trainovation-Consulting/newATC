@@ -7,10 +7,10 @@ section {
 
     img {
       width: 100%;
-      transform:scale(1.1);      
+      transform: scale(1.1);
       @include media {
         width: 52.5%;
-        transform:scale(1);
+        transform: scale(1);
       }
     }
 
@@ -44,6 +44,7 @@ section {
     }
   }
   &.students {
+  
     margin: -3vh 0 8vh;
     div {
       &.tablet {
@@ -87,17 +88,25 @@ section {
       }
     }
 
-    img{
-      transform:translate(-3.125%,0)scale(1.1);
+    /* p {
+      @media screen and (min-width: $tablet) and (max-width: $laptop) {
+        width: 150%;
+        transform: translate(18%, 9%);
+      }
+    }
+ */
+    img {
+      transform: translate(-3.125%, 0) scale(1.1);
     }
     @include media {
       img {
-        transform: translateY(-25.0%);
+        transform: translateY(-25%);
         width: 50%;
       }
     }
   }
   &.stem {
+    display: none;
     @include media {
       .note {
         width: 50%;
@@ -125,6 +134,7 @@ section {
     }
   }
   &.workstation {
+    display: none;
     padding: 0;
     > div {
       padding: $contentPadding;
