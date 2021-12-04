@@ -18,12 +18,15 @@ function Login(props) {
                 </button>
             </span>
             <div className='Or'>
-                <p className="goggle">
-                    Login with <span style={{ color: 'blue', fontSize: '18px' }}>G</span><span style={{ color: 'red', fontSize: '18px' }}>o</span><span style={{ color: 'yellow', fontSize: '18px' }}>o</span><span style={{ color: 'blue', fontSize: '18px' }}>g</span><span style={{ color: 'green', fontSize: '18px' }}>l</span><span style={{ color: 'red', fontSize: '18px' }}>e </span>
-                </p>
-                OR <p className="facebook " >
-                    <span style={{ color: 'blue', fontSize: '18px' }}> Facebook </span>
-                </p>
+                    Login with <span style={{ color: 'blue', fontSize: '16px', paddingLeft: '10px'}}>G</span>
+                    <span style={{ color: 'red', fontSize: '16px' }}>o</span>
+                    <span style={{ color: 'yellow', fontSize: '16px' }}>o</span>
+                    <span style={{ color: 'blue', fontSize: '16px' }}>g</span>
+                    <span style={{ color: 'green', fontSize: '16px' }}>l</span>
+                    <span style={{ color: 'red', fontSize: '16px' }}>e </span>
+               <span className='or_'> OR </span>
+                    <span style={{ color: 'blue', fontSize: '16px' }}> Facebook </span>
+                
             </div>
             <form action="post">
                 <h3 className='title'>LOGIN</h3>
@@ -31,7 +34,7 @@ function Login(props) {
                 <Formgroup label='Password' htmlFor='password' type='password' name='password' placeholder='Enter password' />
                 <ContinueBtn to='signup' />
             </form>
-            <Link to='/forgotpassword' style={{ color: '#262B33', marginTop: '1em' }}>Forgot Password?</Link>
+            <Link to='/forgotpassword' style={{ color: '#262B33', marginTop: '2em', fontSize:'12px' }}>Forgot Password?</Link>
         </>
     )
 }

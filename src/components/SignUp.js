@@ -1,10 +1,14 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import Backdrop from './HOC'
 import Formgroup from '../layouts/FormGroup';
 import ContinueBtn from "../layouts/ContinueBtn";
 function SignUp(props) {
     return (
         <>
+        <span className='already_'>
+                <Link className="already" to='/forgotpassword' style={{ color: '#262B33' }}>Have an account?</Link>
+            </span>
             <span className="flex_btn">
                 <button className="login">
                     Login to continue
