@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand:wght@700&display=swap');
-$font-stack: 'Poppins'sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand:wght@500&display=swap');
+$font-stack: 'Poppins', sans-serif;
 $backdrop-background_color:rgba(21, 12, 33, 0.81);
 $btn_background-color : #5D5FEF;
 $text-color:#423A4B;
@@ -58,15 +58,15 @@ $input-bg-color:#F5F7FA;
     background:none;
     border-radius: 5px;
     border: 1px solid #423A4B;
-    width: 45%;
-    height: 5vh;
+    width: 47%;
+    height: 6vh;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 @mixin btn2 {
     @include btn();
     width: 40%;
-    height: 6vh;
 }
 
 @mixin active-btn {
@@ -229,8 +229,9 @@ h1{
         .dont{
             grid-column:3/span 3;
             justify-self:end;
-            font-size:13px;
+            font-size:10px;
             text-decoration:none;
+            white-space: nowrap;
     }
 }
 .Madbtn {
@@ -364,7 +365,7 @@ form {
         border:none;
         .dont{
                 border:none;
-                font-size:16px;
+                font-size:13px;
         }
     }
     .spanning {
