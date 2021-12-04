@@ -742,7 +742,7 @@ header span.icon {
 }
 
 header span.icon svg {
-  font-size: 24px;
+  width: 22.5px;
 }
 
 header span.icon svg:last-child {
@@ -875,6 +875,41 @@ section.QHSE a {
             transform: translateY(-12.5%);
     width: 50%;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  section.stem {
+    background-image: url("/assets/img/airship.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  section.stem .note {
+    width: 50%;
+  }
+}
+
+section.stem .kids img {
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+}
+
+@media only screen and (min-width: 768px) {
+  section.stem .kids img {
+    height: 35vh;
+    width: 32%;
+  }
+}
+
+section.stem .kids img:hover {
+  -webkit-transform: translate(0, -15%) scaleY(1.3);
+          transform: translate(0, -15%) scaleY(1.3);
 }
 
 section.workstation {

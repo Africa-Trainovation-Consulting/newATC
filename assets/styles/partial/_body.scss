@@ -82,6 +82,33 @@ section {
       }
     }
   }
+  &.stem {
+    @include media {
+      .note {
+        width: 50%;
+      }
+      background: {
+        image: url("/assets/img/airship.svg");
+        repeat: no-repeat;
+        size: cover;
+      }
+    }
+    .kids {
+      img {
+        @include media {
+          height: 35vh;
+          width: 32%;
+        }
+        height: 50vh;
+        object-fit: cover;
+        border-radius: 2 * $borderRadius;
+        image-rendering: pixelated;
+        &:hover {
+          transform: translate(0, -15%) scaleY(1.3);
+        }
+      }
+    }
+  }
   &.workstation {
     padding: 0;
     > div {
@@ -89,7 +116,7 @@ section {
       &:first-child {
         img {
           image-rendering: pixelated;
-          transform:translateX(-12.5%);
+          transform: translateX(-12.5%);
           @include media($tablet) {
             width: 50%;
           }
@@ -110,7 +137,5 @@ section {
         }
       }
     }
-  }
-  &.stem {
   }
 }
