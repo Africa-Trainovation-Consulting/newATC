@@ -69,7 +69,8 @@ header {
     }
 
     &.icon {
-      color: $black;
+      color: rgba($color: $black, $alpha: 0.59);
+      opacity: 0.59;
       align-self: center;
       svg {
         width: 0.3 * $headerHeight;
