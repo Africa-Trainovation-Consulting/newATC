@@ -1,12 +1,14 @@
 footer {
-  display: none;
   padding: $contentPadding;
   padding-top: 2 * $headerHeight;
   background-color: $black;
+  margin-top: -50%;
+  @include media{
+    margin-top: -20%;
+  }
   * {
     color: $footerColor;
-    text-align: left !important;
-  }
+     }
   span {
     color: $white;
   }

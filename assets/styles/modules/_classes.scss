@@ -32,6 +32,11 @@
   line-height: 7vh;
   border-radius: 7px;
   border: 1px solid $black;
+  white-space: nowrap;
+  vertical-align: middle;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+
   //further classify buttons based on width and Color
 }
 .mover {

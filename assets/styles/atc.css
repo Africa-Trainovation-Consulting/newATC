@@ -30,7 +30,7 @@
   background-color: #1207AB !important;
 }
 
-.linkButton {
+.linkButton, button {
   color: #fff;
   text-align: center;
   display: block;
@@ -40,6 +40,11 @@
   line-height: 7vh;
   border-radius: 7px;
   border: 1px solid #150C21;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
 }
 
 .mover {
@@ -603,13 +608,6 @@ body {
   background-color: #1207ab;
 }
 
-hr {
-  width: 40%;
-  height: 0.5vh;
-  margin: 2vh 0;
-  background-color: gray;
-}
-
 a,
 a:hover,
 button {
@@ -617,8 +615,7 @@ button {
   cursor: pointer;
 }
 
-a:hover,
-.droprog:hover {
+a:hover {
   opacity: 0.5;
 }
 
@@ -627,18 +624,8 @@ a.button {
 }
 
 button {
-  margin-top: 1.5vh;
-  padding: 5px;
   background-color: #150C21;
-  color: #fff;
   line-height: 1.71;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  border-radius: 7px;
-  font-size: 1rem;
 }
 
 button:hover {
@@ -659,7 +646,7 @@ h1 {
 
 @media only screen and (min-width: 540px) {
   h1 {
-    font-size: 8.6vw;
+    font-size: 6.6vw;
   }
 }
 
@@ -671,7 +658,7 @@ h1 {
 
 @media only screen and (min-width: 1024px) {
   h1 {
-    font-size: 3.2em;
+    font-size: 2.8em;
   }
 }
 
@@ -682,7 +669,7 @@ h3 {
 
 @media only screen and (min-width: 540px) {
   h3 {
-    font-size: 6.0vw;
+    font-size: 5vw;
   }
 }
 
@@ -694,32 +681,66 @@ h3 {
 
 @media only screen and (min-width: 1024px) {
   h3 {
-    font-size: 2.4em;
+    font-size: 2.0em;
   }
 }
 
-div, p {
+h4 {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 540px) {
+  h4 {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h4 {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h4 {
+    font-size: 1.7em;
+  }
+}
+
+div,
+p {
   font-size: 1em;
   font-weight: 300;
   color: rgba(21, 12, 33, 0.59);
 }
 
 @media only screen and (min-width: 425px) {
-  div, p {
+  div,
+  p {
     font-size: 3.6vw;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  div, p {
+  div,
+  p {
     font-size: 2.5vw;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  div, p {
+  div,
+  p {
     font-size: 1.2em;
   }
+}
+
+hr {
+  width: 40%;
+  height: 0.5vh;
+  margin: 2vh 0;
+  background-color: gray;
 }
 
 li {
@@ -887,9 +908,6 @@ section.laptopWoman img {
 
 section.laptopWoman a {
   background-color: #150C21;
-  color: #fff;
-  display: block;
-  text-align: center;
   width: 100%;
 }
 
@@ -974,21 +992,22 @@ section.QHSE * {
 }
 
 section.QHSE a {
-  background-color: #47D0F2;
   border: none;
-  text-align: center;
+  background-color: #47D0F2;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   section.QHSE a {
     width: 50%;
-    margin: 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
 section.QHSE img {
-  -webkit-transform: translate(-3.125%, 0) scale(1.1);
-          transform: translate(-3.125%, 0) scale(1.1);
+  -webkit-transform: translate(-3.125%, 0);
+          transform: translate(-3.125%, 0);
 }
 
 @media only screen and (min-width: 768px) {
@@ -1039,7 +1058,6 @@ section.stem .kids img:hover {
 }
 
 section.workstation {
-  display: none;
   padding: 0;
 }
 
@@ -1053,44 +1071,57 @@ section.workstation > div:first-child img {
       image-rendering: -moz-crisp-edges;
       image-rendering: -o-pixelated;
       image-rendering: pixelated;
-  -webkit-transform: translateX(-12.5%);
-          transform: translateX(-12.5%);
+  -webkit-transform: translate(-12.5%, -18.75%);
+          transform: translate(-12.5%, -18.75%);
 }
 
 @media only screen and (min-width: 768px) {
   section.workstation > div:first-child img {
     width: 50%;
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
 
 section.workstation > div.contactUs {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  -webkit-transform: translateY(-80%);
+          transform: translateY(-80%);
 }
 
 @media only screen and (min-width: 768px) {
   section.workstation > div.contactUs {
     margin: 2.5vh 5vw;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+    -webkit-transform: translateY(-45%);
+            transform: translateY(-45%);
     border-radius: 10px;
   }
 }
 
-section.workstation > div.contactUs h3 {
+section.workstation > div.contactUs h4 {
   color: #a6efff;
 }
 
+section.workstation > div.contactUs a {
+  border: 1px solid #fff;
+}
+
 footer {
-  display: none;
   padding: 2.5vh 5vw;
   padding-top: 150px;
   background-color: #150C21;
+  margin-top: -50%;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    margin-top: -20%;
+  }
 }
 
 footer * {
   color: #A4A4A4;
-  text-align: left !important;
 }
 
 footer span {

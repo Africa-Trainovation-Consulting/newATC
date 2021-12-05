@@ -12,7 +12,7 @@
   color: $black;
   list-style: none;
   text-decoration: none;
-  text-size-adjust: 100%; 
+  text-size-adjust: 100%;
 }
 
 :root {
@@ -41,13 +41,6 @@ body {
   background-color: #1207ab;
 }
 
-hr {
-  width: 40%;
-  height: 0.5vh;
-  margin: 2vh 0;
-  background-color: gray;
-}
-
 a,
 a:hover,
 button {
@@ -55,8 +48,7 @@ button {
   cursor: pointer;
 }
 
-a:hover,
-.droprog:hover {
+a:hover {
   opacity: 0.5;
 }
 
@@ -65,18 +57,9 @@ a.button {
 }
 
 button {
-  margin-top: 1.5vh;
-  padding: 5px;
+  @extend .linkButton;
   background-color: $black;
-  color: #fff;
   line-height: 1.71;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  transition: all 0.3s ease-in-out;
-  border-radius: 7px;
-  font-size: 1rem;
-
   &:hover {
     opacity: 0.5;
   }
@@ -97,14 +80,14 @@ h1 {
   //padding: 6vh 0 1.5vh;
 
   @include media(540px) {
-    font-size: 8.6vw;
+    font-size: 6.6vw;
     //padding: 3vh 0 0;
   }
   @include media {
     font-size: 5.1vw;
   }
   @include media($laptop) {
-    font-size: 3.2em;
+    font-size: 2.8em;
   }
 }
 h3 {
@@ -112,20 +95,36 @@ h3 {
     size: 1.4em;
     weight: 300;
   }
-//  padding: 6vh 0 1.5vh;
+  //  padding: 6vh 0 1.5vh;
 
   @include media(540px) {
-    font-size: 6.0vw;
-//    padding: 3vh 0 0;
+    font-size: 5vw;
+    //    padding: 3vh 0 0;
   }
   @include media {
     font-size: 1.7em;
   }
   @include media($laptop) {
-    font-size: 2.4em;
+    font-size: 2.0em;
   }
 }
-div,p {
+h4 {
+  font: {
+    size: 1.1em;
+    weight: 300;
+  }
+  @include media(540px) {
+    font-size: 4vw;
+  }
+  @include media {
+    font-size: 1.3em;
+  }
+  @include media($laptop) {
+    font-size: 1.7em;
+  }
+}
+div,
+p {
   font: {
     size: 1em;
     weight: 300;
@@ -143,6 +142,13 @@ div,p {
   @include media($laptop) {
     font-size: 1.2em;
   }
+}
+
+hr {
+  width: 40%;
+  height: 0.5vh;
+  margin: 2vh 0;
+  background-color: gray;
 }
 
 li {

@@ -16,11 +16,7 @@ section {
 
     a {
       background-color: $black;
-      color: #fff;
-      display: block;
-      text-align: center;
       width: 100%;
-
       @include media {
         width: 50%;
       }
@@ -32,7 +28,6 @@ section {
 
     @include media {
       flex-direction: row;
-
       background: {
         image: url(/assets/img/circleBackground.svg);
         repeat: no-repeat;
@@ -44,7 +39,6 @@ section {
     }
   }
   &.students {
-  
     margin: -3vh 0 8vh;
     div {
       &.tablet {
@@ -79,12 +73,12 @@ section {
       color: #fff;
     }
     a {
-      background-color: $lightBlue;
       border: none;
-      text-align: center;
+      background-color: $lightBlue;
+      width: 100%;
       @include media {
         width: 50%;
-        margin: 0;
+        align-self: flex-start;
       }
     }
 
@@ -96,7 +90,7 @@ section {
     }
  */
     img {
-      transform: translate(-3.125%, 0) scale(1.1);
+      transform: translate(-3.125%, 0);
     }
     @include media {
       img {
@@ -134,16 +128,16 @@ section {
     }
   }
   &.workstation {
-    display: none;
     padding: 0;
     > div {
       padding: $contentPadding;
       &:first-child {
         img {
           image-rendering: pixelated;
-          transform: translateX(-12.5%);
+          transform: translate(-12.5%,-18.75%);
           @include media($tablet) {
             width: 50%;
+            transform: translate(0);
           }
         }
       }
@@ -152,13 +146,17 @@ section {
           left-radius: 10px;
           right-radius: 10px;
         }
+        transform: translateY(-80%);
         @include media {
           margin: $contentPadding;
-          transform: translateY(50%);
+          transform: translateY(-45%);
           border-radius: 10px;
         }
-        h3 {
+        h4 {
           color: #a6efff;
+        }
+        a{
+          border: 1px solid #fff;
         }
       }
     }
