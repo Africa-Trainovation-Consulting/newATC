@@ -132,6 +132,11 @@ section {
     > div {
       padding: $contentPadding;
       &:first-child {
+        a{
+          @include media{
+            margin-right: $smallpadding *4;
+          }
+        }
         img {
           image-rendering: pixelated;
           transform: translate(-12.5%,-18.75%);
