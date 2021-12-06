@@ -3,18 +3,28 @@ footer {
   padding-top: 2 * $headerHeight;
   background-color: $black;
   margin-top: -50%;
-  @include media{
+  @include media {
     margin-top: -20%;
   }
   * {
     color: $footerColor;
-     }
+  }
   span {
     color: $white;
   }
   .links {
     @include media {
+      > div {
+        justify-content: space-between;
+        width: 100%;
+      }
       justify-content: space-between;
+    }
+    @include media($laptop) {
+      > div {
+        width: 45%;
+      }
+      flex-direction: row;
     }
     align-items: flex-start;
   }
@@ -23,9 +33,9 @@ footer {
   }
   .socials {
     align-items: flex-start;
-    .follow{
-      a{
-        margin-right: 3*$smallpadding;
+    .follow {
+      a {
+        margin-right: 3 * $smallpadding;
       }
     }
 

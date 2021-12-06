@@ -1140,6 +1140,24 @@ footer .links {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  footer .links > div {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  footer .links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .links > div {
+    width: 45%;
+  }
 }
 
 footer div.flex_c, footer div.flex_cr, footer div.flex_cR {
