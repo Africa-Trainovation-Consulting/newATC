@@ -1066,6 +1066,7 @@ section.stem .kids img:hover {
 
 section.workstation {
   padding: 0;
+  position: relative;
 }
 
 section.workstation > div {
@@ -1084,8 +1085,9 @@ section.workstation > div:first-child img {
       image-rendering: -moz-crisp-edges;
       image-rendering: -o-pixelated;
       image-rendering: pixelated;
-  -webkit-transform: translate(-12.5%, -18.75%);
-          transform: translate(-12.5%, -18.75%);
+  -webkit-transform: translate(-12.5%, 0);
+          transform: translate(-12.5%, 0);
+  margin-top: -25%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1093,21 +1095,22 @@ section.workstation > div:first-child img {
     width: 50%;
     -webkit-transform: translate(0);
             transform: translate(0);
+    margin: 0;
   }
 }
 
 section.workstation > div.contactUs {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  -webkit-transform: translateY(-80%);
-          transform: translateY(-80%);
 }
 
 @media only screen and (min-width: 768px) {
   section.workstation > div.contactUs {
     margin: 2.5vh 5vw;
-    -webkit-transform: translateY(-45%);
-            transform: translateY(-45%);
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-transform: translateY(35%);
+            transform: translateY(35%);
     border-radius: 10px;
   }
 }
@@ -1124,13 +1127,6 @@ footer {
   padding: 2.5vh 5vw;
   padding-top: 150px;
   background-color: #150C21;
-  margin-top: -50%;
-}
-
-@media only screen and (min-width: 768px) {
-  footer {
-    margin-top: -20%;
-  }
 }
 
 footer * {
