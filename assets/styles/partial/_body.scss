@@ -102,6 +102,9 @@ section {
     }
   }
   &.stem {
+    > div{
+      padding: $contentPadding;
+    }
     .note {
       a {
         width: 100%;
@@ -136,22 +139,22 @@ section {
     }
     .gallery{
       height: 12vh;
-      background-image: linear-gradient(0deg, #A5A6F6 -18.66%, rgba(252, 221, 236, 0) 60.15%);
+      background-image: linear-gradient(0deg, #A5A6F6 -18.66%, rgba(252, 221, 236, 0) 90.15%);
       width: 100%;
       color: $black;
-      transform: scaleX(1.5);
-      line-height: 18vh;
-      border: none;
       svg{
-        padding-top: 4vh;
+        margin-left: 5px;
         height: 50%;
+        width: 2.5%;
       }
     }
+    padding: 0;
     @include media {
       background: {
         image: url("/assets/img/airship.svg");
         repeat: no-repeat;
-        size: cover;
+        size: 100% 130%;
+        position: center center;
       }
     }
   }

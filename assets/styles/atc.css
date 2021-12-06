@@ -1021,6 +1021,14 @@ section.QHSE img {
   }
 }
 
+section.stem {
+  padding: 0;
+}
+
+section.stem > div {
+  padding: 2.5vh 5vw;
+}
+
 section.stem .note a {
   width: 100%;
 }
@@ -1075,26 +1083,24 @@ section.stem .kids img:hover {
 
 section.stem .gallery {
   height: 12vh;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-18.66%, #A5A6F6), color-stop(60.15%, rgba(252, 221, 236, 0)));
-  background-image: linear-gradient(0deg, #A5A6F6 -18.66%, rgba(252, 221, 236, 0) 60.15%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-18.66%, #A5A6F6), color-stop(90.15%, rgba(252, 221, 236, 0)));
+  background-image: linear-gradient(0deg, #A5A6F6 -18.66%, rgba(252, 221, 236, 0) 90.15%);
   width: 100%;
   color: #150C21;
-  -webkit-transform: scaleX(1.5);
-          transform: scaleX(1.5);
-  line-height: 18vh;
-  border: none;
 }
 
 section.stem .gallery svg {
-  padding-top: 4vh;
+  margin-left: 5px;
   height: 50%;
+  width: 2.5%;
 }
 
 @media only screen and (min-width: 768px) {
   section.stem {
     background-image: url("/assets/img/airship.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 130%;
+    background-position: center center;
   }
 }
 
