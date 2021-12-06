@@ -1099,7 +1099,7 @@ section.stem .gallery svg {
   section.stem {
     background-image: url("/assets/img/airship.svg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 150%;
     background-position: center center;
   }
 }
