@@ -1,9 +1,9 @@
 section {
   padding: $contentPadding;
-  margin: 1vh 0 0;
 
   &.laptopWoman {
     padding-top: $headerHeight;
+    margin: 0;
 
     img {
       width: 100%;
@@ -39,12 +39,14 @@ section {
     }
   }
   &.students {
-    margin: -3vh 0 8vh;
+    margin: 0 0 4vh;
     div {
       &.tablet {
         img {
-          width: 22%;
-          object-fit: cover;
+          width: 26%;
+          height: 50vh;
+          margin: 6vh 0;
+          object-fit: contain;
           border-radius: $borderRadius;
           image-rendering: pixelated;
           &:hover {
@@ -82,13 +84,13 @@ section {
       }
     }
 
-    /* p {
+    /*     p {
       @media screen and (min-width: $tablet) and (max-width: $laptop) {
         width: 150%;
         transform: translate(18%, 9%);
       }
     }
- */
+  */
     img {
       transform: translate(-3.125%, 0);
     }
@@ -111,18 +113,16 @@ section {
         width: 50%;
       }
     }
-    background: {
-      image: url("/assets/img/airship.svg");
-      repeat: no-repeat;
-      size: cover;
-    }
     .kids {
+      margin: 8vh 0;
       img {
         @include media {
           height: 35vh;
           width: 30%;
         }
         height: 50vh;
+        width: 90%;
+        margin-bottom: 4vh;
         object-fit: cover;
         border-radius: 2 * $borderRadius;
         image-rendering: pixelated;
@@ -130,11 +130,36 @@ section {
           transform: scale(1.15, 1.15);
         }
       }
+      @include media{
+        margin: 18vh 0 -5vh;
+      }
+    }
+    .gallery{
+      height: 12vh;
+      background-image: linear-gradient(0deg, #A5A6F6 -18.66%, rgba(252, 221, 236, 0) 60.15%);
+      width: 100%;
+      color: $black;
+      transform: scaleX(1.5);
+      line-height: 18vh;
+      border: none;
+      svg{
+        padding-top: 4vh;
+        height: 50%;
+      }
+    }
+    @include media {
+      background: {
+        image: url("/assets/img/airship.svg");
+        repeat: no-repeat;
+        size: cover;
+      }
     }
   }
   &.workstation {
     padding: 0;
-    position: relative;
+    @include media {
+      margin-bottom: -6vh;
+    }
     > div {
       padding: $contentPadding;
       &:first-child {
@@ -145,13 +170,12 @@ section {
         }
         img {
           image-rendering: pixelated;
-          transform: translate(-12.5%,0);
+          transform: translate(-12.5%, 0);
           margin-top: -25%;
           @include media($tablet) {
-            width: 50%;            
+            width: 50%;
             transform: translate(0);
             margin: 0;
-
           }
         }
       }
@@ -160,9 +184,10 @@ section {
           left-radius: 10px;
           right-radius: 10px;
         }
+        margin-bottom: -1vh;
         @include media {
           margin: $contentPadding;
-          margin-top: 0;
+          margin-top: -12vh;
           margin-bottom: 0;
           transform: translateY(35%);
           border-radius: 10px;
@@ -175,5 +200,11 @@ section {
         }
       }
     }
+  }
+}
+.container {
+  margin: 6vh 0 3vh;
+  @include media {
+    margin: 22vh 0 3vh;
   }
 }

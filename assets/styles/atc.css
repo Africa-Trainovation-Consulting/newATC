@@ -34,17 +34,16 @@
   color: #fff;
   text-align: center;
   display: block;
-  padding: 5px;
   margin: 1.5vh 0;
   height: 8vh;
-  line-height: 7vh;
+  line-height: 8vh;
   border-radius: 7px;
   border: 1px solid #150C21;
   white-space: nowrap;
   vertical-align: middle;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .mover {
@@ -686,6 +685,7 @@ h3 {
 }
 
 h4 {
+  margin: 1vh 0 0;
   font-size: 1.1em;
   font-weight: 300;
 }
@@ -710,6 +710,7 @@ h4 {
 
 div,
 p {
+  margin: 1vh 0;
   font-size: 1em;
   font-weight: 300;
   color: rgba(21, 12, 33, 0.59);
@@ -732,7 +733,7 @@ p {
 @media only screen and (min-width: 1024px) {
   div,
   p {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 
@@ -885,11 +886,11 @@ header span.icon svg:last-child {
 
 section {
   padding: 2.5vh 5vw;
-  margin: 1vh 0 0;
 }
 
 section.laptopWoman {
   padding-top: 75px;
+  margin: 0;
 }
 
 section.laptopWoman img {
@@ -941,13 +942,15 @@ section.laptopWoman a {
 }
 
 section.students {
-  margin: -3vh 0 8vh;
+  margin: 0 0 4vh;
 }
 
 section.students div.tablet img {
-  width: 22%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 26%;
+  height: 50vh;
+  margin: 6vh 0;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 10px;
   -ms-interpolation-mode: nearest-neighbor;
       image-rendering: -webkit-optimize-contrast;
@@ -978,13 +981,13 @@ section.QHSE {
   background-color: #1207AB;
   padding-top: 8vh;
   padding-bottom: 8vh;
-  /* p {
+  /*     p {
       @media screen and (min-width: $tablet) and (max-width: $laptop) {
         width: 150%;
         transform: translate(18%, 9%);
       }
     }
- */
+  */
 }
 
 section.QHSE * {
@@ -1018,12 +1021,6 @@ section.QHSE img {
   }
 }
 
-section.stem {
-  background-image: url("/assets/img/airship.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 section.stem .note a {
   width: 100%;
 }
@@ -1040,8 +1037,14 @@ section.stem .note a {
   }
 }
 
+section.stem .kids {
+  margin: 8vh 0;
+}
+
 section.stem .kids img {
   height: 50vh;
+  width: 90%;
+  margin-bottom: 4vh;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
@@ -1064,9 +1067,45 @@ section.stem .kids img:hover {
           transform: scale(1.15, 1.15);
 }
 
+@media only screen and (min-width: 768px) {
+  section.stem .kids {
+    margin: 18vh 0 -5vh;
+  }
+}
+
+section.stem .gallery {
+  height: 12vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-18.66%, #A5A6F6), color-stop(60.15%, rgba(252, 221, 236, 0)));
+  background-image: linear-gradient(0deg, #A5A6F6 -18.66%, rgba(252, 221, 236, 0) 60.15%);
+  width: 100%;
+  color: #150C21;
+  -webkit-transform: scaleX(1.5);
+          transform: scaleX(1.5);
+  line-height: 18vh;
+  border: none;
+}
+
+section.stem .gallery svg {
+  padding-top: 4vh;
+  height: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  section.stem {
+    background-image: url("/assets/img/airship.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 section.workstation {
   padding: 0;
-  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  section.workstation {
+    margin-bottom: -6vh;
+  }
 }
 
 section.workstation > div {
@@ -1102,12 +1141,13 @@ section.workstation > div:first-child img {
 section.workstation > div.contactUs {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  margin-bottom: -1vh;
 }
 
 @media only screen and (min-width: 768px) {
   section.workstation > div.contactUs {
     margin: 2.5vh 5vw;
-    margin-top: 0;
+    margin-top: -12vh;
     margin-bottom: 0;
     -webkit-transform: translateY(35%);
             transform: translateY(35%);
@@ -1123,6 +1163,16 @@ section.workstation > div.contactUs a {
   border: 1px solid #fff;
 }
 
+.container {
+  margin: 6vh 0 3vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 22vh 0 3vh;
+  }
+}
+
 footer {
   padding: 2.5vh 5vw;
   padding-top: 150px;
@@ -1131,6 +1181,12 @@ footer {
 
 footer * {
   color: #A4A4A4;
+}
+
+footer a, footer div {
+  font-size: 1em;
+  font-weight: 100;
+  margin: 0.5vh 0;
 }
 
 footer span {

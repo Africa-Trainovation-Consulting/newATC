@@ -5,6 +5,11 @@ footer {
   * {
     color: $footerColor;
   }
+  a,div{
+    font-size: 1em;
+    font-weight: 100;
+    margin: 0.5vh 0;
+  }
   span {
     color: $white;
   }
