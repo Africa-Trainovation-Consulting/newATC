@@ -1019,15 +1019,22 @@ section.QHSE img {
 }
 
 section.stem {
-  display: none;
+  background-image: url("/assets/img/airship.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.stem .note a {
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-  section.stem {
-    background-image: url("/assets/img/airship.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  section.stem .note a {
+    width: 50%;
   }
+}
+
+@media only screen and (min-width: 768px) {
   section.stem .note {
     width: 50%;
   }

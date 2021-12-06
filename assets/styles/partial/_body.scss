@@ -100,16 +100,21 @@ section {
     }
   }
   &.stem {
-    display: none;
-    @include media {
-      .note {
+    .note {
+      a {
+        width: 100%;
+        @include media {
+          width: 50%;
+        }
+      }
+      @include media {
         width: 50%;
       }
-      background: {
-        image: url("/assets/img/airship.svg");
-        repeat: no-repeat;
-        size: cover;
-      }
+    }
+    background: {
+      image: url("/assets/img/airship.svg");
+      repeat: no-repeat;
+      size: cover;
     }
     .kids {
       img {
@@ -132,14 +137,14 @@ section {
     > div {
       padding: $contentPadding;
       &:first-child {
-        a{
-          @include media{
-            margin-right: $smallpadding *4;
+        a {
+          @include media {
+            margin-right: $smallpadding * 4;
           }
         }
         img {
           image-rendering: pixelated;
-          transform: translate(-12.5%,-18.75%);
+          transform: translate(-12.5%, -18.75%);
           @include media($tablet) {
             width: 50%;
             transform: translate(0);
@@ -160,7 +165,7 @@ section {
         h4 {
           color: #a6efff;
         }
-        a{
+        a {
           border: 1px solid #fff;
         }
       }
