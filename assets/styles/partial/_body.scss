@@ -106,7 +106,7 @@ section {
         }
       }
       @include media {
-        width: 50%;
+        max-width: 55%;
         padding-top: 18vh;
       }
     }
@@ -127,7 +127,7 @@ section {
         }
       }
       @include media {
-        margin: 12vh 0 -5vh;
+        margin: 16vh 0 -5vh;
       }
     }
     .gallery {
@@ -153,9 +153,12 @@ section {
       background: {
         image: url("/assets/img/airship.svg");
         repeat: no-repeat;
-        size: 110% 120%;
-        position: left top;
+        size: 110% 110%;
+        position: right top;
       }
+    }
+    @include media($laptop){
+      background-size: 90% 130%;
     }
   }
   &.workstation {
