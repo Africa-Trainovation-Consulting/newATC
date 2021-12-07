@@ -2,9 +2,11 @@ import React from "react";
 import Backdrop from './HOC'
 import Formgroup from '../layouts/FormGroup';
 import ContinueBtn from "../layouts/ContinueBtn";
+import Spanning from '../layouts/Spanning';
 function ForgotPassword(props) {
     return (
         <>
+        <Spanning heading='FORGOT PASSWORD' />
             <h1 className='forgot'>
                 FORGOT PASSWORD
             </h1>
