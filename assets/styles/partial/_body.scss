@@ -83,29 +83,22 @@ section {
         align-self: flex-start;
       }
     }
-
-    /*     p {
-      @media screen and (min-width: $tablet) and (max-width: $laptop) {
-        width: 150%;
-        transform: translate(18%, 9%);
-      }
-    }
-  */
     img {
       transform: translate(-3.125%, 0);
     }
     @include media {
       img {
-        transform: translateY(-25%);
+        transform: translateY(-20%);
         width: 50%;
       }
     }
   }
   &.stem {
-    > div{
+    > div {
       padding: $contentPadding;
     }
     .note {
+      padding-top: 10vh;
       a {
         width: 100%;
         @include media {
@@ -114,10 +107,10 @@ section {
       }
       @include media {
         width: 50%;
+        padding-top: 18vh;
       }
     }
     .kids {
-      margin: 8vh 0;
       img {
         @include media {
           height: 35vh;
@@ -133,19 +126,26 @@ section {
           transform: scale(1.15, 1.15);
         }
       }
-      @include media{
-        margin: 18vh 0 -5vh;
+      @include media {
+        margin: 12vh 0 -5vh;
       }
     }
-    .gallery{
+    .gallery {
       height: 12vh;
-      background-image: linear-gradient(0deg, #A5A6F6 -18.66%, rgba(252, 221, 236, 0) 90.15%);
+      background-image: linear-gradient(
+        0deg,
+        #a5a6f6 -18.66%,
+        rgba(252, 221, 236, 0) 90.15%
+      );
       width: 100%;
       color: $black;
-      svg{
+      svg {
         margin-left: 5px;
         height: 50%;
-        width: 2.5%;
+        width: 5%;
+        @include media {
+          width: 2.5%;
+        }
       }
     }
     padding: 0;
@@ -153,8 +153,8 @@ section {
       background: {
         image: url("/assets/img/airship.svg");
         repeat: no-repeat;
-        size: 100% 150%;
-        position: center center;
+        size: 110% 120%;
+        position: left top;
       }
     }
   }
@@ -162,6 +162,9 @@ section {
     padding: 0;
     @include media {
       margin-bottom: -6vh;
+    }
+    @include media($laptop) {
+      margin-top: -20vh;
     }
     > div {
       padding: $contentPadding;
@@ -203,11 +206,5 @@ section {
         }
       }
     }
-  }
-}
-.container {
-  margin: 6vh 0 3vh;
-  @include media {
-    margin: 22vh 0 3vh;
   }
 }
