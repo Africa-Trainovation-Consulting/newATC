@@ -15,7 +15,7 @@ function Upload(props) {
         <>
             <Spanning heading='Upload Picture' />
             <form action="post">
-                <label className='imageUpload' for='myphoto'  >
+                <label className='imageUpload' htmlFor='myphoto'  >
                     <input type='file' name='myphoto' /* onChange={loadfile} */ accept="image/*" className='inputImage' />
                     <img id='output' alt='myImage' />
                 </label>

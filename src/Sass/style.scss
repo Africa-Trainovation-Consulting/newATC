@@ -221,6 +221,9 @@ button {
         align-self: flex-start;
         display: block;
     }
+    .Madbtn{
+        cursor: pointer;
+    }
 }
 
 h1 {
@@ -328,10 +331,13 @@ a {
 
 @mixin upload {
     border-radius: 5px;
-    margin: 2em 0;
+    margin: {
+        top:3em;
+    }
     width: 40%;
     padding: 0.2em 0;
     text-align: center;
+    border: 1px solid grey;
 }
 
 .upload {
@@ -494,6 +500,7 @@ form {
 
         button {
             @include continue_btn2();
+            width: 70%;
         }
     }
 }
