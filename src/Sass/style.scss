@@ -134,6 +134,14 @@ $input-bg-color:#Fff;
     margin-top: 1em;
     min-height: 45px;
     max-height: 40px;
+    &:hover {
+        border: 1px solid #1207AB;
+        color: #1207AB;
+        background-color: white;
+        .arrow{
+            fill: #1207AB;
+        }
+    }
 }
 
 @mixin continue_btn2 {
@@ -423,7 +431,7 @@ form {
         display: block;
         .cancel_btn {
             display: grid;
-            grid-template-columns: 30% 35% 35%;
+            grid-template-columns: 15% 60% 20%;
             grid-template-rows: auto;
             justify-content: end;
             width: 100%;
@@ -434,6 +442,7 @@ form {
                 align-self: center;
                 display: block;
                 grid-column: 2 / 2;
+                font-size: 1.2em;
             }
             .Madbtn{
                 grid-column: 3 / span 3;
@@ -485,7 +494,6 @@ form {
 
         button {
             @include continue_btn2();
-            width: 70%;
         }
     }
 }

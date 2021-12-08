@@ -9,7 +9,6 @@ function ChoosePlan(props) {
     return (
         <>
             <Spanning heading='Choose a Plan' />
-            <h1>Choose a Plan</h1>
             <form action="post">
                 <span className="form-group">
                     <label for="inputPaymentType"> Choose a Package </label>
