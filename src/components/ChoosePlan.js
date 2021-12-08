@@ -37,6 +37,25 @@ function ChoosePlan(props) {
                         <option value="Monthly">Monthly</option>
                     </select>
                 </span>
+                <div class="custom-select">
+                    <select>
+                        <option value="0">Freelancer</option>
+                        <option value="0">Freelancer</option>
+                        <option value="1">Team of 6</option>
+                        <option value="2">Executive</option>
+                        <option value="3">Digital Classroom</option>
+                        <option value="4">Hangouts</option>
+                    </select>
+                </div>
+                <div class="custom-select">
+                    <select>
+                        <option value="0">Daily</option>
+                        <option value="0">Daily</option>
+                        <option value="1">Hourly</option>
+                        <option value="2">Weekly</option>
+                        <option value="3">Monthly</option>
+                    </select>
+                </div>
                 <ContinueBtn to='/' />
             </form>
         </>
