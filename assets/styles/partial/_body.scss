@@ -2,7 +2,7 @@ section {
   padding: $contentPadding;
 
   &.laptopWoman {
-    padding-top: $headerHeight;
+//    padding-top: $headerHeight;
     margin: 0;
 
     img {
@@ -35,11 +35,11 @@ section {
         size: 75% 75%;
       }
 
-      padding-top: 0.5 * $headerHeight;
+   //   padding-top: 0.5 * $headerHeight;
     }
   }
   &.students {
-    margin: 0 0 4vh;
+//    margin: 0 0 4vh;
     div {
       &.tablet {
         img {
@@ -67,10 +67,10 @@ section {
   }
   &.QHSE {
     background-color: $deepBlue;
-    padding: {
+ /*    padding: {
       top: 8vh;
       bottom: 8vh;
-    }
+    } */
     * {
       color: #fff;
     }
@@ -98,7 +98,7 @@ section {
       padding: $contentPadding;
     }
     .note {
-      padding-top: 10vh;
+  //    padding-top: 10vh;
       a {
         width: 100%;
         @include media {
@@ -107,7 +107,7 @@ section {
       }
       @include media {
         max-width: 55%;
-        padding-top: 18vh;
+    //    padding-top: 18vh;
       }
     }
     .kids {
@@ -127,7 +127,7 @@ section {
         }
       }
       @include media {
-        margin: 16vh 0 -5vh;
+  //      margin: 16vh 0 -5vh;
       }
     }
     .gallery {
@@ -164,10 +164,10 @@ section {
   &.workstation {
     padding: 0;
     @include media {
-      margin-bottom: -6vh;
+   //   margin-bottom: -6vh;
     }
     @include media($laptop) {
-      margin-top: -20vh;
+   //   margin-top: -20vh;
     }
     > div {
       padding: $contentPadding;
@@ -193,7 +193,7 @@ section {
           left-radius: 10px;
           right-radius: 10px;
         }
-        margin-bottom: -1vh;
+//        margin-bottom: -1vh;
         @include media {
           margin: $contentPadding;
           margin-top: -12vh;

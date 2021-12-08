@@ -88,7 +88,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 100%;
-  margin: auto;
   overflow: hidden;
 }
 
@@ -641,6 +640,7 @@ img {
 h1 {
   font-size: 9.3vw;
   font-weight: 500;
+  margin: 3vh 0 6vh;
 }
 
 @media only screen and (min-width: 540px) {
@@ -664,6 +664,7 @@ h1 {
 h3 {
   font-size: 1.4em;
   font-weight: 300;
+  margin: 2vh 0 4vh;
 }
 
 @media only screen and (min-width: 540px) {
@@ -685,9 +686,9 @@ h3 {
 }
 
 h4 {
-  margin: 1vh 0 0;
   font-size: 1.1em;
   font-weight: 300;
+  margin: 1.5vh 0 3vh;
 }
 
 @media only screen and (min-width: 540px) {
@@ -710,9 +711,9 @@ h4 {
 
 div,
 p {
-  margin: 1vh 0;
   font-size: 1em;
   font-weight: 300;
+  margin: 1.2vh 0 2.4vh;
   color: rgba(21, 12, 33, 0.59);
 }
 
@@ -889,7 +890,6 @@ section {
 }
 
 section.laptopWoman {
-  padding-top: 75px;
   margin: 0;
 }
 
@@ -937,12 +937,7 @@ section.laptopWoman a {
     background-repeat: no-repeat;
     background-position: 200% -100%;
     background-size: 75% 75%;
-    padding-top: 37.5px;
   }
-}
-
-section.students {
-  margin: 0 0 4vh;
 }
 
 section.students div.tablet img {
@@ -979,8 +974,10 @@ section.students div.tablet img:hover {
 
 section.QHSE {
   background-color: #1207AB;
-  padding-top: 8vh;
-  padding-bottom: 8vh;
+  /*    padding: {
+      top: 8vh;
+      bottom: 8vh;
+    } */
 }
 
 section.QHSE * {
@@ -1022,10 +1019,6 @@ section.stem > div {
   padding: 2.5vh 5vw;
 }
 
-section.stem .note {
-  padding-top: 10vh;
-}
-
 section.stem .note a {
   width: 100%;
 }
@@ -1039,7 +1032,6 @@ section.stem .note a {
 @media only screen and (min-width: 768px) {
   section.stem .note {
     max-width: 55%;
-    padding-top: 18vh;
   }
 }
 
@@ -1067,12 +1059,6 @@ section.stem .kids img {
 section.stem .kids img:hover {
   -webkit-transform: scale(1.15, 1.15);
           transform: scale(1.15, 1.15);
-}
-
-@media only screen and (min-width: 768px) {
-  section.stem .kids {
-    margin: 16vh 0 -5vh;
-  }
 }
 
 section.stem .gallery {
@@ -1114,18 +1100,6 @@ section.workstation {
   padding: 0;
 }
 
-@media only screen and (min-width: 768px) {
-  section.workstation {
-    margin-bottom: -6vh;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  section.workstation {
-    margin-top: -20vh;
-  }
-}
-
 section.workstation > div {
   padding: 2.5vh 5vw;
 }
@@ -1159,7 +1133,6 @@ section.workstation > div:first-child img {
 section.workstation > div.contactUs {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  margin-bottom: -1vh;
 }
 
 @media only screen and (min-width: 768px) {

@@ -25,3 +25,8 @@
   }
 
 }
+
+@mixin margin($t: 1, $b: $t, $vh: vh) {
+  $h1: (3, 6);
+  margin: nth($h1, 1) / $t + $vh 0 nth($h1, 2) / $b + $vh;
+}

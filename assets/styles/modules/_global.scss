@@ -77,11 +77,9 @@ h1 {
     size: 9.3vw;
     weight: 500;
   }
-  //padding: 6vh 0 1.5vh;
-
+  @include margin();
   @include media(540px) {
     font-size: 6.6vw;
-    //padding: 3vh 0 0;
   }
   @include media {
     font-size: 5.1vw;
@@ -95,11 +93,10 @@ h3 {
     size: 1.4em;
     weight: 300;
   }
-  //  padding: 6vh 0 1.5vh;
+  @include margin(1.5);
 
   @include media(540px) {
     font-size: 5vw;
-    //    padding: 3vh 0 0;
   }
   @include media {
     font-size: 1.7em;
@@ -109,11 +106,11 @@ h3 {
   }
 }
 h4 {
-  margin: 1vh 0 0;
   font: {
     size: 1.1em;
     weight: 300;
   }
+  @include margin(2);
   @include media(540px) {
     font-size: 4vw;
   }
@@ -126,17 +123,14 @@ h4 {
 }
 div,
 p {
-  margin: 1vh 0;
   font: {
     size: 1em;
     weight: 300;
   }
+  @include margin(2.5);
   color: rgba($color: $black, $alpha: 0.59);
-  //padding: 1.5vh 0 4.5vh;
-
   @include media(425px) {
     font-size: 3.6vw;
-    //padding: 3vh 0 0;
   }
   @include media {
     font-size: 2.5vw;
