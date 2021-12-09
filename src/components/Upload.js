@@ -1,7 +1,7 @@
 import React from 'react';
 import Backdrop from './HOC';
 import Spanning from '../layouts/Spanning';
-import ContinueBtn from "../layouts/ContinueBtn";
+import ContinueBtn from "../layouts/Continuebtn_upload";
 function Upload(props) {
     /* function loadfile(event) {
         let image = document.getElementById('output');

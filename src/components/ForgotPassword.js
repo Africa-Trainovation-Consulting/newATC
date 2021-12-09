@@ -6,8 +6,7 @@ import Spanning from '../layouts/Spanning';
 function ForgotPassword(props) {
     return (
         <>
-        <Spanning heading='FORGOT PASSWORD' />
-            
+        <Spanning heading='FORGOT PASSWORD' />  
             <form action='post'>
                 <Formgroup label='Email' htmlFor='Email' type='email' name='email' placeholder='Enter your email' />
                 <ContinueBtn to='/createNewPassword' />

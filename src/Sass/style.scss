@@ -508,6 +508,9 @@ form {
 
         button {
             @include continue_btn2();
+        }
+        .continue_upload{
+            @include continue_btn2();
             width: 70%;
         }
     }
