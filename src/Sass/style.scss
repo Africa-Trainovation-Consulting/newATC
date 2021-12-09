@@ -75,6 +75,11 @@ $input-bg-color:#Fff;
 @mixin active-btn {
     background-color: $btn_background-color;
     color: $alt-text-color;
+    &:hover {
+        border: 1px solid $btn_background-color;
+        color: #f8f8fa;
+        background-color: rgb(34, 15, 119);
+        }
 }
 
 @mixin form {
@@ -134,14 +139,6 @@ $input-bg-color:#Fff;
     margin-top: 1em;
     min-height: 45px;
     max-height: 40px;
-    &:hover {
-        border: 1px solid #1207AB;
-        color: #f8f8fa;
-        background-color: rgb(34, 15, 119);
-        .arrow{
-            fill: #1207AB;
-        }
-    }
 }
 
 @mixin continue_btn2 {
