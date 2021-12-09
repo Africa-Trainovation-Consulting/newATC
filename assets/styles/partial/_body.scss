@@ -41,14 +41,13 @@ section {
     }
   }
   &.students {
-    //    margin: 0 0 4vh;
     div {
       &.tablet {
         img {
-          width: 26%;
+          width: 24%;
           height: 50vh;
-          margin: 6vh 0;
-          object-fit: contain;
+          margin: 6vh 0.5vw;
+          object-fit: cover;
           border-radius: $borderRadius;
           image-rendering: pixelated;
           &:hover {
@@ -120,6 +119,7 @@ section {
         @include media {
           height: 35vh;
           width: 30%;
+          margin-top: 35vh;
         }
         height: 50vh;
         width: 90%;
@@ -155,17 +155,16 @@ section {
       background: {
         image: url("/assets/img/airship.svg");
         repeat: no-repeat;
-        size: 120% 140%;
-        position: center center;
+        size: cover;
+        position: 100% 10%;
       }
-    }
-    @include media($laptop) {
-      background-size: 200% 107%;
     }
   }
   &.workstation {
     padding: 0;
-    margin-top: -25vh;
+    @include media($laptop) {
+      margin-top: -25vh;
+    }
     > div {
       padding: $contentPadding;
       &:first-child {
@@ -193,6 +192,7 @@ section {
           left-radius: 10px;
           right-radius: 10px;
         }
+        margin-bottom: -10vh;
         @include media {
           margin: $contentPadding;
           margin-top: -25vh;
@@ -208,6 +208,7 @@ section {
           @include media {
             width: 50%;
             margin-left: 4vw;
+            padding: 0 5px;
           }
         }
       }

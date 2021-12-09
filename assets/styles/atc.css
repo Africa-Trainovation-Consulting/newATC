@@ -946,11 +946,11 @@ section.laptopWoman a {
 }
 
 section.students div.tablet img {
-  width: 26%;
+  width: 24%;
   height: 50vh;
-  margin: 6vh 0;
-  -o-object-fit: contain;
-     object-fit: contain;
+  margin: 6vh 0.5vw;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
   -ms-interpolation-mode: nearest-neighbor;
       image-rendering: -webkit-optimize-contrast;
@@ -1064,6 +1064,7 @@ section.stem .kids img {
   section.stem .kids img {
     height: 35vh;
     width: 30%;
+    margin-top: 35vh;
   }
 }
 
@@ -1096,20 +1097,19 @@ section.stem .gallery svg {
   section.stem {
     background-image: url("/assets/img/airship.svg");
     background-repeat: no-repeat;
-    background-size: 120% 140%;
-    background-position: center center;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  section.stem {
-    background-size: 200% 107%;
+    background-size: cover;
+    background-position: 100% 10%;
   }
 }
 
 section.workstation {
   padding: 0;
-  margin-top: -25vh;
+}
+
+@media only screen and (min-width: 1024px) {
+  section.workstation {
+    margin-top: -25vh;
+  }
 }
 
 section.workstation > div {
@@ -1148,6 +1148,7 @@ section.workstation > div:first-child img {
 section.workstation > div.contactUs {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  margin-bottom: -10vh;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1173,6 +1174,7 @@ section.workstation > div.contactUs a {
   section.workstation > div.contactUs a {
     width: 50%;
     margin-left: 4vw;
+    padding: 0 5px;
   }
 }
 
