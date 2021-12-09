@@ -713,7 +713,7 @@ div,
 p {
   font-size: 1em;
   font-weight: 300;
-  margin: 1.2vh 0 2.4vh;
+  margin: 2.72727vh 0 5.45455vh;
   color: rgba(21, 12, 33, 0.59);
 }
 
@@ -1152,6 +1152,13 @@ section.workstation > div.contactUs h4 {
 
 section.workstation > div.contactUs a {
   border: 1px solid #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  section.workstation > div.contactUs a {
+    width: 50%;
+    margin-left: 4vw;
+  }
 }
 
 footer {

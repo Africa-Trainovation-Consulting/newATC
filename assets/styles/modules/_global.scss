@@ -127,7 +127,7 @@ p {
     size: 1em;
     weight: 300;
   }
-  @include margin(2.5);
+  @include margin(1.1);
   color: rgba($color: $black, $alpha: 0.59);
   @include media(425px) {
     font-size: 3.6vw;

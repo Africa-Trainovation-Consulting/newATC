@@ -206,6 +206,10 @@ section {
         }
         a {
           border: 1px solid #fff;
+          @include media{
+            width: 50%;
+            margin-left: 4vw;
+          }
         }
       }
     }
