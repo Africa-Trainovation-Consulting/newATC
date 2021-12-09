@@ -1,11 +1,12 @@
 section {
   padding: $contentPadding;
+  margin-bottom: 10vh;
 
   &.laptopWoman {
     margin: 0;
-div{
-  padding-top: 1.5*$headerHeight;
-}
+    div {
+      padding-top: 1.5 * $headerHeight;
+    }
     img {
       width: 100%;
       transform: scale(1.1);
@@ -36,11 +37,11 @@ div{
         size: 75% 75%;
       }
 
-   //   padding-top: 0.5 * $headerHeight;
+      //   padding-top: 0.5 * $headerHeight;
     }
   }
   &.students {
-//    margin: 0 0 4vh;
+    //    margin: 0 0 4vh;
     div {
       &.tablet {
         img {
@@ -65,15 +66,15 @@ div{
         }
       }
     }
-    a{
-      @include media{
+    a {
+      @include media {
         width: 25%;
       }
     }
   }
   &.QHSE {
     background-color: $deepBlue;
- /*    padding: {
+    /*    padding: {
       top: 8vh;
       bottom: 8vh;
     } */
@@ -104,7 +105,6 @@ div{
       padding: $contentPadding;
     }
     .note {
-  //    padding-top: 10vh;
       a {
         width: 100%;
         @include media {
@@ -113,7 +113,6 @@ div{
       }
       @include media {
         max-width: 55%;
-    //    padding-top: 18vh;
       }
     }
     .kids {
@@ -131,9 +130,6 @@ div{
         &:hover {
           transform: scale(1.15, 1.15);
         }
-      }
-      @include media {
-  //      margin: 16vh 0 -5vh;
       }
     }
     .gallery {
@@ -159,28 +155,23 @@ div{
       background: {
         image: url("/assets/img/airship.svg");
         repeat: no-repeat;
-        size: 110% 110%;
-        position: right top;
+        size: 120% 140%;
+        position: center center;
       }
     }
-    @include media($laptop){
-      background-size: 90% 130%;
+    @include media($laptop) {
+      background-size: 200% 107%;
     }
   }
   &.workstation {
     padding: 0;
-    @include media {
-   //   margin-bottom: -6vh;
-    }
-    @include media($laptop) {
-   //   margin-top: -20vh;
-    }
+    margin-top: -25vh;
     > div {
       padding: $contentPadding;
       &:first-child {
         a {
           @include media {
-            &:last-child{
+            &:last-child {
               width: 50%;
             }
             margin-right: $smallpadding * 4;
@@ -202,12 +193,11 @@ div{
           left-radius: 10px;
           right-radius: 10px;
         }
-//        margin-bottom: -1vh;
         @include media {
           margin: $contentPadding;
-          margin-top: -12vh;
+          margin-top: -25vh;
           margin-bottom: 0;
-          transform: translateY(35%);
+          transform: translateY(65%);
           border-radius: 10px;
         }
         h4 {
@@ -215,7 +205,7 @@ div{
         }
         a {
           border: 1px solid #fff;
-          @include media{
+          @include media {
             width: 50%;
             margin-left: 4vw;
           }

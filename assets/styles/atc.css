@@ -664,7 +664,7 @@ h1 {
 h3 {
   font-size: 1.4em;
   font-weight: 300;
-  margin: 2.66667vh 0 5.33333vh;
+  margin: 1.33333vh 0 2.66667vh;
 }
 
 @media only screen and (min-width: 540px) {
@@ -887,6 +887,7 @@ header span.icon svg:last-child {
 
 section {
   padding: 2.5vh 5vw;
+  margin-bottom: 10vh;
 }
 
 section.laptopWoman {
@@ -1095,19 +1096,20 @@ section.stem .gallery svg {
   section.stem {
     background-image: url("/assets/img/airship.svg");
     background-repeat: no-repeat;
-    background-size: 110% 110%;
-    background-position: right top;
+    background-size: 120% 140%;
+    background-position: center center;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   section.stem {
-    background-size: 90% 130%;
+    background-size: 200% 107%;
   }
 }
 
 section.workstation {
   padding: 0;
+  margin-top: -25vh;
 }
 
 section.workstation > div {
@@ -1151,10 +1153,10 @@ section.workstation > div.contactUs {
 @media only screen and (min-width: 768px) {
   section.workstation > div.contactUs {
     margin: 2.5vh 5vw;
-    margin-top: -12vh;
+    margin-top: -25vh;
     margin-bottom: 0;
-    -webkit-transform: translateY(35%);
-            transform: translateY(35%);
+    -webkit-transform: translateY(65%);
+            transform: translateY(65%);
     border-radius: 10px;
   }
 }
