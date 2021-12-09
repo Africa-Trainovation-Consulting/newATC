@@ -640,7 +640,7 @@ img {
 h1 {
   font-size: 9.3vw;
   font-weight: 500;
-  margin: 3vh 0 6vh;
+  margin: 4vh 0 8vh;
 }
 
 @media only screen and (min-width: 540px) {
@@ -664,7 +664,7 @@ h1 {
 h3 {
   font-size: 1.4em;
   font-weight: 300;
-  margin: 2vh 0 4vh;
+  margin: 2.66667vh 0 5.33333vh;
 }
 
 @media only screen and (min-width: 540px) {
@@ -688,7 +688,7 @@ h3 {
 h4 {
   font-size: 1.1em;
   font-weight: 300;
-  margin: 1.5vh 0 3vh;
+  margin: 2vh 0 4vh;
 }
 
 @media only screen and (min-width: 540px) {
@@ -713,7 +713,7 @@ div,
 p {
   font-size: 1em;
   font-weight: 300;
-  margin: 2.72727vh 0 5.45455vh;
+  margin: 2vh 0 4vh;
   color: rgba(21, 12, 33, 0.59);
 }
 
@@ -893,6 +893,10 @@ section.laptopWoman {
   margin: 0;
 }
 
+section.laptopWoman div {
+  padding-top: 112.5px;
+}
+
 section.laptopWoman img {
   width: 100%;
   -webkit-transform: scale(1.1);
@@ -969,6 +973,12 @@ section.students div.tablet img:hover {
 @media only screen and (min-width: 1024px) {
   section.students div.note {
     width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section.students a {
+    width: 25%;
   }
 }
 
@@ -1107,6 +1117,9 @@ section.workstation > div {
 @media only screen and (min-width: 768px) {
   section.workstation > div:first-child a {
     margin-right: 16px;
+  }
+  section.workstation > div:first-child a:last-child {
+    width: 50%;
   }
 }
 

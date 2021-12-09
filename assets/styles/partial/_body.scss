@@ -2,9 +2,10 @@ section {
   padding: $contentPadding;
 
   &.laptopWoman {
-//    padding-top: $headerHeight;
     margin: 0;
-
+div{
+  padding-top: 1.5*$headerHeight;
+}
     img {
       width: 100%;
       transform: scale(1.1);
@@ -62,6 +63,11 @@ section {
         @include media($laptop) {
           width: 50%;
         }
+      }
+    }
+    a{
+      @include media{
+        width: 25%;
       }
     }
   }
@@ -174,6 +180,9 @@ section {
       &:first-child {
         a {
           @include media {
+            &:last-child{
+              width: 50%;
+            }
             margin-right: $smallpadding * 4;
           }
         }
