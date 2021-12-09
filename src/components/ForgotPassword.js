@@ -7,9 +7,7 @@ function ForgotPassword(props) {
     return (
         <>
         <Spanning heading='FORGOT PASSWORD' />
-            <h1 className='forgot'>
-                FORGOT PASSWORD
-            </h1>
+            
             <form action='post'>
                 <Formgroup label='Email' htmlFor='Email' type='email' name='email' placeholder='Enter your email' />
                 <ContinueBtn to='/createNewPassword' />

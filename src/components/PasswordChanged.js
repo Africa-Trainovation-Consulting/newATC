@@ -8,7 +8,7 @@ function PasswordChanged(props) {
                     Password changed <br /> successfuly
                 </p>
             <form action='post'>
-                <svg width="93" height="81" viewBox="0 0 163 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className='checked' width="93" height="81" viewBox="0 0 163 151" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M37.6299 64.5085C46.5894 74.3641 65.4045 111.994 70.7803 108.41C85.1156 81.5317 119.162 25.0864 155 14.335" stroke="#00BC00" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" />
                     <mask id="path-2-inside-1_431_104" fill="white">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M120.023 14.7528C107.513 5.48261 92.0267 0 75.2603 0C33.6952 0 0 33.6952 0 75.2603C0 116.825 33.6952 150.521 75.2603 150.521C116.825 150.521 150.521 116.825 150.521 75.2603C150.521 64.9403 148.444 55.1055 144.684 46.151L138.938 50.6204C141.898 58.2635 143.521 66.5724 143.521 75.2603C143.521 112.959 112.959 143.521 75.2603 143.521C37.5612 143.521 7 112.959 7 75.2603C7 37.5612 37.5612 7 75.2603 7C89.7374 7 103.162 11.5068 114.207 19.1939L120.023 14.7528Z" />

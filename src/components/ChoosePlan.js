@@ -3,9 +3,9 @@ import Backdrop from './HOC'
 import Spanning from '../layouts/Spanning';
 import ContinueBtn from "../layouts/ContinueBtn";
 function ChoosePlan(props) {
-    const optionStyle = {
+     const optionStyle = {
         borderTop: '1px solid rgba(0, 0, 0, 0.2)'
-    }
+    } 
     return (
         <>
             <Spanning heading='Choose a Plan' />
@@ -36,8 +36,8 @@ function ChoosePlan(props) {
                         <option value="Weekly">Weekly</option>
                         <option value="Monthly">Monthly</option>
                     </select>
-                </span>
-                <div class="custom-select">
+                </span> 
+                {/* <div className="custom-select">
                     <select>
                         <option value="0">Freelancer</option>
                         <option value="0">Freelancer</option>
@@ -47,7 +47,7 @@ function ChoosePlan(props) {
                         <option value="4">Hangouts</option>
                     </select>
                 </div>
-                <div class="custom-select">
+                <div className="custom-select">
                     <select>
                         <option value="0">Daily</option>
                         <option value="0">Daily</option>
@@ -55,7 +55,7 @@ function ChoosePlan(props) {
                         <option value="2">Weekly</option>
                         <option value="3">Monthly</option>
                     </select>
-                </div>
+                </div> */}
                 <ContinueBtn to='/' />
             </form>
         </>

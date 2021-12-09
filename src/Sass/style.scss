@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@500&display=swap');
 $font-stack: 'Poppins',
 sans-serif;
 $backdrop-background_color:rgba(21, 12, 33, 0.81);
@@ -136,8 +136,8 @@ $input-bg-color:#Fff;
     max-height: 40px;
     &:hover {
         border: 1px solid #1207AB;
-        color: #1207AB;
-        background-color: white;
+        color: #f8f8fa;
+        background-color: rgb(34, 15, 119);
         .arrow{
             fill: #1207AB;
         }
@@ -371,12 +371,20 @@ select {
 
 .lead {
     text-align: center;
-
+    line-height: 1.1;
+    margin: {
+        bottom:1em;
+    }
     font: {
-        size: 30px;
+        size: 1.2em;
+        weight:normal;
     }
 }
-
+.checked{
+    margin: {
+        bottom:1.5em;
+    }
+}
 .title {
     align-self: flex-start;
     margin-bottom: 1.2em;
