@@ -1,6 +1,12 @@
 footer {
   padding: $contentPadding;
-  padding-top: 2 * $headerHeight;
+  @include media{
+    padding-top: 3.5 * $headerHeight;
+    padding-bottom: 6vh;
+  }
+  section{
+    margin-bottom: 0;
+  }
   background-color: $black;
   * {
     color: $footerColor;
@@ -10,10 +16,14 @@ footer {
     font-weight: 100;
     margin: 0.5vh 0;
   }
-  span {
-    color: $white;
-  }
+  span {  color: $white;}
   .links {
+    span{
+      margin: 2vh 0 4vh;
+    }
+    a{
+      margin: 2vh 0 ;
+    }
     @include media {
       > div {
         justify-content: space-between;
@@ -29,9 +39,7 @@ footer {
     }
     align-items: flex-start;
   }
-  div.flex_c {
-    align-items: flex-start;
-  }
+  div.flex_c {  align-items: flex-start;}
   .socials {
     align-items: flex-start;
     .follow {
@@ -40,6 +48,7 @@ footer {
       }
     }
 
+    margin-top: 6vh;
     @include media {
       justify-content: space-between;
       align-items: center;

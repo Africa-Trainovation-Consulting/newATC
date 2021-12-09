@@ -5,14 +5,14 @@ section {
   &.laptopWoman {
     margin: 0;
     div {
-      padding-top: 1.5 * $headerHeight;
+      padding-top: 2 * $headerHeight;
     }
     img {
       width: 100%;
       transform: scale(1.1);
       @include media {
-        width: 52.5%;
-        transform: scale(1);
+        width: 53.8%;
+        transform: translate(0) scale(1);
       }
     }
 
@@ -46,7 +46,7 @@ section {
         img {
           width: 24%;
           height: 50vh;
-          margin: 6vh 0.5vw;
+          margin: 18vh 0.5vw 6vh;
           object-fit: cover;
           border-radius: $borderRadius;
           image-rendering: pixelated;
@@ -73,16 +73,14 @@ section {
   }
   &.QHSE {
     background-color: $deepBlue;
-    /*    padding: {
-      top: 8vh;
-      bottom: 8vh;
-    } */
     * {
       color: #fff;
     }
+    margin-top: 32vh;
     a {
       border: none;
-      background-color: $lightBlue;
+      background-color: #0135d6;
+      box-shadow: 2px 2px #000 ;
       width: 100%;
       @include media {
         width: 50%;
@@ -91,10 +89,8 @@ section {
     }
     img {
       transform: translate(-3.125%, 0);
-    }
-    @include media {
-      img {
-        transform: translateY(-20%);
+      @include media {
+        transform: translateY(-15%);
         width: 50%;
       }
     }
@@ -112,6 +108,7 @@ section {
       }
       @include media {
         max-width: 55%;
+        padding-top: 10vh;
       }
     }
     .kids {
@@ -119,7 +116,7 @@ section {
         @include media {
           height: 35vh;
           width: 30%;
-          margin-top: 35vh;
+          margin-top: 10vh;
         }
         height: 50vh;
         width: 90%;
@@ -128,7 +125,18 @@ section {
         border-radius: 2 * $borderRadius;
         image-rendering: pixelated;
         &:hover {
-          transform: scale(1.15, 1.15);
+          transform: scale(1.2);
+        }
+      }
+    }
+    > a {
+      margin: $contentPadding;
+      background-color: #fff;
+      @include media {
+        width: 25%;
+        margin: {
+          right: auto;
+          left: auto;
         }
       }
     }
@@ -141,39 +149,44 @@ section {
       );
       width: 100%;
       color: $black;
-      svg {
-        margin-left: 5px;
-        height: 50%;
-        width: 5%;
-        @include media {
-          width: 2.5%;
-        }
-      }
+      margin: 12vh 0;
     }
     padding: 0;
     @include media {
       background: {
         image: url("/assets/img/airship.svg");
         repeat: no-repeat;
-        size: cover;
-        position: 100% 10%;
+        size: center center;
+        position: 60% 10%;
       }
     }
   }
   &.workstation {
     padding: 0;
     @include media($laptop) {
-      margin-top: -25vh;
+      margin-top: -15vh;
     }
     > div {
       padding: $contentPadding;
       &:first-child {
-        a {
-          @include media {
-            &:last-child {
-              width: 50%;
+        p {
+          margin-top: 8vh;
+        }
+        .buttons {
+          justify-content: flex-start;
+
+          a {
+            @include media {
+              margin: 12vh 0;
+              &:first-child {
+                border: none;
+                width: 45%;
+                margin-right: 3vw;
+              }
+              &:last-child {
+                width: 25%;
+              }
             }
-            margin-right: $smallpadding * 4;
           }
         }
         img {
@@ -184,6 +197,7 @@ section {
             width: 50%;
             transform: translate(0);
             margin: 0;
+            z-index: 1;
           }
         }
       }
@@ -196,9 +210,16 @@ section {
         @include media {
           margin: $contentPadding;
           margin-top: -25vh;
-          margin-bottom: 0;
-          transform: translateY(65%);
+          margin-bottom: -30vh;
+          transform: translateY(10%);
           border-radius: 10px;
+          z-index: 0;
+        }
+        p {
+          color: $footerColor;
+          @include media{
+            max-width: 85%;
+          }
         }
         h4 {
           color: #a6efff;
