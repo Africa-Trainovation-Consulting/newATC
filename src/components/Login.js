@@ -30,7 +30,7 @@ function Login(props) {
                 <Formgroup label='Password' htmlFor='password' type='password' name='password' placeholder='Enter password' />
                 <ContinueBtn to='signup' />
             </form>
-            <Link to='/forgotpassword' className='opacity' style={{ color: '#262B33', marginTop: '2em', fontSize:'12px' }}>Forgot Password?</Link>
+            <Link to='/forgotpassword' className='opacity' style={{ color: '#262B33', marginTop: '2em', fontSize:'15px' }}>Forgot Password?</Link>
         </>
     )
 }
