@@ -15,16 +15,16 @@ function Upload(props) {
         <>
             <Spanning heading='Upload Picture' />
             <form action="post">
-                <label className='imageUpload' htmlFor='myphoto'  >
+                <label className='imageUpload regular' htmlFor='myphoto'  >
                     <input type='file' name='myphoto' /* onChange={loadfile} */ accept="image/*" className='inputImage' />
                     <img id='output' alt='myImage' />
                 </label>
                 <span className="flex_btn">
-                    <label className="upload">
+                    <label className="upload regular">
                         <input type='file' accept="image/*" className='inputImage' />
                     </label>
 
-                    <label className="takePicture">
+                    <label className="takePicture regular">
                         <input type='file' capture='user' accept="image/*" className='inputImage' />
                     </label>
                 </span>

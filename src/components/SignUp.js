@@ -7,10 +7,10 @@ function SignUp(props) {
     return (
         <>
         <span className='already_'>
-                <Link className="already" to='/forgotpassword' style={{ color: '#262B33' }}>Have an account?</Link>
+                <Link className="already opacity" to='/forgotpassword' style={{ color: '#262B33' }}>Have an account?</Link>
             </span>
             <span className="flex_btn">
-                <button className="login">
+                <button className="login regular">
                     Login to continue
                 </button>
                 <button className="signUp active">
