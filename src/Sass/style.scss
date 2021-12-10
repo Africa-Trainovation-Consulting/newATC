@@ -85,7 +85,8 @@ $input-bg-color:#Fff;
 .regular{
     &:hover{
         background-color: #F5F7FA;
-        box-shadow: 0 4px rgb(194, 192, 192);
+        box-shadow: 0 2px rgb(194, 192, 192);
+        opacity: 0.8;
         border: 1px solid #F5F7FA;
     }
 }
@@ -251,8 +252,7 @@ h1 {
         justify-self: start;
         font-size: 10px;
         text-decoration: none;
-        white-space: nowrap;
-        
+        white-space: nowrap; 
     }
 }
 .opacity{
