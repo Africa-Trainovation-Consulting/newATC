@@ -228,6 +228,24 @@ button {
     }
     .Madbtn{
         cursor: pointer;
+        i{
+            text-decoration: none;
+            font-style: normal;
+            border: 1px solid #AAAAAA;
+            color: #AAAAAA;
+            border-radius: 50%;
+            text-align: center;
+            padding: {
+                top:0.2em;
+                left: 0.5em;
+                right: 0.5em;
+                bottom: -1em;
+            }
+                &:hover {
+                    border: 1px solid black;
+                    color: black;
+                }
+        }
     }
 }
 
@@ -474,6 +492,23 @@ form {
             .Madbtn{
                 grid-column: 3 / span 3;
                 justify-self: end;
+                i{
+                    text-decoration: none;
+                    font-style: normal;
+                    border: 1px solid #AAAAAA;
+                    color: #AAAAAA;
+                    border-radius: 50%;
+                    text-align: center;
+                    height: 5vh;
+                    padding: 0 0.5em;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    &:hover {
+                        border: 1px solid black;
+                        color: black;
+                    }
+                }
             }
         }
 
