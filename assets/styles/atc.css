@@ -38,7 +38,7 @@
   height: 8vh;
   line-height: 8vh;
   border-radius: 7px;
-  border: 2px solid #150C21;
+  border: 1px solid #150C21;
   white-space: nowrap;
   vertical-align: middle;
   -webkit-transition: all 0.3s ease-in-out;
@@ -607,19 +607,17 @@ body {
   background-color: #1207ab;
 }
 
-a,
-a:hover,
-button {
+a, button {
   border-radius: 10px;
   cursor: pointer;
 }
 
-a:hover {
-  opacity: 0.5;
+a.button, button.button {
+  display: inline-block;
 }
 
-a.button {
-  display: inline-block;
+a:hover, button:hover {
+  opacity: 0.5;
 }
 
 button {
@@ -628,7 +626,13 @@ button {
 }
 
 button:hover {
-  opacity: 0.5;
+  -webkit-box-shadow: 0px 0.5px 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0.5px 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #f5f7fa;
+  -webkit-box-shadow: 0 2px #c2c0c0;
+          box-shadow: 0 2px #c2c0c0;
+  opacity: 0.8;
+  border: 1px solid #f5f7fa;
 }
 
 img {
@@ -781,17 +785,17 @@ header {
           flex-direction: row;
 }
 
-header a svg:nth-child(2) {
+header a svg:nth-child(2), header button svg:nth-child(2) {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
-  header a svg:nth-child(2) {
+  header a svg:nth-child(2), header button svg:nth-child(2) {
     display: inline;
   }
 }
 
-header a img {
+header a img, header button img {
   width: 80%;
   margin: 0;
 }
@@ -803,7 +807,7 @@ header span.navLinks {
   width: 100%;
 }
 
-header span.navLinks a {
+header span.navLinks a, header span.navLinks button {
   color: #150C21;
   text-align: center;
   margin: 1vh 0;
@@ -813,14 +817,14 @@ header span.navLinks a {
 }
 
 @media only screen and (min-width: 768px) {
-  header span.navLinks a {
+  header span.navLinks a, header span.navLinks button {
     margin-left: 1.5vw;
     border-bottom: none;
     width: auto;
   }
 }
 
-header span.navLinks a:last-child {
+header span.navLinks a:last-child, header span.navLinks button:last-child {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-weight: 600;
@@ -831,7 +835,7 @@ header span.navLinks a:last-child {
 }
 
 @media only screen and (min-width: 768px) {
-  header span.navLinks a:last-child {
+  header span.navLinks a:last-child, header span.navLinks button:last-child {
     display: block;
   }
 }
@@ -914,13 +918,13 @@ section.laptopWoman img {
   }
 }
 
-section.laptopWoman a {
+section.laptopWoman a, section.laptopWoman button {
   background-color: #150C21;
   width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-  section.laptopWoman a {
+  section.laptopWoman a, section.laptopWoman button {
     width: 50%;
   }
 }
@@ -980,21 +984,23 @@ section.students div.tablet img:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  section.students a {
+  section.students a, section.students button {
     width: 25%;
   }
 }
 
 section.QHSE {
   background-color: #1207AB;
-  margin-top: 32vh;
+  margin-top: 18vh;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
 }
 
 section.QHSE * {
   color: #fff;
 }
 
-section.QHSE a {
+section.QHSE a, section.QHSE button {
   border: none;
   background-color: #0135d6;
   -webkit-box-shadow: 2px 2px #000;
@@ -1005,7 +1011,7 @@ section.QHSE a {
 }
 
 @media only screen and (min-width: 768px) {
-  section.QHSE a {
+  section.QHSE a, section.QHSE button {
     width: 50%;
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -1019,8 +1025,8 @@ section.QHSE img {
 
 @media only screen and (min-width: 768px) {
   section.QHSE img {
-    -webkit-transform: translateY(-15%);
-            transform: translateY(-15%);
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
     width: 50%;
   }
 }
@@ -1033,12 +1039,12 @@ section.stem > div {
   padding: 2.5vh 5vw;
 }
 
-section.stem .note a {
+section.stem .note a, section.stem .note button {
   width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-  section.stem .note a {
+  section.stem .note a, section.stem .note button {
     width: 50%;
   }
 }
@@ -1077,13 +1083,13 @@ section.stem .kids img:hover {
           transform: scale(1.2);
 }
 
-section.stem > a {
+section.stem > a, section.stem > button {
   margin: 2.5vh 5vw;
   background-color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
-  section.stem > a {
+  section.stem > a, section.stem > button {
     width: 25%;
     margin-right: auto;
     margin-left: auto;
@@ -1133,15 +1139,15 @@ section.workstation > div:first-child .buttons {
 }
 
 @media only screen and (min-width: 768px) {
-  section.workstation > div:first-child .buttons a {
+  section.workstation > div:first-child .buttons a, section.workstation > div:first-child .buttons button {
     margin: 12vh 0;
   }
-  section.workstation > div:first-child .buttons a:first-child {
+  section.workstation > div:first-child .buttons a:first-child, section.workstation > div:first-child .buttons button:first-child {
     border: none;
     width: 45%;
     margin-right: 3vw;
   }
-  section.workstation > div:first-child .buttons a:last-child {
+  section.workstation > div:first-child .buttons a:last-child, section.workstation > div:first-child .buttons button:last-child {
     width: 25%;
   }
 }
@@ -1199,12 +1205,12 @@ section.workstation > div.contactUs h4 {
   color: #a6efff;
 }
 
-section.workstation > div.contactUs a {
+section.workstation > div.contactUs a, section.workstation > div.contactUs button {
   border: 1px solid #fff;
 }
 
 @media only screen and (min-width: 768px) {
-  section.workstation > div.contactUs a {
+  section.workstation > div.contactUs a, section.workstation > div.contactUs button {
     width: 50%;
     margin-left: 4vw;
     padding: 0 5px;
@@ -1231,7 +1237,7 @@ footer * {
   color: #A4A4A4;
 }
 
-footer a, footer div {
+footer a, footer button, footer div {
   font-size: 1em;
   font-weight: 100;
   margin: 0.5vh 0;
@@ -1251,7 +1257,7 @@ footer .links span {
   margin: 2vh 0 4vh;
 }
 
-footer .links a {
+footer .links a, footer .links button {
   margin: 2vh 0;
 }
 
@@ -1294,7 +1300,7 @@ footer .socials {
   margin-top: 6vh;
 }
 
-footer .socials .follow a {
+footer .socials .follow a, footer .socials .follow button {
   margin-right: 12px;
 }
 

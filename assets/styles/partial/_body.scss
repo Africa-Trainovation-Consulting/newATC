@@ -76,12 +76,16 @@ section {
     * {
       color: #fff;
     }
-    margin-top: 32vh;
+    margin-top: 18vh;
+      padding: {
+        top: 8vh;
+        bottom: 8vh;
+      }
     a {
       border: none;
       background-color: #0135d6;
-      box-shadow: 2px 2px #000 ;
-      box-shadow: 0 0 3px rgba(60,72,88,15);
+      box-shadow: 2px 2px #000;
+      box-shadow: 0 0 3px rgba(60, 72, 88, 15);
       width: 100%;
       @include media {
         width: 50%;
@@ -91,7 +95,7 @@ section {
     img {
       transform: translate(-3.125%, 0);
       @include media {
-        transform: translateY(-15%);
+        transform: translateY(-25%);
         width: 50%;
       }
     }
@@ -218,7 +222,7 @@ section {
         }
         p {
           color: $footerColor;
-          @include media{
+          @include media {
             max-width: 85%;
           }
         }
