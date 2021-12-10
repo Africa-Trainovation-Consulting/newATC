@@ -287,6 +287,10 @@ h1 {
 
     .or_ {
         padding: 0 6px;
+        cursor: pointer;
+        &:hover{
+            color: #080808;
+        }
     }
 
 }
@@ -319,7 +323,7 @@ h1 {
     width: 60%;
     line-height: 1.5;
     text-align: center;
-    content: 'Click here to upload from file';
+    content: 'Click here to upload file';
 }
 
 
