@@ -458,6 +458,20 @@ a {
     width:100%;
     margin-bottom: 1em;
 }
+.css-319lph-ValueContainer {
+    height: 45px;
+}
+.css-14el2xx-placeholder{
+    display: none;
+}.css-14el2xx-placeholder::before{
+    content: 'go';
+}
+.css-1s2u09g-control{
+    height: 45px;
+}
+.css-1okebmr-indicatorSeparator{
+    display: none;
+}
 select {
     @include input();
     &:invalid {

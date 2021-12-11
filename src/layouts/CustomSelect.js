@@ -9,11 +9,10 @@ function CustomSelect(props) {
         { label: 'Hangouts', value: 'Hangouts' }
     ]
     const option2 = [
-        { label: 'Freelancer', value: 'Freelancer' },
-        { label: 'Team of 6', value: 'Team of 6' },
-        { label: 'Executive', value: 'Executive' },
-        { label: 'Digital Classroom', value: 'Digital Classroom' },
-        { label: 'Hangouts', value: 'Hangouts' }
+        { label: 'Daily', value: 'Daily' },
+        { label: 'Hourly', value: 'Hourly' },
+        { label: 'Weekly', value: 'Weekly' },
+        { label: 'Monthly', value: 'Monthly' }
     ]
 const selectStyle = {
 height:'5vh'
