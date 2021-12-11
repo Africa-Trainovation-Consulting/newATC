@@ -2,15 +2,13 @@ import React from 'react';
 import Backdrop from './HOC'
 import Spanning from '../layouts/Spanning';
 import ContinueBtn from "../layouts/ContinueBtn";
+import CustomSelect from '../layouts/CustomSelect';
 function ChoosePlan(props) {
-     const optionStyle = {
-        borderTop: '1px solid rgba(0, 0, 0, 0.2)'
-    } 
     return (
         <>
             <Spanning heading='Choose a Plan' />
             <form action="post">
-                <span className="form-group">
+                {/* <span className="form-group">
                     <label for="inputPaymentType"> Choose a Package </label>
                     <select name="paymentType" placeholder="Freelancer">
                         <option value="" disabled invalid selected hidden id="selected"
@@ -36,7 +34,7 @@ function ChoosePlan(props) {
                         <option value="Weekly">Weekly</option>
                         <option value="Monthly">Monthly</option>
                     </select>
-                </span> 
+                </span> */} 
                 {/* <div className="custom-select">
                     <select>
                         <option value="0">Freelancer</option>
@@ -56,6 +54,7 @@ function ChoosePlan(props) {
                         <option value="3">Monthly</option>
                     </select>
                 </div> */}
+                <CustomSelect />
                 <ContinueBtn to='/' />
             </form>
         </>

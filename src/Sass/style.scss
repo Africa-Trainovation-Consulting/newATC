@@ -9,7 +9,80 @@ $label-color:rgba(3, 3, 3, 0.5);
 $font-size :18px;
 $border-color:#DFDFDF;
 $input-bg-color:#Fff;
+        /*the container must be positioned relative:*/
+        .custom-select {
+            position: relative;
+            font-family: Arial;
+            width:100%;
+        }
 
+        .custom-select select {
+            display: none;
+            /*hide original SELECT element:*/
+        }
+
+        .select-selected {
+            background-color: #fff;
+        }
+
+        /*style the arrow inside the select element:*/
+        .select-selected:after {
+            position: absolute;
+            content: "";
+            top: 14px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: #000 transparent transparent transparent;
+        }
+
+        /*point the arrow upwards when the select box is open (active):*/
+        .select-selected.select-arrow-active:after {
+            border-color: transparent transparent #000 transparent;
+            top: 7px;
+        }
+
+        /*style the items (options), including the selected item:*/
+        .select-items div{
+            min-height: 45px;
+            max-height: 30px;
+            border-bottom: 1px solid #A9A9A9;
+            margin-bottom: 1.5em;
+        }
+        .select-selected {
+            color: #939393;
+            margin-bottom: 1.5em;
+            border: 1px solid #A9A9A9;
+            box-sizing: border-box;
+            padding: 0 5px 0 5px;
+            border-radius: 5px;
+            min-height: 45px;
+            max-height: 30px;
+            width: 100%;
+            max-width: 100%;
+            user-select: none;
+        }
+
+        /*style items (options):*/
+        .select-items {
+            position: absolute;
+            background-color: white;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 99;
+        }
+
+        /*hide the items when the select box is closed:*/
+        .select-hide {
+            display: none;
+        }
+
+        .select-items div:hover,
+        .same-as-selected {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
 @mixin flex {
     display: flex;
     justify-content: center;
@@ -381,10 +454,12 @@ a {
 .takePicture::before {
     content: 'Take picture';
 }
-
+.css-b62m3t-container {
+    width:100%;
+    margin-bottom: 1em;
+}
 select {
     @include input();
-
     &:invalid {
         color: gray;
     }
@@ -498,6 +573,7 @@ form {
                     border: 1px solid #AAAAAA;
                     color: #AAAAAA;
                     border-radius: 50%;
+                    font-size: 15px;
                     text-align: center;
                     height: 4.5vh;
                     padding: 0 0.5em;
