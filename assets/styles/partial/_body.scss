@@ -1,11 +1,14 @@
 section {
   padding: $contentPadding;
-  margin-bottom: 10vh;
+  margin: $paddingHeight 0 ;
 
   &.laptopWoman {
     margin: 0;
     div {
-      padding-top: 2 * $headerHeight;
+      padding-top: 1 * $headerHeight;
+      @include media{
+        padding-top: 2 * $headerHeight;
+      }
     }
     img {
       width: 100%;
@@ -24,10 +27,6 @@ section {
       }
     }
 
-    @include media($tablet) {
-      flex-direction: column;
-    }
-
     @include media {
       flex-direction: row;
       background: {
@@ -36,8 +35,6 @@ section {
         position: 200% -100%;
         size: 75% 75%;
       }
-
-      //   padding-top: 0.5 * $headerHeight;
     }
   }
   &.students {
@@ -46,12 +43,12 @@ section {
         img {
           width: 24%;
           height: 50vh;
-          margin: 18vh 0.5vw 6vh;
+          margin: 3*$paddingHeight $smallMargin;
           object-fit: cover;
           border-radius: $borderRadius;
           image-rendering: pixelated;
           &:hover {
-            transform: scale(1.15);
+            transform: scale(1.13);
           }
         }
       }
@@ -73,14 +70,10 @@ section {
   }
   &.QHSE {
     background-color: $deepBlue;
+    padding-top: 4*$paddingHeight;
     * {
       color: #fff;
     }
-    margin-top: 18vh;
-      padding: {
-        top: 8vh;
-        bottom: 8vh;
-      }
     a {
       border: none;
       background-color: #0135d6;
@@ -95,9 +88,12 @@ section {
     img {
       transform: translate(-3.125%, 0);
       @include media {
-        transform: translateY(-25%);
+        transform: translateY(-35%);
         width: 50%;
       }
+    }
+    @include media{
+      margin-top: 8*$paddingHeight;
     }
   }
   &.stem {
@@ -181,6 +177,7 @@ section {
           justify-content: flex-start;
 
           a {
+            margin: $paddingHeight 0;
             @include media {
               margin: 12vh 0;
               &:first-child {
@@ -212,13 +209,16 @@ section {
           right-radius: 10px;
         }
         margin-bottom: -10vh;
+        padding-bottom: 6*$paddingHeight;
         @include media {
-          margin: $contentPadding;
-          margin-top: -25vh;
-          margin-bottom: -30vh;
+          margin: -15vh $paddingSide -30vh;
           transform: translateY(10%);
           border-radius: 10px;
           z-index: 0;
+          padding-bottom: $paddingHeight;
+        }
+        @include media(1200px){
+          margin-top: -25vh;
         }
         p {
           color: $footerColor;

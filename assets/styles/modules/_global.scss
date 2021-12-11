@@ -12,6 +12,7 @@
   color: $black;
   list-style: none;
   text-decoration: none;
+  text-align: initial;
   text-size-adjust: 100%;
   line-height: initial;
 }
@@ -128,10 +129,12 @@ h4 {
 div,
 p {
   font: {
-    size: 19.2px;
+    size: $defaultFontSize;
     weight: 300;
   }
   line-height: 200%;
+  text-align: justify;
+//  word-break: keep-all;
   @include margin(2);
   color: rgba($color: $black, $alpha: 0.59);
   @include media(425px) {
@@ -141,7 +144,7 @@ p {
     font-size: 2.5vw;
   }
   @include media($laptop) {
-    font-size: 19.2px;
+    font-size: $defaultFontSize;
   }
 }
 
