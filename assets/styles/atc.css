@@ -716,7 +716,7 @@ h4 {
 
 div,
 p {
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 300;
   line-height: 200%;
   margin: 1.5vh 0 1.5vh;
@@ -1266,24 +1266,6 @@ footer .links a, footer .links button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  footer .links > div {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  footer .links {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  footer .links > div {
-    width: 45%;
   }
 }
 
