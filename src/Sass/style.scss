@@ -499,14 +499,14 @@ form {
                     color: #AAAAAA;
                     border-radius: 50%;
                     text-align: center;
-                    height: 5vh;
+                    height: 4.5vh;
                     padding: 0 0.5em;
                     display: flex;
                     align-items: center;
                     width: 100%;
                     &:hover {
-                        border: 1px solid black;
-                        color: black;
+                        border: 1px solid #1207AB;
+                        color: #1207AB;
                     }
                 }
             }
