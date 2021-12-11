@@ -1,4 +1,6 @@
-$contentPadding: 2.5vh 5vw ;
+$paddingHeight: 2.5vh; 
+$paddingSide: 7vw; 
+$contentPadding: $paddingHeight $paddingSide ;
 $defaultBackgroundColor: #FFF;
 $black:#150C21;
 $white:#fff;
