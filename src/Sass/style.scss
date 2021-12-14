@@ -461,10 +461,7 @@ a {
 .css-319lph-ValueContainer {
     height: 45px;
 }
-.css-14el2xx-placeholder{
-    display: none;
-}.css-14el2xx-placeholder::before{
-    content: 'go';
+.css-14el2xx-placeholder{padding-bottom: 12px;
 }
 .css-1s2u09g-control{
     height: 45px;
@@ -589,7 +586,7 @@ form {
                     border-radius: 50%;
                     font-size: 15px;
                     text-align: center;
-                    height: 4.5vh;
+                    height: 3.5vh;
                     padding: 0 0.5em;
                     display: flex;
                     align-items: center;

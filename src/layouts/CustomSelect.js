@@ -21,8 +21,8 @@ height:'5vh'
 return <>
 
 
-    <Select options={options}  style={selectStyle}/>
-    <Select options={option2} />
+    <Select placeholder={'Freelancer'} options={options}  style={selectStyle}/>
+    <Select placeholder={'Daily'} options={option2} />
 
 
 </>
