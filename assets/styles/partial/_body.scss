@@ -88,8 +88,12 @@ section {
     img {
       transform: translate(-3.125%, 0);
       @include media {
-        transform: translateY(-35%);
+        transform: translateY(-60%);
         width: 50%;
+      }
+      @include media($laptop){
+        transform: translateY(-25%);
+
       }
     }
     @include media{

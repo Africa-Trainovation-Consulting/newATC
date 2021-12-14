@@ -1022,9 +1022,16 @@ section.QHSE img {
 
 @media only screen and (min-width: 768px) {
   section.QHSE img {
-    -webkit-transform: translateY(-35%);
-            transform: translateY(-35%);
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
     width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section.QHSE img {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
   }
 }
 
