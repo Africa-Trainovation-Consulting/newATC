@@ -3,11 +3,11 @@ function flex_btn(props) {
     
     return (
         <span className="flex_btn">
-            <button className="login active">
-                Login to continue
+            <button className="login active" >
+                {props.login}
             </button>
             <button className="signUp regular">
-                Sign up to continue
+                {props.signup}
             </button>
         </span>
     )

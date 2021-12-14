@@ -127,7 +127,18 @@ $input-bg-color:#Fff;
     @include flex_btn();
     width: 70%;
 }
-
+.socials{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: 600;
+    color: $label-color;
+    img{
+        margin: {
+            right: 0.5em;
+        }
+    }
+}
 @mixin btn {
     background: none;
     border-radius: 5px;
@@ -265,6 +276,12 @@ body {
 
 .flex_btn {
     @include flex_btn();
+    h3{
+        font-size: 16px;
+        margin: {
+            top: 1em;
+        }
+    }
 }
 
 button {
@@ -331,7 +348,6 @@ h1 {
     display: flex;
     width: 100%;
 }
-
 .already_ {
     width: 90%;
     display: grid;
@@ -603,6 +619,7 @@ form {
 
     .flex_btn {
         @include flex_btn2();
+        
     }
 
     button {
