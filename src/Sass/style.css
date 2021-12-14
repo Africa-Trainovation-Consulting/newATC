@@ -190,6 +190,20 @@ body {
   margin-top: 1em;
 }
 
+.flexSelect {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flexSelect .form-group {
+  width: 45%;
+}
+
 button {
   background: none;
   border-radius: 5px;
