@@ -18,11 +18,11 @@ function Login(props) {
                 <h3>Login with</h3>
             </span>
             <span className="flex_btn">
-                <button className="login socials">
+                <button className="login socials regular">
                     <img src={GoogleLogo} alt='googlelogo' />  Google
                 </button>
                 OR
-                <button className="signUp socials">
+                <button className="signUp socials regular">
                     <img src={FacebookLogo} alt='facebooklogo' />  Facebook
                 </button>
             </span>
