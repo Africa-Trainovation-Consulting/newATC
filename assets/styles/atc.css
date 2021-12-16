@@ -965,8 +965,8 @@ section.students div.tablet img {
 }
 
 section.students div.tablet img:hover {
-  -webkit-transform: scale(1.13);
-          transform: scale(1.13);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media only screen and (min-width: 768px) {
@@ -1030,8 +1030,12 @@ section.QHSE img {
 
 @media only screen and (min-width: 1024px) {
   section.QHSE img {
-    -webkit-transform: translateY(-25%);
-            transform: translateY(-25%);
+    /*         transform: translateY(-20%);
+        width: 42%;
+        */
+    -webkit-transform: translateY(-8%);
+            transform: translateY(-8%);
+    width: 42%;
   }
 }
 
