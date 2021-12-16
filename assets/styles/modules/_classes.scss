@@ -26,16 +26,22 @@
   color: #fff;
   text-align: center;
   display: block;
-  margin: 4 *$paddingHeight 0;
-  height: 4 *$paddingHeight;
-  line-height: 4 *$paddingHeight;
+  margin: 4 * $paddingHeight 0;
+  height: 4 * $paddingHeight;
+  line-height: 4 * $paddingHeight;
   border-radius: $borderRadius;
   border: 1px solid $black;
   white-space: nowrap;
   vertical-align: middle;
   transition: all 0.3s ease-in-out;
   font-size: $defaultFontSize;
-
+  width: 100%;
+  @include media{
+    width: 18vw;
+  }
+  @include media($laptop){
+    
+  }
   //further classify buttons based on width and Color
 }
 .mover {
@@ -113,7 +119,7 @@
 }
 
 .w {
-  $widths: 25, 33, 50,60, 75, 100;
+  $widths: 25, 33, 50, 60, 75, 100;
   @each $width in $widths {
     @at-root &#{$width} {
       width: $width#{"%"};
