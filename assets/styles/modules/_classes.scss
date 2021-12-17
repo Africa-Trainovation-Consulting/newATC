@@ -37,9 +37,10 @@
   font-size: $defaultFontSize;
   width: 100%;
   @include media{
-    width: 18vw;
+    width: 24vw;
   }
   @include media($laptop){
+    width: 18vw;
     
   }
   //further classify buttons based on width and Color

@@ -49,6 +49,12 @@
 
 @media only screen and (min-width: 768px) {
   .linkButton, button {
+    width: 24vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .linkButton, button {
     width: 18vw;
   }
 }
@@ -931,11 +937,27 @@ section.laptopWoman img {
           transform: scale(1.1);
 }
 
+section.laptopWoman img:last-child {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  section.laptopWoman img:last-child {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section.laptopWoman img {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   section.laptopWoman img {
     width: 53.8%;
-    -webkit-transform: translate(0) scale(1);
-            transform: translate(0) scale(1);
+    -webkit-transform: translate(4.5vw, 0) scale(1.1);
+            transform: translate(4.5vw, 0) scale(1.1);
   }
 }
 
@@ -964,15 +986,15 @@ section.students div.tablet img {
       image-rendering: -moz-crisp-edges;
       image-rendering: -o-pixelated;
       image-rendering: pixelated;
-  -webkit-filter: sepia(100%) hue-rotate(90deg) drop-shadow(8px 8px 10px gray);
-          filter: sepia(100%) hue-rotate(90deg) drop-shadow(8px 8px 10px gray);
 }
 
 section.students div.tablet img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-filter: none;
-          filter: none;
+  -webkit-filter: sepia(100%) hue-rotate(90deg) drop-shadow(8px 8px 10px gray);
+          filter: sepia(100%) hue-rotate(90deg) drop-shadow(8px 8px 10px gray);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 @media only screen and (min-width: 768px) {

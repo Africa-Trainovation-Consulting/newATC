@@ -13,9 +13,10 @@ section {
     img {
       width: 100%;
       transform: scale(1.1);
+      @include srcset;
       @include media {
         width: 53.8%;
-        transform: translate(0) scale(1);
+        transform: translate(4.5vw,0) scale(1.1);
       }
     }
     @include media {
@@ -38,10 +39,11 @@ section {
           object-fit: cover;
           border-radius: $borderRadius;
           image-rendering: pixelated;
-          filter: sepia(100%)hue-rotate(90deg)drop-shadow(8px 8px 10px gray);
           &:hover {
             transform: scale(1.1);
-            filter: none;
+            filter: sepia(100%)hue-rotate(90deg)drop-shadow(8px 8px 10px gray);
+            filter: grayscale(100%);
+            
           }
         }
       }
