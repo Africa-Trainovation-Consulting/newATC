@@ -9,80 +9,83 @@ $label-color:rgba(3, 3, 3, 0.5);
 $font-size :18px;
 $border-color:#DFDFDF;
 $input-bg-color:#Fff;
-        /*the container must be positioned relative:*/
-        .custom-select {
-            position: relative;
-            font-family: Arial;
-            width:100%;
-        }
 
-        .custom-select select {
-            display: none;
-            /*hide original SELECT element:*/
-        }
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    width: 100%;
+}
 
-        .select-selected {
-            background-color: #fff;
-        }
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
 
-        /*style the arrow inside the select element:*/
-        .select-selected:after {
-            position: absolute;
-            content: "";
-            top: 14px;
-            right: 10px;
-            width: 0;
-            height: 0;
-            border: 6px solid transparent;
-            border-color: #000 transparent transparent transparent;
-        }
+.select-selected {
+    background-color: #fff;
+}
 
-        /*point the arrow upwards when the select box is open (active):*/
-        .select-selected.select-arrow-active:after {
-            border-color: transparent transparent #000 transparent;
-            top: 7px;
-        }
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #000 transparent transparent transparent;
+}
 
-        /*style the items (options), including the selected item:*/
-        .select-items div{
-            min-height: 45px;
-            max-height: 30px;
-            border-bottom: 1px solid #A9A9A9;
-            margin-bottom: 1.5em;
-        }
-        .select-selected {
-            color: #939393;
-            margin-bottom: 1.5em;
-            border: 1px solid #A9A9A9;
-            box-sizing: border-box;
-            padding: 0 5px 0 5px;
-            border-radius: 5px;
-            min-height: 45px;
-            max-height: 30px;
-            width: 100%;
-            max-width: 100%;
-            user-select: none;
-        }
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000 transparent;
+    top: 7px;
+}
 
-        /*style items (options):*/
-        .select-items {
-            position: absolute;
-            background-color: white;
-            top: 100%;
-            left: 0;
-            right: 0;
-            z-index: 99;
-        }
+/*style the items (options), including the selected item:*/
+.select-items div {
+    min-height: 45px;
+    max-height: 30px;
+    border-bottom: 1px solid #A9A9A9;
+    margin-bottom: 1.5em;
+}
 
-        /*hide the items when the select box is closed:*/
-        .select-hide {
-            display: none;
-        }
+.select-selected {
+    color: #939393;
+    margin-bottom: 1.5em;
+    border: 1px solid #A9A9A9;
+    box-sizing: border-box;
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+    min-height: 45px;
+    max-height: 30px;
+    width: 100%;
+    max-width: 100%;
+    user-select: none;
+}
 
-        .select-items div:hover,
-        .same-as-selected {
-            background-color: rgba(0, 0, 0, 0.1);
-        }
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 @mixin flex {
     display: flex;
     justify-content: center;
@@ -127,18 +130,21 @@ $input-bg-color:#Fff;
     @include flex_btn();
     width: 70%;
 }
-.socials{
+
+.socials {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     font-weight: 600;
     color: $label-color;
-    img{
+
+    img {
         margin: {
             right: 0.5em;
         }
     }
 }
+
 @mixin btn {
     background: none;
     border-radius: 5px;
@@ -159,21 +165,24 @@ $input-bg-color:#Fff;
 @mixin active-btn {
     background-color: $btn_background-color;
     color: $alt-text-color;
+
     &:hover {
         border: 1px solid $btn_background-color;
         color: #f8f8fa;
         background-color: rgb(34, 15, 119);
         opacity: 0.9;
-        }
+    }
 }
-.regular{
-    &:hover{
+
+.regular {
+    &:hover {
         background-color: #F5F7FA;
         box-shadow: 0 2px rgb(194, 192, 192);
         opacity: 0.8;
         border: 1px solid #F5F7FA;
     }
 }
+
 @mixin form {
     @include flex2();
     width: 90%;
@@ -276,21 +285,26 @@ body {
 
 .flex_btn {
     @include flex_btn();
-    h3{
+
+    h3 {
         font-size: 16px;
+
         margin: {
             top: 1em;
         }
     }
 }
-.flexSelect{
+
+.flexSelect {
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    .form-group{
+
+    .form-group {
         width: 45%;
     }
 }
+
 button {
     @include btn();
 }
@@ -316,6 +330,7 @@ button {
     @include flex();
     justify-content: space-between;
     width: 90%;
+
     h1 {
         font-size: 15px;
         margin-bottom: 1em;
@@ -323,10 +338,12 @@ button {
         align-self: flex-start;
         display: block;
     }
-    .Madbtn{
+
+    .Madbtn {
         cursor: pointer;
-        i{
-            text-decoration: none;
+
+        i {
+            /* text-decoration: none;
             font-style: normal;
             border: 1px solid #AAAAAA;
             color: #AAAAAA;
@@ -337,11 +354,24 @@ button {
                 left: 0.5em;
                 right: 0.5em;
                 bottom: -1em;
+            } */
+            text-decoration: none;
+            font-style: normal;
+            border: 1px solid #AAAAAA;
+            color: #AAAAAA;
+            border-radius: 50%;
+            font-size: 15px;
+            text-align: center;
+            height: 3.5vh;
+            padding: 0 0.2em;
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            &:hover {
+                border: 1px solid black;
+                color: black;
             }
-                &:hover {
-                    border: 1px solid black;
-                    color: black;
-                }
         }
     }
 }
@@ -355,6 +385,7 @@ h1 {
     display: flex;
     width: 100%;
 }
+
 .already_ {
     width: 90%;
     display: grid;
@@ -366,13 +397,16 @@ h1 {
         justify-self: start;
         font-size: 10px;
         text-decoration: none;
-        white-space: nowrap; 
+        white-space: nowrap;
     }
 }
-.opacity{
-    &:hover{opacity: 0.7;
+
+.opacity {
+    &:hover {
+        opacity: 0.7;
     }
 }
+
 .dont_ {
     width: 90%;
     display: grid;
@@ -402,7 +436,8 @@ h1 {
     .or_ {
         padding: 0 6px;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
             color: #080808;
         }
     }
@@ -457,9 +492,11 @@ a {
 
 @mixin upload {
     border-radius: 5px;
+
     margin: {
-        top:3em;
+        top: 3em;
     }
+
     width: 40%;
     padding: 0.2em 0;
     text-align: center;
@@ -477,23 +514,31 @@ a {
 .takePicture::before {
     content: 'Take picture';
 }
+
 .css-b62m3t-container {
-    width:100%;
+    width: 100%;
     margin-bottom: 1em;
 }
+
 .css-319lph-ValueContainer {
     height: 45px;
 }
-.css-14el2xx-placeholder{padding-bottom: 12px;
+
+.css-14el2xx-placeholder {
+    padding-bottom: 12px;
 }
-.css-1s2u09g-control{
+
+.css-1s2u09g-control {
     height: 45px;
 }
-.css-1okebmr-indicatorSeparator{
+
+.css-1okebmr-indicatorSeparator {
     display: none;
 }
+
 select {
     @include input();
+
     &:invalid {
         color: gray;
     }
@@ -511,19 +556,23 @@ select {
 .lead {
     text-align: center;
     line-height: 1.1;
+
     margin: {
-        bottom:1em;
+        bottom: 1em;
     }
+
     font: {
         size: 1.2em;
-        weight:normal;
+        weight: normal;
     }
 }
-.checked{
+
+.checked {
     margin: {
-        bottom:1.5em;
+        bottom: 1.5em;
     }
 }
+
 .title {
     align-self: flex-start;
     margin-bottom: 1.2em;
@@ -531,18 +580,22 @@ select {
 
 form {
     @include form();
+
     .form-group {
         width: 100%;
     }
-    h3{
-       font: {
-           size: 1.2em;
-           weight:900;
-       }
+
+    h3 {
+        font: {
+            size: 1.2em;
+            weight: 900;
+        }
     }
+
     label {
         @include label();
     }
+
     input {
         @include input();
     }
@@ -583,6 +636,7 @@ form {
 
     .spanning {
         display: block;
+
         .cancel_btn {
             display: grid;
             grid-template-columns: 15% 60% 20%;
@@ -598,10 +652,12 @@ form {
                 grid-column: 2 / 2;
                 font-size: 1.2em;
             }
-            .Madbtn{
+
+            .Madbtn {
                 grid-column: 3 / span 3;
                 justify-self: end;
-                i{
+
+                i {
                     text-decoration: none;
                     font-style: normal;
                     border: 1px solid #AAAAAA;
@@ -614,6 +670,7 @@ form {
                     display: flex;
                     align-items: center;
                     width: 100%;
+
                     &:hover {
                         border: 1px solid #1207AB;
                         color: #1207AB;
@@ -626,7 +683,7 @@ form {
 
     .flex_btn {
         @include flex_btn2();
-        
+
     }
 
     button {
@@ -668,7 +725,8 @@ form {
         button {
             @include continue_btn2();
         }
-        .continue_upload{
+
+        .continue_upload {
             @include continue_btn2();
             width: 70%;
         }

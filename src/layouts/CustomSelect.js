@@ -64,7 +64,7 @@ function CustomSelect(props) {
                 <Select placeholder={'Daily'} options={option2} />
             </span>
             <span className="form-group">
-                <label htmlFor='select'> Number </label>
+                <label htmlFor='select'> Duration </label>
                 <Select placeholder={'1'} options={option3} />
             </span>
         </span>
