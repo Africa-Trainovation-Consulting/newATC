@@ -728,6 +728,7 @@ p {
   font-weight: 300;
   line-height: 200%;
   text-align: justify;
+  word-break: keep-all;
   margin: 1.5vh 0 1.5vh;
   color: rgba(21, 12, 33, 0.59);
 }
@@ -830,6 +831,11 @@ header span.navLinks a, header span.navLinks button {
     margin-left: 1.5vw;
     border-bottom: none;
     width: auto;
+  }
+  header span.navLinks a:not(:last-child):hover, header span.navLinks button:not(:last-child):hover {
+    -webkit-text-decoration: underline solid #1207AB 4px;
+            text-decoration: underline solid #1207AB 4px;
+    text-underline-offset: 4px;
   }
 }
 
@@ -958,11 +964,15 @@ section.students div.tablet img {
       image-rendering: -moz-crisp-edges;
       image-rendering: -o-pixelated;
       image-rendering: pixelated;
+  -webkit-filter: sepia(100%) hue-rotate(90deg) drop-shadow(8px 8px 10px gray);
+          filter: sepia(100%) hue-rotate(90deg) drop-shadow(8px 8px 10px gray);
 }
 
 section.students div.tablet img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-filter: none;
+          filter: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1018,19 +1028,18 @@ section.QHSE img {
   section.QHSE img {
     -webkit-transform: translateY(-8%);
             transform: translateY(-8%);
-    width: 42%;
+    width: 45%;
   }
-}
-
-section.QHSE p {
-  max-width: 85%;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
 }
 
 @media only screen and (min-width: 768px) {
   section.QHSE {
     margin-top: 16vh;
+  }
+  section.QHSE p {
+    max-width: 85%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
@@ -1249,6 +1258,12 @@ footer .links span {
 
 footer .links a, footer .links button {
   margin: 2vh 0;
+}
+
+footer .links svg {
+  width: 10%;
+  vertical-align: middle;
+  margin-right: 0.5vw;
 }
 
 footer .links hr {

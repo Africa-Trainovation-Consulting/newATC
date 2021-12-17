@@ -38,8 +38,10 @@ section {
           object-fit: cover;
           border-radius: $borderRadius;
           image-rendering: pixelated;
+          filter: sepia(100%)hue-rotate(90deg)drop-shadow(8px 8px 10px gray);
           &:hover {
             transform: scale(1.1);
+            filter: none;
           }
         }
       }
@@ -76,14 +78,14 @@ section {
       }
       @include media($laptop) {
         transform: translateY(-8%);
-        width: 42%;
+        width: 45%;
       }
     }
-    p {
-      max-width: 85%;
-      align-self: flex-start;
-    }
     @include media {
+      p {
+        max-width: 85%;
+        align-self: flex-start;
+      }
       margin-top: 8 * $paddingHeight;
     }
     @include media($laptop) {

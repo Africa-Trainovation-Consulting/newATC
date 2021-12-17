@@ -36,8 +36,12 @@ header {
         width: 100%;
         border-bottom: 1px solid $black;
         border-radius: 0;
-
         @include media {
+          &:not(:last-child):hover {
+            text-decoration: underline solid $deepBlue $smallpadding;
+            text-underline-offset: $smallpadding;
+          }
+
           margin-left: $anchorMargin;
           border-bottom: none;
           width: auto;
