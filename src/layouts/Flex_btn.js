@@ -1,13 +1,16 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 function flex_btn(props) {
-    
+
     return (
         <span className="flex_btn">
             <button className="login active" >
-                {props.login}
+                <Link to='/'>
+                    {props.login}
+                </Link>
             </button>
             <button className="signUp regular">
-                {props.signup}
+                <Link to='/signup'>{props.signup}</Link>
             </button>
         </span>
     )

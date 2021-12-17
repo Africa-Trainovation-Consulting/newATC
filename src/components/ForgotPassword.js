@@ -13,7 +13,7 @@ function ForgotPassword(props) {
                 <ContinueBtn to='/createNewPassword' />
             </form>
             <span className="flex_link">
-            <Link to='/forgotpassword' className='opacity' style={{ color: '#262B33', fontSize: '15px' }}>Remember your Password?</Link> <Link to='/' className='opacity' style={{ color: '#1207AB', fontSize: '16px' }}>Login </Link>
+                <Link to='/' className='opacity' style={{ color: '#262B33', fontSize: '15px' }}>Remember your Password?</Link> <Link to='/' className='opacity' style={{ color: '#1207AB', textDecoration: 'none', fontSize: '16px' }}>Login </Link>
             </span>
             {/* 
       <ForgotPassword label='Email' title='FORGOT PASSWORD'/> */}

@@ -181,6 +181,10 @@ $input-bg-color:#Fff;
         opacity: 0.8;
         border: 1px solid #F5F7FA;
     }
+    a{
+        text-decoration: none;
+        color: #423A4B;
+    }
 }
 
 @mixin form {
@@ -312,6 +316,10 @@ button {
 .active {
     border: none;
     @include active-btn();
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .continueWith {
@@ -604,7 +612,9 @@ form {
         @include continue_btn();
     }
 }
-
+.flex_link{
+    margin-top:1em;
+}
 @media screen and (min-width:800px) {
     h1 {
         font-size: 1.5em;
@@ -683,7 +693,7 @@ form {
 
     .flex_btn {
         @include flex_btn2();
-
+        
     }
 
     button {
