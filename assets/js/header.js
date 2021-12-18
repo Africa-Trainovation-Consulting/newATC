@@ -1,20 +1,27 @@
-bgHeader = "#A4A4A4"
+let bgHeader = "#ffffffcc";
+let minHeight = "50";
+let navLinks = document.querySelector(".navLinks");
 window.onscroll = () => {
-  minHeight = "50";
-  scrolling =
+  let scrolling =
     document.body.scrollTop > minHeight ||
     document.documentElement.scrollTop > minHeight;
-     document.getElementsByTagName("header")[0].style.backgroundColor = scrolling
+  document.getElementsByTagName("header")[0].style.backgroundColor = scrolling
     ? bgHeader
     : "#00000000";
- 
 };
-svgs = document.querySelector(".icon").querySelectorAll("svg");
+headerFunction = () => {
+  navLinks.classList.toggle("none");
+  navLinks.classList.toggle("bgMobileHeader");
+  svgs[0].classList.toggle("none");
+  svgs[1].classList.toggle("none");
+};
+let svgs = document.querySelector(".icon").querySelectorAll("svg");
 svgs.forEach((svg) => {
   svg.addEventListener("click", (e) => {
-    document.querySelector(".navLinks").classList.toggle("none");
-    document.querySelector(".navLinks").classList.toggle("bgMobileHeader");
-    svgs[0].classList.toggle("none");
-    svgs[1].classList.toggle("none");
+    headerFunction();
+    e.stopPropagation();
   });
 });
+window.onclick = () => {
+  !navLinks.classList.contains("none") ? headerFunction() : "";
+};

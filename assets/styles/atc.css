@@ -31,7 +31,7 @@
 }
 
 .bgMobileHeader {
-  background-color: #a4a4a4;
+  background-color: white;
 }
 
 @media only screen and (min-width: 768px) {
