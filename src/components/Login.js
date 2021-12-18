@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react'
 import Backdrop from './HOC'
 import { Link } from 'react-router-dom'
 import Formgroup from '../layouts/FormGroup';
@@ -7,6 +8,7 @@ import FlexBtn from '../layouts/Flex_btn';
 import FacebookLogo from '../img/facebookLogo.svg'
 import Google from '.././layouts/socials/Google'
 function Login(props) {
+    useEffect(() => { document.title = 'Login' })
     return (
         <>
             <span className='dont_'>
@@ -26,7 +28,7 @@ function Login(props) {
 
             <form action="post">
                 <h3 className='title'>LOGIN</h3>
-                <Formgroup label='Email' htmlFor='Email' type='email' name='email' placeholder='Enter your email' />
+                <Formgroup size="10" maxLength="50" label='Email' htmlFor='Email' type='email' name='email' placeholder='Enter your email' />
                 <Formgroup label='Password' htmlFor='password' type='password' name='password' placeholder='Enter password' />
                 <ContinueBtn to='signup' />
             </form>
