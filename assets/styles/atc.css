@@ -30,6 +30,16 @@
   background-color: #1207AB !important;
 }
 
+.bgMobileHeader {
+  background-color: #a4a4a4;
+}
+
+@media only screen and (min-width: 768px) {
+  .bgMobileHeader {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
 .linkButton, button {
   color: #fff;
   text-align: center;
@@ -782,6 +792,7 @@ header {
   padding: 2vh 7vw;
   position: fixed;
   z-index: 100;
+  color: #150C21;
   -webkit-box-shadow: 5px 10px 18px #eeeeee00;
           box-shadow: 5px 10px 18px #eeeeee00;
   -webkit-transition: all 0.5s ease;
@@ -824,7 +835,6 @@ header span.navLinks {
 }
 
 header span.navLinks a, header span.navLinks button {
-  color: #150C21;
   text-align: center;
   margin: 1vh 0;
   width: 100%;
@@ -902,10 +912,6 @@ header span.icon svg {
   width: 22.5px;
 }
 
-header span.icon svg:last-child {
-  display: none;
-}
-
 @media only screen and (min-width: 768px) {
   header span.icon {
     display: none;
@@ -956,8 +962,8 @@ section.laptopWoman img:last-child {
 @media only screen and (min-width: 768px) {
   section.laptopWoman img {
     width: 53.8%;
-    -webkit-transform: translate(4.5vw, 0) scale(1.1);
-            transform: translate(4.5vw, 0) scale(1.1);
+    -webkit-transform: translate(0, 0) scale(1.1);
+            transform: translate(0, 0) scale(1.1);
   }
 }
 
@@ -1140,7 +1146,7 @@ section.workstation > div {
 }
 
 section.workstation > div:first-child p {
-  margin-top: 8vh;
+  margin-top: 2vh;
 }
 
 section.workstation > div:first-child .buttons {
@@ -1155,7 +1161,7 @@ section.workstation > div:first-child .buttons a, section.workstation > div:firs
 
 @media only screen and (min-width: 768px) {
   section.workstation > div:first-child .buttons a, section.workstation > div:first-child .buttons button {
-    margin: 12vh 0;
+    margin: 3vh 0 11vh;
   }
   section.workstation > div:first-child .buttons a:first-child, section.workstation > div:first-child .buttons button:first-child {
     border: none;
@@ -1246,7 +1252,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
   footer {
-    padding: 262.5px 0 6vh;
+    padding: 337.5px 0 6vh;
   }
 }
 
