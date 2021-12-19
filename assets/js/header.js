@@ -15,7 +15,7 @@ headerFunction = () => {
   svgs[0].classList.toggle("none");
   svgs[1].classList.toggle("none");
 };
-let svgs = document.querySelector(".icon").querySelectorAll("svg");
+let svgs = document.querySelectorAll(".icon svg");
 svgs.forEach((svg) => {
   svg.addEventListener("click", (e) => {
     headerFunction();

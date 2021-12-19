@@ -906,6 +906,7 @@ header span.icon {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  cursor: pointer;
 }
 
 header span.icon svg {
