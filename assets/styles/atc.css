@@ -848,6 +848,7 @@ header span.navLinks a, header span.navLinks button {
     margin-left: 1.5vw;
     border-bottom: none;
     width: auto;
+    word-break: keep-all;
   }
   header span.navLinks a:not(:last-child):hover, header span.navLinks button:not(:last-child):hover {
     -webkit-text-decoration: underline solid #1207AB 4px;
@@ -859,7 +860,6 @@ header span.navLinks a, header span.navLinks button {
 header span.navLinks a:last-child, header span.navLinks button:last-child {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  font-weight: 600;
   border: 1px solid #150C21;
   border-radius: 10px;
   padding: 0 20px;
@@ -871,6 +871,7 @@ header span.navLinks a:last-child, header span.navLinks button:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 25%;
   }
 }
 
@@ -1201,7 +1202,7 @@ section.workstation > div.contactUs {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-bottom: 0vh;
-  padding-bottom: 12vh;
+  padding: 8vh 7vw;
 }
 
 @media only screen and (min-width: 768px) {

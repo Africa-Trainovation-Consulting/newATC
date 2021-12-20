@@ -191,7 +191,7 @@ section {
           right-radius: 10px;
         }
         margin-bottom: 0vh;
-        padding-bottom: 6 * $paddingHeight;
+        padding: 4 * $paddingHeight $paddingSide;
         @include media {
           margin: -15vh $paddingSide -30vh;
           transform: translateY(10%);
