@@ -9,7 +9,7 @@ function Google(props) {
             : null
     )
     const handleFailure = (result) => {
-        alert(result);
+        alert('Fuck off bitch');
     }
     const handleLogin = (googleData) => {
         console.log(googleData);

@@ -4,9 +4,10 @@ import Backdrop from './HOC'
 import { Link } from 'react-router-dom'
 import Formgroup from '../layouts/FormGroup';
 import ContinueBtn from "../layouts/ContinueBtn";
-import FlexBtn from '../layouts/Flex_btn';
-import FacebookLogo from '../img/facebookLogo.svg'
+import FlexBtn from '../layouts/Flex_btn';/* 
+import FacebookLogo from '../img/facebookLogo.svg' */
 import Google from '.././layouts/socials/Google'
+import Facebook from '.././layouts/socials/Facebook'
 function Login(props) {
     useEffect(() => { document.title = 'Login' })
     return (
@@ -21,9 +22,10 @@ function Login(props) {
             <span className="flex_btn">
                 <Google />
                 OR
-                <button className="signUp socials regular">
+                <Facebook />
+                {/* <button className="signUp socials regular">
                     <img src={FacebookLogo} alt='facebooklogo' />  Facebook
-                </button>
+                </button> */}
             </span>
 
             <form action="post">
