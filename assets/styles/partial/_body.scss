@@ -16,7 +16,7 @@ section {
       @include srcset;
       @include media {
         width: 53.8%;
-        transform: translate(0,0) scale(1.1);
+        transform: translate(0,0) scale(1.1);        
       }
     }
     @include media {
@@ -99,6 +99,7 @@ section {
   &.stem {
     > div {
       padding: $contentPadding;
+      a{margin: 0;}
     }
     .note {
       @include media {

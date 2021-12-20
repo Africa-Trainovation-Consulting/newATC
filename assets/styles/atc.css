@@ -1081,6 +1081,10 @@ section.stem > div {
   padding: 2vh 7vw;
 }
 
+section.stem > div a, section.stem > div button {
+  margin: 0;
+}
+
 @media only screen and (min-width: 768px) {
   section.stem .note {
     max-width: 55%;
@@ -1253,6 +1257,12 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  footer {
+    padding: 217.5px 0 6vh;
+  }
+}
+
+@media only screen and (min-width: 1320px) {
   footer {
     padding: 337.5px 0 6vh;
   }
