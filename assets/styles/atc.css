@@ -862,13 +862,15 @@ header span.navLinks a:last-child, header span.navLinks button:last-child {
   font-weight: 600;
   border: 1px solid #150C21;
   border-radius: 10px;
-  padding: 4px 8px;
+  padding: 0 20px;
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
   header span.navLinks a:last-child, header span.navLinks button:last-child {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1213,7 +1215,7 @@ section.workstation > div.contactUs {
             transform: translateY(10%);
     border-radius: 10px;
     z-index: 0;
-    padding-bottom: 2vh;
+    padding-bottom: 0;
   }
 }
 

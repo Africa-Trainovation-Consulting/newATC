@@ -198,7 +198,7 @@ section {
           transform: translateY(10%);
           border-radius: 10px;
           z-index: 0;
-          padding-bottom: $paddingHeight;
+          padding-bottom: 0;
         }
         @include media(1200px) {
           margin-top: -25vh;
