@@ -924,11 +924,6 @@ header span.icon svg {
 
 section {
   padding: 2vh 7vw;
-  margin: 2vh 0;
-}
-
-section.laptopWoman {
-  margin: 0;
 }
 
 section.laptopWoman div {
@@ -986,7 +981,8 @@ section.laptopWoman img:last-child {
 
 section.students div.tablet img {
   width: 24%;
-  height: 50vh;
+  /*           height: 50vh;
+          max-height: 500px; */
   margin: 6vh 0.5vw;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1204,7 +1200,7 @@ section.workstation > div:first-child img {
 section.workstation > div.contactUs {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  margin-bottom: -10vh;
+  margin-bottom: 0vh;
   padding-bottom: 12vh;
 }
 
@@ -1221,7 +1217,7 @@ section.workstation > div.contactUs {
 
 @media only screen and (min-width: 1200px) {
   section.workstation > div.contactUs {
-    margin-top: -25vh;
+    margin-top: 0vh;
   }
 }
 
@@ -1259,12 +1255,6 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-  footer {
-    padding: 217.5px 0 6vh;
-  }
-}
-
-@media only screen and (min-width: 1320px) {
   footer {
     padding: 337.5px 0 6vh;
   }

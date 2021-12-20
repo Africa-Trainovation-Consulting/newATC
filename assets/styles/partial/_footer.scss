@@ -3,9 +3,6 @@ footer {
   padding-bottom: $paddingHeight;
   padding: 3*$paddingHeight 0 $paddingHeight;
   @include media{
-    padding: 2.9*$headerHeight 0 3 * $paddingHeight;
-  }
-  @include media(1320px){
     padding: 4.5*$headerHeight 0 3 * $paddingHeight;
   }
   section{

@@ -1,9 +1,7 @@
 section {
   padding: $contentPadding;
-  margin: $paddingHeight 0;
 
   &.laptopWoman {
-    margin: 0;
     div {
       padding-top: 1 * $headerHeight;
       @include media {
@@ -34,7 +32,8 @@ section {
       &.tablet {
         img {
           width: 24%;
-          height: 50vh;
+/*           height: 50vh;
+          max-height: 500px; */
           margin: 3 * $paddingHeight $smallMargin;
           object-fit: cover;
           border-radius: $borderRadius;
@@ -191,7 +190,7 @@ section {
           left-radius: 10px;
           right-radius: 10px;
         }
-        margin-bottom: -10vh;
+        margin-bottom: 0vh;
         padding-bottom: 6 * $paddingHeight;
         @include media {
           margin: -15vh $paddingSide -30vh;
@@ -201,7 +200,7 @@ section {
           padding-bottom: 0;
         }
         @include media(1200px) {
-          margin-top: -25vh;
+          margin-top: 0vh;
         }
         p {
           color: $footerColor;
