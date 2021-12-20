@@ -1,4 +1,4 @@
-let bgHeader = "#ffffffcc";
+let bgHeader = "#ffffff";
 let minHeight = "50";
 let navLinks = document.querySelector(".navLinks");
 window.onscroll = () => {

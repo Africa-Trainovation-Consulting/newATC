@@ -31,7 +31,7 @@
 }
 
 .bgMobileHeader {
-  background-color: white;
+  background-color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -791,6 +791,7 @@ header {
   width: 100%;
   padding: 2vh 7vw;
   position: fixed;
+  top: 0;
   z-index: 100;
   color: #150C21;
   -webkit-box-shadow: 5px 10px 18px #eeeeee00;

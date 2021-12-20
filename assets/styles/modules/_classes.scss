@@ -23,7 +23,7 @@
   background-color: $deepBlue !important;
 }
 .bgMobileHeader{
-  background-color:rgba( $white, 1);
+  background-color:$white;
   @include media{
   background-color:rgba( #000, 0);
 
