@@ -46,19 +46,19 @@ header {
           margin-left: $anchorMargin;
           border-bottom: none;
           width: auto;
-          word-break: keep-all;
         }
 
         &:last-child {
           transition: all 0.3s;
           border: 1px solid $black;
           border-radius: 10px;
-          padding: 0 (5 * $smallpadding);
           display: none;
 
           @include media {
             display: flex;
             width: 25%;
+            text-align: center;
+            justify-content: center;
           }
         }
       }
@@ -71,7 +71,8 @@ header {
         @include flex(row, space-between, center);
         position: static;
         width: auto;
-      }
+        min-width: 55%;
+        }
     }
 
     &.icon {
