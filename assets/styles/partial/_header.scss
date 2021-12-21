@@ -57,6 +57,8 @@ header {
           @include media {
             display: flex;
             width: 25%;
+            height: 3* $paddingHeight;
+            line-height: 3* $paddingHeight;
             text-align: center;
             justify-content: center;
           }

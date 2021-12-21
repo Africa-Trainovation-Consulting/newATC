@@ -870,6 +870,8 @@ header span.navLinks a:last-child, header span.navLinks button:last-child {
     display: -ms-flexbox;
     display: flex;
     width: 25%;
+    height: 6vh;
+    line-height: 6vh;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
