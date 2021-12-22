@@ -29,7 +29,7 @@ export default class Facebook extends Component {
                 callback={this.responseFacebook} 
                 render={renderProps => (
                     <button className="login socials regular" type="submit" onClick={renderProps.onClick}>
-                    <img src={FacebookLogo} alt='googlelogo' />  Google</button>
+                    <img src={FacebookLogo} alt='googlelogo' />  facebook</button>
                   )}
                 />
                 )
