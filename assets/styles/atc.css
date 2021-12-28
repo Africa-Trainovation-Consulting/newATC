@@ -817,7 +817,7 @@ header a svg:nth-child(2), header button svg:nth-child(2) {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   header a svg:nth-child(2), header button svg:nth-child(2) {
     display: inline;
   }
@@ -851,7 +851,7 @@ header span.navLinks {
         -ms-flex-direction: row;
             flex-direction: row;
     position: static;
-    max-width: 70%;
+    max-width: 80%;
   }
 }
 

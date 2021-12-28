@@ -13,7 +13,7 @@ header {
   a {
     svg:nth-child(2) {
       display: none;
-      @include media {
+      @include media($laptop) {
         display: inline;
       }
     }
@@ -33,7 +33,7 @@ header {
       @include media {
         @include flex(row, space-between, center);
         position: static;
-        max-width: 70%;
+        max-width: 80%;
         }
         @include media($laptop){
           max-width: 55%;
@@ -51,7 +51,6 @@ header {
             text-underline-offset: $smallpadding;
           }
 
-          //margin-left: $anchorMargin;
           border-bottom: none;
           width: auto;
         }
