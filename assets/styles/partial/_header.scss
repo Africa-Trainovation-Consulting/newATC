@@ -30,6 +30,14 @@ header {
       right: 0;
       top: $headerHeight;
       width: 100%;
+      @include media {
+        @include flex(row, space-between, center);
+        position: static;
+        max-width: 70%;
+        }
+        @include media($laptop){
+          max-width: 55%;
+        }
 
       a {
         text-align: center;
@@ -43,7 +51,7 @@ header {
             text-underline-offset: $smallpadding;
           }
 
-          margin-left: $anchorMargin;
+          //margin-left: $anchorMargin;
           border-bottom: none;
           width: auto;
         }
@@ -65,16 +73,6 @@ header {
         }
       }
 
-      @include media($tablet) {
-        flex-direction: column;
-      }
-
-      @include media {
-        @include flex(row, space-between, center);
-        position: static;
-        width: auto;
-        min-width: 55%;
-        }
     }
 
     &.icon {

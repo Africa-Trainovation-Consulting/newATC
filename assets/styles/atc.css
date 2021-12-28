@@ -835,6 +835,32 @@ header span.navLinks {
   width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+  header span.navLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: static;
+    max-width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header span.navLinks {
+    max-width: 55%;
+  }
+}
+
 header span.navLinks a, header span.navLinks button {
   text-align: center;
   margin: 1vh 0;
@@ -845,7 +871,6 @@ header span.navLinks a, header span.navLinks button {
 
 @media only screen and (min-width: 768px) {
   header span.navLinks a, header span.navLinks button {
-    margin-left: 1.5vw;
     border-bottom: none;
     width: auto;
   }
@@ -876,36 +901,6 @@ header span.navLinks a:last-child, header span.navLinks button:last-child {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  header span.navLinks {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  header span.navLinks {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    position: static;
-    width: auto;
-    min-width: 55%;
   }
 }
 
@@ -1274,7 +1269,8 @@ footer * {
   color: #A4A4A4;
 }
 
-footer a, footer button, footer div {
+footer a, footer button,
+footer div {
   font-size: 1em;
   font-weight: 100;
   margin: 0.5vh 0;
@@ -1292,6 +1288,22 @@ footer .links {
 
 footer .links span {
   margin: 2vh 0 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .links span svg {
+  width: 5%;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .links span svg {
+    display: none;
+  }
 }
 
 footer .links a, footer .links button {

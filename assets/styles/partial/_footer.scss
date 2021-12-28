@@ -1,51 +1,64 @@
 footer {
-  padding-top:$paddingHeight;
+  padding-top: $paddingHeight;
   padding-bottom: $paddingHeight;
-  padding: 3*$paddingHeight 0 $paddingHeight;
-  @include media{
-    padding: 4.5*$headerHeight 0 3 * $paddingHeight;
+  padding: 3 * $paddingHeight 0 $paddingHeight;
+  @include media {
+    padding: 4.5 * $headerHeight 0 3 * $paddingHeight;
   }
-  section{
+  section {
     margin-bottom: 0;
   }
   background-color: $black;
   * {
     color: $footerColor;
   }
-  a,div{
+  a,
+  div {
     font-size: 1em;
     font-weight: 100;
     margin: 0.5vh 0;
   }
-  span {  color: $white;}
+  span {
+    color: $white;
+  }
   .links {
-    span{
+    span {
       margin: 2vh 0 4vh;
+      display: flex;
+      justify-content: space-between;
+      svg{
+        width: 5%;
+        @include media{
+          display: none;
+        }
+      }
     }
-    a{
-      margin: 2vh 0 ;
+    a {
+      margin: 2vh 0;
     }
-    svg{
+    svg {
       width: 10%;
       vertical-align: middle;
       margin-right: $smallMargin;
     }
-    hr{
+    hr {
       margin: -3vh 0 0;
     }
-   
+
     @include media {
-      div{
+      div {
         width: auto;
       }
-      hr{
+      hr {
         display: none;
       }
       justify-content: space-between;
     }
     align-items: flex-start;
   }
-  div.flex_c {  align-items: flex-start;}
+  div.flex_c {
+    align-items: flex-start;
+  }
   .socials {
     .follow {
       a {
