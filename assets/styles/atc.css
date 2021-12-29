@@ -215,6 +215,50 @@
   display: none;
 }
 
+.none_m {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (max-width: 768px) {
+  .none_m {
+    display: none;
+  }
+}
+
+.none_t {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (max-width: 1024px) {
+  .none_t {
+    display: none;
+  }
+}
+
 .w25 {
   width: 25%;
 }
@@ -980,7 +1024,7 @@ section.laptopWoman img:last-child {
   }
 }
 
-section.students div.tablet img {
+section#acad div.tablet img {
   width: 24%;
   /*           height: 50vh;
           max-height: 500px; */
@@ -995,7 +1039,7 @@ section.students div.tablet img {
       image-rendering: pixelated;
 }
 
-section.students div.tablet img:hover {
+section#acad div.tablet img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-filter: sepia(100%) hue-rotate(90deg) drop-shadow(8px 8px 10px gray);
@@ -1005,28 +1049,28 @@ section.students div.tablet img:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  section.students div.note {
+  section#acad div.note {
     width: 70%;
     text-align: center;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  section.students div.note {
+  section#acad div.note {
     width: 50%;
   }
 }
 
-section.QHSE {
+section#qhse {
   background-color: #1207AB;
   padding-top: 8vh;
 }
 
-section.QHSE * {
+section#qhse * {
   color: #fff;
 }
 
-section.QHSE a, section.QHSE button {
+section#qhse a, section#qhse button {
   border: none;
   background-color: #0135d6;
   -webkit-box-shadow: 2px 2px #000;
@@ -1036,25 +1080,25 @@ section.QHSE a, section.QHSE button {
 }
 
 @media only screen and (min-width: 768px) {
-  section.QHSE a, section.QHSE button {
+  section#qhse a, section#qhse button {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
 }
 
-section.QHSE img {
+section#qhse img {
   -webkit-transform: translate(-3.125%, 0);
           transform: translate(-3.125%, 0);
 }
 
 @media only screen and (min-width: 768px) {
-  section.QHSE img {
+  section#qhse img {
     max-width: 50%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  section.QHSE img {
+  section#qhse img {
     -webkit-transform: translateY(-8%);
             transform: translateY(-8%);
     width: 45%;
@@ -1062,36 +1106,36 @@ section.QHSE img {
 }
 
 @media only screen and (min-width: 768px) {
-  section.QHSE {
+  section#qhse {
     margin-top: 16vh;
   }
-  section.QHSE p {
+  section#qhse p {
     max-width: 85%;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
 }
 
-section.stem {
+section#steam {
   padding: 0;
 }
 
-section.stem > div {
+section#steam > div {
   padding: 2vh 7vw;
 }
 
-section.stem > div a, section.stem > div button {
+section#steam > div a, section#steam > div button {
   margin: 0;
 }
 
 @media only screen and (min-width: 768px) {
-  section.stem .note {
+  section#steam .note {
     max-width: 55%;
     padding-top: 10vh;
   }
 }
 
-section.stem .kids img {
+section#steam .kids img {
   height: 50vh;
   width: 90%;
   margin-bottom: 4vh;
@@ -1106,19 +1150,19 @@ section.stem .kids img {
 }
 
 @media only screen and (min-width: 768px) {
-  section.stem .kids img {
+  section#steam .kids img {
     height: 35vh;
     width: 30%;
     margin-top: 10vh;
   }
 }
 
-section.stem .kids img:hover {
+section#steam .kids img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-section.stem .gallery {
+section#steam .gallery {
   height: 12vh;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-18.66%, #a5a6f6), color-stop(90.15%, rgba(252, 221, 236, 0)));
   background-image: linear-gradient(0deg, #a5a6f6 -18.66%, rgba(252, 221, 236, 0) 90.15%);
@@ -1128,7 +1172,7 @@ section.stem .gallery {
 }
 
 @media only screen and (min-width: 768px) {
-  section.stem {
+  section#steam {
     background-image: url("/assets/img/airship.svg");
     background-repeat: no-repeat;
     background-size: center center;
@@ -1136,69 +1180,65 @@ section.stem .gallery {
   }
 }
 
-section.workstation {
+section#workstation {
   padding: 0;
 }
 
 @media only screen and (min-width: 1024px) {
-  section.workstation {
+  section#workstation {
     margin-top: -15vh;
   }
 }
 
-section.workstation > div {
+section#workstation > div {
   padding: 2vh 7vw;
 }
 
-section.workstation > div:first-child p {
+section#workstation > div:first-child p {
   margin-top: 2vh;
 }
 
-section.workstation > div:first-child .buttons {
+section#workstation > div:first-child .buttons {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
-section.workstation > div:first-child .buttons a, section.workstation > div:first-child .buttons button {
+section#workstation > div:first-child .buttons a, section#workstation > div:first-child .buttons button {
   margin: 2vh 0;
 }
 
 @media only screen and (min-width: 768px) {
-  section.workstation > div:first-child .buttons a, section.workstation > div:first-child .buttons button {
+  section#workstation > div:first-child .buttons a, section#workstation > div:first-child .buttons button {
     margin: 3vh 0 11vh;
   }
-  section.workstation > div:first-child .buttons a:first-child, section.workstation > div:first-child .buttons button:first-child {
+  section#workstation > div:first-child .buttons a:first-child, section#workstation > div:first-child .buttons button:first-child {
     border: none;
     margin-right: 3vw;
   }
-  section.workstation > div:first-child .buttons a:last-child, section.workstation > div:first-child .buttons button:last-child {
+  section#workstation > div:first-child .buttons a:last-child, section#workstation > div:first-child .buttons button:last-child {
     width: 25%;
   }
 }
 
-section.workstation > div:first-child img {
+section#workstation > div:first-child img {
   -ms-interpolation-mode: nearest-neighbor;
       image-rendering: -webkit-optimize-contrast;
       image-rendering: -moz-crisp-edges;
       image-rendering: -o-pixelated;
       image-rendering: pixelated;
-  -webkit-transform: translate(-12.5%, 0);
-          transform: translate(-12.5%, 0);
   margin-top: -25%;
 }
 
 @media only screen and (min-width: 768px) {
-  section.workstation > div:first-child img {
+  section#workstation > div:first-child img {
     width: 50%;
-    -webkit-transform: translate(0);
-            transform: translate(0);
     margin: 0;
     z-index: 1;
   }
 }
 
-section.workstation > div.contactUs {
+section#workstation > div#contactUs {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-bottom: 0vh;
@@ -1206,7 +1246,7 @@ section.workstation > div.contactUs {
 }
 
 @media only screen and (min-width: 768px) {
-  section.workstation > div.contactUs {
+  section#workstation > div#contactUs {
     margin: -15vh 7vw -30vh;
     -webkit-transform: translateY(10%);
             transform: translateY(10%);
@@ -1217,31 +1257,31 @@ section.workstation > div.contactUs {
 }
 
 @media only screen and (min-width: 1200px) {
-  section.workstation > div.contactUs {
+  section#workstation > div#contactUs {
     margin-top: 0vh;
   }
 }
 
-section.workstation > div.contactUs p {
+section#workstation > div#contactUs p {
   color: #A4A4A4;
 }
 
 @media only screen and (min-width: 768px) {
-  section.workstation > div.contactUs p {
+  section#workstation > div#contactUs p {
     max-width: 85%;
   }
 }
 
-section.workstation > div.contactUs h4 {
+section#workstation > div#contactUs h4 {
   color: #a6efff;
 }
 
-section.workstation > div.contactUs a, section.workstation > div.contactUs button {
+section#workstation > div#contactUs a, section#workstation > div#contactUs button {
   border: 1px solid #fff;
 }
 
 @media only screen and (min-width: 768px) {
-  section.workstation > div.contactUs a, section.workstation > div.contactUs button {
+  section#workstation > div#contactUs a, section#workstation > div#contactUs button {
     width: 50%;
     margin-left: 4vw;
     padding: 0 5px;

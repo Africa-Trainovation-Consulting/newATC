@@ -27,7 +27,7 @@ section {
       }
     }
   }
-  &.students {
+  &#acad {
     div {
       &.tablet {
         img {
@@ -57,7 +57,7 @@ section {
       }
     }
   }
-  &.QHSE {
+  &#qhse {
     background-color: $deepBlue;
     padding-top: 4 * $paddingHeight;
     * {
@@ -95,7 +95,7 @@ section {
       }
     }
   }
-  &.stem {
+  &#steam {
     > div {
       padding: $contentPadding;
       a{margin: 0;}
@@ -145,7 +145,7 @@ section {
       }
     }
   }
-  &.workstation {
+  &#workstation {
     padding: 0;
     @include media($laptop) {
       margin-top: -15vh;
@@ -175,17 +175,15 @@ section {
         }
         img {
           image-rendering: pixelated;
-          transform: translate(-12.5%, 0);
           margin-top: -25%;
           @include media($tablet) {
             width: 50%;
-            transform: translate(0);
             margin: 0;
             z-index: 1;
           }
         }
       }
-      &.contactUs {
+      &#contactUs {
         border-top: {
           left-radius: 10px;
           right-radius: 10px;

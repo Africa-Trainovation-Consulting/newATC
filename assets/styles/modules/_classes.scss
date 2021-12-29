@@ -22,12 +22,11 @@
 .bgBlue {
   background-color: $deepBlue !important;
 }
-.bgMobileHeader{
-  background-color:$white;
-  @include media{
-  background-color:rgba( #000, 0);
-
-}
+.bgMobileHeader {
+  background-color: $white;
+  @include media {
+    background-color: rgba(#000, 0);
+  }
 }
 .linkButton {
   color: #fff;
@@ -43,12 +42,11 @@
   transition: all 0.3s ease-in-out;
   font-size: $defaultFontSize;
   width: 100%;
-  @include media{
+  @include media {
     width: 24vw;
   }
-  @include media($laptop){
+  @include media($laptop) {
     width: 18vw;
-    
   }
   //further classify buttons based on width and Color
 }
@@ -124,6 +122,20 @@
 
 .none {
   display: none;
+  //starts showing from on tablet
+  &_m {
+    @include flex;
+    @include mediaR {
+      display: none;
+    }
+  }
+  //only shows on laptop
+  &_t {
+    @include flex;
+    @include mediaR($laptop) {
+      display: none;
+    }
+  }
 }
 
 .w {
