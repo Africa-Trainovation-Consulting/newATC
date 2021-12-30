@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 function ContinueBtn(props) {
     function continueHandler(event) {
         event.stopPropagation();
-        console.log('goat')
     } 
     return (
         <Link to={props.to}>
