@@ -8,8 +8,14 @@ import FlexBtn from '../layouts/Flex_btn';/*
 import FacebookLogo from '../img/facebookLogo.svg' */
 import Google from '.././layouts/socials/Google'
 import Facebook from '.././layouts/socials/Facebook'
+import useForm from '../useForm';
 function Login(props) {
     useEffect(() => { document.title = 'Login' })
+    const submit = e => {
+        e.preventDefault()
+        document.getElementsByClassName('error')[0].innerHTML = ""
+      }
+    const {handleChange, values} = useForm();
     return (
         <>
             <span className='dont_'>
@@ -28,10 +34,10 @@ function Login(props) {
                 </button> */}
             </span>
 
-            <form action="post">
+            <form action="post" name="form" method="post" validate="true" autoComplete="on" onSubmit={submit}>
                 <h3 className='title'>LOGIN</h3>
-                <Formgroup size="10" maxLength="50" label='Email' htmlFor='Email' type='email' name='email' placeholder='Enter your email' />
-                <Formgroup label='Password' htmlFor='password' type='password' name='password' placeholder='Enter password' />
+                <Formgroup value={values.email} onChange={handleChange} required size="10" maxLength="50" label='Email' htmlFor='email' id='email' type='email' name='email' placeholder='Enter your email' />
+                <Formgroup value={values.password} onChange={handleChange} required label='Password' minLength='6' htmlFor='password' id='password' type='password' name='password' placeholder='Enter password' />
                 <ContinueBtn to='signup' />
             </form>
             <Link to='/forgotpassword' className='opacity' style={{ color: '#262B33', marginTop: '2em', fontSize: '15px' }}>Forgot Password?</Link>
