@@ -138,6 +138,9 @@
   }
 }
 
+.rotate{
+  transform:rotate(180deg)
+}
 .w {
   $widths: 25, 33, 50, 60, 75, 100;
   @each $width in $widths {
