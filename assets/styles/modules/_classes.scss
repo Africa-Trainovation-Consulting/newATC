@@ -125,7 +125,7 @@
   //starts showing from on tablet
   &_m {
     @include flex;
-    @include mediaR {
+    @include mediaR(767px) {//tablet -1 to avoid error @768px
       display: none;
     }
   }
