@@ -9,13 +9,11 @@ import FacebookLogo from '../img/facebookLogo.svg' */
 import Google from '.././layouts/socials/Google'
 import Facebook from '.././layouts/socials/Facebook'
 import useForm from '../useForm';
+import validate from '../validateInfo';
 function Login(props) {
     useEffect(() => { document.title = 'Login' })
-    const submit = e => {
-        e.preventDefault()
-        document.getElementsByClassName('error')[0].innerHTML = ""
-      }
-    const {handleChange, values} = useForm();
+    
+    const {handleChange, values, submit, errors} = useForm(validate);
     return (
         <>
             <span className='dont_'>
@@ -37,7 +35,9 @@ function Login(props) {
             <form action="post" name="form" method="post" validate="true" autoComplete="on" onSubmit={submit}>
                 <h3 className='title'>LOGIN</h3>
                 <Formgroup value={values.email} onChange={handleChange} required size="10" maxLength="50" label='Email' htmlFor='email' id='email' type='email' name='email' placeholder='Enter your email' />
+                {errors.email && <i>{errors.email}</i>}
                 <Formgroup value={values.password} onChange={handleChange} required label='Password' minLength='6' htmlFor='password' id='password' type='password' name='password' placeholder='Enter password' />
+                {errors.password && <i>{errors.password}</i>}
                 <ContinueBtn to='signup' />
             </form>
             <Link to='/forgotpassword' className='opacity' style={{ color: '#262B33', marginTop: '2em', fontSize: '15px' }}>Forgot Password?</Link>
