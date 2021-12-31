@@ -216,46 +216,46 @@
 }
 
 .none_m {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: none;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) {
   .none_m {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
 .none_t {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: none;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .none_t {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -986,6 +986,12 @@ section.laptopWoman div {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  section.laptopWoman div {
+    width: 55%;
+  }
+}
+
 section.laptopWoman img {
   width: 100%;
   -webkit-transform: scale(1.1);
@@ -1027,6 +1033,10 @@ section.laptopWoman img:last-child {
     background-position: 200% -100%;
     background-size: 75% 75%;
   }
+}
+
+section#acad div.tablet {
+  width: 100%;
 }
 
 section#acad div.tablet img {
@@ -1121,6 +1131,12 @@ section#qhse img {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  section#qhse div {
+    max-width: 55%;
+  }
+}
+
 section#steam {
   padding: 0;
 }
@@ -1199,6 +1215,12 @@ section#workstation > div {
   padding: 2vh 7vw;
 }
 
+@media only screen and (min-width: 1024px) {
+  section#workstation > div:first-child > div {
+    width: 55%;
+  }
+}
+
 section#workstation > div:first-child p {
   margin-top: 2vh;
 }
@@ -1237,9 +1259,15 @@ section#workstation > div:first-child img {
 
 @media only screen and (min-width: 768px) {
   section#workstation > div:first-child img {
-    width: 50%;
-    margin: 0;
+    margin: -18% 0 0 5%;
     z-index: 1;
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section#workstation > div:first-child img {
+    margin-top: -10%;
   }
 }
 
@@ -1339,6 +1367,7 @@ footer .links span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 footer .links span svg {

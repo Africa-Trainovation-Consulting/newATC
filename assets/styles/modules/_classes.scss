@@ -124,16 +124,16 @@
   display: none;
   //starts showing from on tablet
   &_m {
-    @include flex;
-    @include mediaR(767px) {//tablet -1 to avoid error @768px
-      display: none;
+    display: none;
+    @include media {
+      @include flex;
     }
   }
   //only shows on laptop
   &_t {
-    @include flex;
-    @include mediaR($laptop) {
-      display: none;
+    display: none;
+    @include media($laptop) {
+      @include flex;
     }
   }
 }

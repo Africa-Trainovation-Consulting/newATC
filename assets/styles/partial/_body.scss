@@ -7,6 +7,9 @@ section {
       @include media {
         padding-top: 2 * $headerHeight;
       }
+      @include media($laptop) {
+        width: 55%;
+      }
     }
     img {
       width: 100%;
@@ -14,7 +17,7 @@ section {
       @include srcset;
       @include media {
         width: 53.8%;
-        transform: translate(0,0) scale(1.1);        
+        transform: translate(0, 0) scale(1.1);
       }
     }
     @include media {
@@ -30,9 +33,10 @@ section {
   &#acad {
     div {
       &.tablet {
+        width: 100%;
         img {
           width: 24%;
-/*           height: 50vh;
+          /*           height: 50vh;
           max-height: 500px; */
           margin: 3 * $paddingHeight $smallMargin;
           object-fit: cover;
@@ -40,9 +44,8 @@ section {
           image-rendering: pixelated;
           &:hover {
             transform: scale(1.1);
-            filter: sepia(100%)hue-rotate(90deg)drop-shadow(8px 8px 10px gray);
+            filter: sepia(100%) hue-rotate(90deg) drop-shadow(8px 8px 10px gray);
             filter: grayscale(100%);
-            
           }
         }
       }
@@ -91,14 +94,16 @@ section {
     }
     @include media($laptop) {
       div {
-        //        max-width: 50%;
+        max-width: 55%;
       }
     }
   }
   &#steam {
     > div {
       padding: $contentPadding;
-      a{margin: 0;}
+      a {
+        margin: 0;
+      }
     }
     .note {
       @include media {
@@ -153,6 +158,11 @@ section {
     > div {
       padding: $contentPadding;
       &:first-child {
+        > div {
+          @include media($laptop) {
+            width: 55%;
+          }
+        }
         p {
           margin-top: $paddingHeight;
         }
@@ -162,7 +172,7 @@ section {
           a {
             margin: $paddingHeight 0;
             @include media {
-              margin: 1.5*$paddingHeight 0 5.5* $paddingHeight;
+              margin: 1.5 * $paddingHeight 0 5.5 * $paddingHeight;
               &:first-child {
                 border: none;
                 margin-right: 3vw;
@@ -177,9 +187,12 @@ section {
           image-rendering: pixelated;
           margin-top: -25%;
           @include media($tablet) {
-            width: 50%;
-            margin: 0;
+            margin: -18% 0 0 5%;
             z-index: 1;
+            width: 45%;
+          }
+          @include media($laptop) {
+            margin-top: -10%;
           }
         }
       }

@@ -26,6 +26,7 @@ footer {
       margin: 2vh 0 4vh;
       display: flex;
       justify-content: space-between;
+      width: 100%;
       svg{
         width: 5%;
         @include media{
