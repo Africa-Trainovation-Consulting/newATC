@@ -12,7 +12,6 @@ import useForm from '../useForm';
 import validate from '../validateInfo';
 function Login(props) {
     useEffect(() => { document.title = 'Login' })
-    
     const {handleChange, values, submit, errors} = useForm(validate);
     return (
         <>
@@ -36,7 +35,7 @@ function Login(props) {
                 <h3 className='title'>LOGIN</h3>
                 <Formgroup value={values.email} onChange={handleChange} required size="10" maxLength="50" label='Email' htmlFor='email' id='email' type='email' name='email' placeholder='Enter your email' />
                 {errors.email && <i>{errors.email}</i>}
-                <Formgroup value={values.password} onChange={handleChange} required label='Password' minLength='6' htmlFor='password' id='password' type='password' name='password' placeholder='Enter password' />
+                <Formgroup value={values.password} onChange={handleChange} required label='Password' minLength='8' htmlFor='password' id='password' type='password' name='password' placeholder='Enter password' />
                 {errors.password && <i>{errors.password}</i>}
                 <ContinueBtn to='signup' />
             </form>

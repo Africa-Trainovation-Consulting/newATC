@@ -4,8 +4,12 @@ import { useState } from 'react'
 
 const useForm = validate => {
     const [values, setValues] = useState({
+        fullname: '',
         email: '',
-        password: ''
+        address:'',
+        phonenumber:'',
+        password: '',
+        confirmPassword:''
     })
     const [errors, setErrors] = useState({})
 

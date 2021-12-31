@@ -23,12 +23,12 @@ function SignUp(props) {
             </span>
             <form action="post">
                 <h3 className='title'>SIGN UP</h3>
-                <Formgroup label='Full Name' htmlFor='name' type='text' name='name' placeholder='Enter your full name' />
-                <Formgroup label='Email' htmlFor='Email' type='email' name='email' placeholder='Enter your email' />
-                <Formgroup label='Home Address' htmlFor='Address' type='address' name='address' placeholder='Enter your home address' />
-                <Formgroup label='Phone Number' htmlFor='Phone' type='tel' name='phone' placeholder='Enter phone number' />
-                <Formgroup label='Password' htmlFor='password' type='password' name='password' placeholder='Enter password' />
-                <Formgroup label='Confirm Password' htmlFor='password' type='password' name='confirmPassword' placeholder='Confirm password' />
+                <Formgroup label='Full Name' htmlFor='name' minLength='10' maxLength="60" id='name' type='text' name='fullname' placeholder='Enter your full name'  required/>
+                <Formgroup label='Email' htmlFor='email' maxLength="50" id='email' type='email' name='email' placeholder='Enter your email'  required/>
+                <Formgroup label='Home Address' htmlFor='address' id='address' type='address' name='address' placeholder='Enter your home address' />
+                <Formgroup label='Phone Number' htmlFor='Phone' id='Phone' minLength='11' maxLength="15"  type='tel' name='phonenumber' placeholder='Enter phone number'  required/>
+                <Formgroup label='Password' id='password'  minLength='8' htmlFor='password' type='password' name='password' placeholder='Enter password' required/>
+                <Formgroup label='Confirm Password'  id='confirmPassword' minLength='8' htmlFor='confirmPassword' type='password' name='confirmPassword' required placeholder='Confirm password' />
                 <ContinueBtn to='/upload' />
             </form>
         </>
