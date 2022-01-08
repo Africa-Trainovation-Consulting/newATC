@@ -29,7 +29,8 @@ function Google(props) {
                     <GoogleLogin render={renderProps => (
                         <button className="login socials regular" type="submit" onClick={renderProps.onClick}>
                         <img src={GoogleLogo} alt='googlelogo' />  Google</button>
-                      )}  clientId='299026080175-aniok2a19bldg972gn6ulkibf297h5bp.apps.googleusercontent.com' onSuccess={handleLogin} onFailure={handleFailure} cookiePolicy={'single_host_origin'}></GoogleLogin>
+                        
+                      )}  clientId='299026080175-buro0lat3f7iu915r50ksvdm45n2trep.apps.googleusercontent.com' onSuccess={handleLogin} onFailure={handleFailure} cookiePolicy={'single_host_origin'}></GoogleLogin>
                 )
             }
         </>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import FacebookLogin  from 'react-facebook-login'
+import FacebookLogin  from 'react-facebook-login/dist/facebook-login-render-props'
 import FacebookLogo from '../../img/facebookLogo.svg'
 export default class Facebook extends Component {
     
@@ -30,15 +30,15 @@ export default class Facebook extends Component {
                 callback={this.responseFacebook}
                 render={renderProps => (
                     <button className="login socials regular" type="submit" onClick={renderProps.onClick}>
-                    <img src={FacebookLogo} alt='googlelogo' />  facebook</button>
+                    <img src={FacebookLogo} alt='Facebooklogo' />  facebook</button>
                   )}
                 />
                 )
         }
         return (
-            <div>
+            <>
                 {fbContent}
-            </div>
+            </>
         )
     }
 }

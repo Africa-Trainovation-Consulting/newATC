@@ -36,5 +36,14 @@ export default function validateInfo(values) {
     }else if (values.confirmPassword !== values.password) {
         errors.confirmPassword = 'Passwords do not match, please check and try again.'
     }
+
+    //Choose PLan
+
+
+
+
+
+
+
     return errors;
 }

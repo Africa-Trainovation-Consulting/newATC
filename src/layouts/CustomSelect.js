@@ -53,7 +53,6 @@ function CustomSelect(props) {
     }
 
     return <>
-
         <span className="form-group">
             <label htmlFor='select'> Choose a Package </label>
             <Select placeholder={'Freelancer'} options={options} style={selectStyle} />
@@ -64,8 +63,8 @@ function CustomSelect(props) {
                 <Select placeholder={'Daily'} options={option2} />
             </span>
             <span className="form-group">
-                <label htmlFor='select'> Duration </label>
-                <Select placeholder={'1'} options={option3} />
+                <label htmlFor='select' name='react-select-4-input'> Duration </label>
+                <Select  placeholder={'1'} options={option3} />
             </span>
         </span>
 
