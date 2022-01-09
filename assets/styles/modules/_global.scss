@@ -93,6 +93,22 @@ h1 {
     font-size: 2.95em;
   }
 }
+h2 {
+  font: {
+    size: 7.3vw;
+    weight: 700;
+  }
+  @include margin();
+  @include media(540px) {
+    font-size: 6.0vw;
+  }
+  @include media {
+    font-size: 3.2vw;
+  }
+  @include media($laptop) {
+    font-size: 2.95em;
+  }
+}
 h3 {
   font: {
     size: 1.4em;

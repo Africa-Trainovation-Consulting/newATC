@@ -739,6 +739,30 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 7.3vw;
+  font-weight: 700;
+  margin: 3vh 0 3vh;
+}
+
+@media only screen and (min-width: 540px) {
+  h2 {
+    font-size: 6.0vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 3.2vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 2.95em;
+  }
+}
+
 h3 {
   font-size: 1.4em;
   font-weight: 300;
@@ -1108,14 +1132,16 @@ section#qhse img {
 
 @media only screen and (min-width: 768px) {
   section#qhse img {
+    -webkit-transform: translate(3.5%, 0);
+            transform: translate(3.5%, 0);
     max-width: 50%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   section#qhse img {
-    -webkit-transform: translateY(-8%);
-            transform: translateY(-8%);
+    -webkit-transform: translate(3.5%, -24%);
+            transform: translate(3.5%, -24%);
     width: 45%;
   }
 }
@@ -1123,11 +1149,9 @@ section#qhse img {
 @media only screen and (min-width: 768px) {
   section#qhse {
     margin-top: 16vh;
-  }
-  section#qhse p {
-    max-width: 85%;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1205,12 +1229,6 @@ section#workstation {
   padding: 0;
 }
 
-@media only screen and (min-width: 1024px) {
-  section#workstation {
-    margin-top: -15vh;
-  }
-}
-
 section#workstation > div {
   padding: 2vh 7vw;
 }
@@ -1259,7 +1277,7 @@ section#workstation > div:first-child img {
 
 @media only screen and (min-width: 768px) {
   section#workstation > div:first-child img {
-    margin: -18% 0 0 5%;
+    margin-bottom: 5%;
     z-index: 1;
     width: 45%;
   }

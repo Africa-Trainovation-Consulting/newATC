@@ -78,19 +78,17 @@ section {
     img {
       transform: translate(-3.125%, 0);
       @include media {
+        transform: translate(3.5%, 0);
         max-width: 50%;
       }
       @include media($laptop) {
-        transform: translateY(-8%);
+        transform: translate(3.5%,-24%);
         width: 45%;
       }
     }
     @include media {
-      p {
-        max-width: 85%;
-        align-self: flex-start;
-      }
       margin-top: 8 * $paddingHeight;
+      align-items: flex-start;
     }
     @include media($laptop) {
       div {
@@ -153,7 +151,7 @@ section {
   &#workstation {
     padding: 0;
     @include media($laptop) {
-      margin-top: -15vh;
+      //margin-top: -15vh;
     }
     > div {
       padding: $contentPadding;
@@ -187,7 +185,7 @@ section {
           image-rendering: pixelated;
           margin-top: -25%;
           @include media($tablet) {
-            margin: -18% 0 0 5%;
+            margin-bottom: 5%;
             z-index: 1;
             width: 45%;
           }
