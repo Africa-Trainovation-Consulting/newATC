@@ -1213,7 +1213,7 @@ section#steam .gallery {
   background-image: linear-gradient(0deg, #a5a6f6 -18.66%, rgba(252, 221, 236, 0) 90.15%);
   background-color: #fff;
   width: 100%;
-  margin: 12vh 0;
+  margin: 12vh 0 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1231,6 +1231,9 @@ section#workstation {
 
 section#workstation > div {
   padding: 2vh 7vw;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1272,20 +1275,16 @@ section#workstation > div:first-child img {
       image-rendering: -moz-crisp-edges;
       image-rendering: -o-pixelated;
       image-rendering: pixelated;
-  margin-top: -25%;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
 }
 
 @media only screen and (min-width: 768px) {
   section#workstation > div:first-child img {
     margin-bottom: 5%;
+    margin-left: 2%;
     z-index: 1;
-    width: 45%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  section#workstation > div:first-child img {
-    margin-top: -10%;
+    width: 50%;
   }
 }
 
@@ -1298,18 +1297,13 @@ section#workstation > div#contactUs {
 
 @media only screen and (min-width: 768px) {
   section#workstation > div#contactUs {
-    margin: -15vh 7vw -30vh;
-    -webkit-transform: translateY(10%);
-            transform: translateY(10%);
+    max-height: 350px;
+    padding: 5% 7vw;
+    margin: -30% 7vw 0;
+    -webkit-transform: translateY(60%);
+            transform: translateY(60%);
     border-radius: 10px;
-    z-index: 0;
-    padding-bottom: 0;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  section#workstation > div#contactUs {
-    margin-top: 0vh;
+    z-index: 10;
   }
 }
 
@@ -1334,7 +1328,7 @@ section#workstation > div#contactUs a, section#workstation > div#contactUs butto
 @media only screen and (min-width: 768px) {
   section#workstation > div#contactUs a, section#workstation > div#contactUs button {
     width: 50%;
-    margin-left: 4vw;
+    margin: 0 0 0 4vw;
     padding: 0 5px;
   }
 }

@@ -136,7 +136,7 @@ section {
       );
       background-color: $white;
       width: 100%;
-      margin: 12vh 0;
+      margin: 12vh 0 0;
     }
     padding: 0;
     @include media {
@@ -150,11 +150,9 @@ section {
   }
   &#workstation {
     padding: 0;
-    @include media($laptop) {
-      //margin-top: -15vh;
-    }
     > div {
       padding: $contentPadding;
+      align-items: flex-start;
       &:first-child {
         > div {
           @include media($laptop) {
@@ -183,14 +181,12 @@ section {
         }
         img {
           image-rendering: pixelated;
-          margin-top: -25%;
+         transform: translateY(-20%);
           @include media($tablet) {
             margin-bottom: 5%;
+            margin-left: 2%;
             z-index: 1;
-            width: 45%;
-          }
-          @include media($laptop) {
-            margin-top: -10%;
+            width: 50%;
           }
         }
       }
@@ -202,14 +198,12 @@ section {
         margin-bottom: 0vh;
         padding: 4 * $paddingHeight $paddingSide;
         @include media {
-          margin: -15vh $paddingSide -30vh;
-          transform: translateY(10%);
+          max-height: 350px;
+          padding: 5% $paddingSide;
+          margin: -30% $paddingSide 0;
+          transform: translateY(60%);
           border-radius: 10px;
-          z-index: 0;
-          padding-bottom: 0;
-        }
-        @include media(1200px) {
-          margin-top: 0vh;
+          z-index: 10;
         }
         p {
           color: $footerColor;
@@ -224,7 +218,7 @@ section {
           border: 1px solid #fff;
           @include media {
             width: 50%;
-            margin-left: 4vw;
+            margin:0 0 0 4vw;
             padding: 0 5px;
           }
         }
