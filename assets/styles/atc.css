@@ -1313,8 +1313,8 @@ section#workstation > div:first-child img {
     margin-bottom: 5%;
     margin-left: 2%;
     z-index: 1;
-    min-width: 50%;
-    width: 45%;
+    min-width: 40%;
+    width: 40%;
   }
 }
 
