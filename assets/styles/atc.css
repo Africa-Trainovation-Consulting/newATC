@@ -735,7 +735,7 @@ h1 {
 
 @media only screen and (min-width: 1024px) {
   h1 {
-    font-size: 68px;
+    font-size: 65px;
   }
 }
 
@@ -759,7 +759,7 @@ h2 {
 
 @media only screen and (min-width: 1024px) {
   h2 {
-    font-size: 2.95em;
+    font-size: 65px;
   }
 }
 
@@ -1175,15 +1175,15 @@ section#qhse img {
 
 @media only screen and (min-width: 1024px) {
   section#qhse p {
-    width: 200%;
-    -webkit-transform: translateX(22vw);
-            transform: translateX(22vw);
+    min-width: 150%;
+    -webkit-transform: translateX(11vw);
+            transform: translateX(11vw);
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1290px) {
   section#qhse p {
-    width: 100%;
+    min-width: 100%;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
@@ -1195,10 +1195,6 @@ section#steam {
 
 section#steam > div {
   padding: 2vh 7vw;
-}
-
-section#steam > div a, section#steam > div button {
-  margin: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1259,10 +1255,21 @@ section#workstation {
 
 section#workstation > div {
   padding: 2vh 7vw;
-  margin-top: 5%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media only screen and (min-width: 1024px) {
+  section#workstation > div:first-child {
+    margin-top: 19%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  section#workstation > div:first-child {
+    margin-top: 10%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1271,8 +1278,16 @@ section#workstation > div {
   }
 }
 
-section#workstation > div:first-child p {
-  margin-top: 2vh;
+@media only screen and (min-width: 1024px) {
+  section#workstation > div:first-child p {
+    width: 150%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  section#workstation > div:first-child p {
+    width: 100%;
+  }
 }
 
 section#workstation > div:first-child .buttons {
@@ -1311,7 +1326,7 @@ section#workstation > div:first-child img {
 @media only screen and (min-width: 768px) {
   section#workstation > div:first-child img {
     margin-bottom: 5%;
-    margin-left: 2%;
+    margin-left: 1%;
     z-index: 1;
     min-width: 50%;
     width: 50%;
@@ -1320,7 +1335,16 @@ section#workstation > div:first-child img {
 
 @media only screen and (min-width: 1024px) {
   section#workstation > div:first-child img {
+    -webkit-transform: translateY(-52.5%);
+            transform: translateY(-52.5%);
     min-width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  section#workstation > div:first-child img {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
   }
 }
 

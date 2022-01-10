@@ -103,11 +103,11 @@ section {
     }
     p {
       @include media($laptop) {
-        width: 200%;
-        transform: translateX(22vw);
+        min-width: 150%;
+        transform: translateX(11vw);
       }
-      @include media(1200px) {
-        width: 100%;
+      @include media(1290px){
+        min-width: 100%;
         transform: translateX(0);
       }
     }
@@ -115,9 +115,6 @@ section {
   &#steam {
     > div {
       padding: $contentPadding;
-      a {
-        margin: 0;
-      }
     }
     .note {
       @include media {
@@ -168,16 +165,26 @@ section {
     padding: 0;
     > div {
       padding: $contentPadding;
-      margin-top: 5%;
       align-items: flex-start;
       &:first-child {
+        @include media($laptop){
+          margin-top: 19%;
+        }
+        @include media(1200px){
+          margin-top: 10%;
+        }
         > div {
           @include media($laptop) {
             width: 55%;
           }
         }
         p {
-          margin-top: $paddingHeight;
+          @include media($laptop){
+            width: 150%;
+          }
+          @include media(1200px){
+            width: 100%;
+          }
         }
         .buttons {
           justify-content: flex-start;
@@ -201,13 +208,17 @@ section {
           transform: translateY(-20%);
           @include media($tablet) {
             margin-bottom: 5%;
-            margin-left: 2%;
+            margin-left: 1%;
             z-index: 1;
             min-width: 50%;
             width: 50%;
           }
           @include media($laptop){
+            transform: translateY(-52.5%);
             min-width: 40%;
+          }
+          @include media(1200px){
+            transform: translateY(-30%);
           }
         }
       }
