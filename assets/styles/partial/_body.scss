@@ -4,11 +4,19 @@ section {
   &.laptopWoman {
     div {
       padding-top: 1 * $headerHeight;
+      width: 100%;
       @include media {
         padding-top: 2 * $headerHeight;
       }
       @include media($laptop) {
         width: 55%;
+        h1 {
+          width: 135%;
+          // declaring media inside media makes use 2 and min-width but the 1st is ignored
+          @include media(1200px) {
+            width: 120%;
+          }
+        }
       }
     }
     img {
@@ -16,6 +24,7 @@ section {
       transform: scale(1.1);
       @include srcset;
       @include media {
+        min-width: 53.8%;
         width: 53.8%;
         transform: translate(0, 0) scale(1.1);
       }
@@ -79,20 +88,27 @@ section {
       transform: translate(-3.125%, 0);
       @include media {
         transform: translate(3.5%, 0);
-        max-width: 50%;
+        min-width: 50%;
       }
       @include media($laptop) {
-        transform: translate(3.5%,-24%);
-        width: 45%;
+        transform: translate(3.5%, -24%);
+      }
+      @include media(1200px) {
+        min-width: 45%;
       }
     }
     @include media {
       margin-top: 8 * $paddingHeight;
       align-items: flex-start;
     }
-    @include media($laptop) {
-      div {
-        max-width: 55%;
+    p {
+      @include media($laptop) {
+        width: 200%;
+        transform: translateX(22vw);
+      }
+      @include media(1200px) {
+        width: 100%;
+        transform: translateX(0);
       }
     }
   }
@@ -152,6 +168,7 @@ section {
     padding: 0;
     > div {
       padding: $contentPadding;
+      margin-top: 5%;
       align-items: flex-start;
       &:first-child {
         > div {
@@ -181,12 +198,13 @@ section {
         }
         img {
           image-rendering: pixelated;
-         transform: translateY(-20%);
+          transform: translateY(-20%);
           @include media($tablet) {
             margin-bottom: 5%;
             margin-left: 2%;
             z-index: 1;
-            width: 50%;
+            min-width: 50%;
+            width: 45%;
           }
         }
       }
@@ -198,7 +216,7 @@ section {
         margin-bottom: 0vh;
         padding: 4 * $paddingHeight $paddingSide;
         @include media {
-          max-height: 350px;
+          max-height: 500px;
           padding: 5% $paddingSide;
           margin: -30% $paddingSide 0;
           transform: translateY(60%);
@@ -218,7 +236,7 @@ section {
           border: 1px solid #fff;
           @include media {
             width: 50%;
-            margin:0 0 0 4vw;
+            margin: 0 0 0 4vw;
             padding: 0 5px;
           }
         }

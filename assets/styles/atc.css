@@ -735,7 +735,7 @@ h1 {
 
 @media only screen and (min-width: 1024px) {
   h1 {
-    font-size: 2.95em;
+    font-size: 68px;
   }
 }
 
@@ -753,7 +753,7 @@ h2 {
 
 @media only screen and (min-width: 768px) {
   h2 {
-    font-size: 3.2vw;
+    font-size: 4.2vw;
   }
 }
 
@@ -969,7 +969,9 @@ header span.navLinks a:last-child, header span.navLinks button:last-child {
     display: flex;
     width: 25%;
     height: 6vh;
-    line-height: 6vh;
+    min-height: 40px;
+    max-height: 48px;
+    line-height: 2;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1002,6 +1004,7 @@ section {
 
 section.laptopWoman div {
   padding-top: 75px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1013,6 +1016,15 @@ section.laptopWoman div {
 @media only screen and (min-width: 1024px) {
   section.laptopWoman div {
     width: 55%;
+  }
+  section.laptopWoman div h1 {
+    width: 135%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (min-width: 1200px) {
+  section.laptopWoman div h1 {
+    width: 120%;
   }
 }
 
@@ -1040,6 +1052,7 @@ section.laptopWoman img:last-child {
 
 @media only screen and (min-width: 768px) {
   section.laptopWoman img {
+    min-width: 53.8%;
     width: 53.8%;
     -webkit-transform: translate(0, 0) scale(1.1);
             transform: translate(0, 0) scale(1.1);
@@ -1134,7 +1147,7 @@ section#qhse img {
   section#qhse img {
     -webkit-transform: translate(3.5%, 0);
             transform: translate(3.5%, 0);
-    max-width: 50%;
+    min-width: 50%;
   }
 }
 
@@ -1142,7 +1155,12 @@ section#qhse img {
   section#qhse img {
     -webkit-transform: translate(3.5%, -24%);
             transform: translate(3.5%, -24%);
-    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  section#qhse img {
+    min-width: 45%;
   }
 }
 
@@ -1156,8 +1174,18 @@ section#qhse img {
 }
 
 @media only screen and (min-width: 1024px) {
-  section#qhse div {
-    max-width: 55%;
+  section#qhse p {
+    width: 200%;
+    -webkit-transform: translateX(22vw);
+            transform: translateX(22vw);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  section#qhse p {
+    width: 100%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -1231,6 +1259,7 @@ section#workstation {
 
 section#workstation > div {
   padding: 2vh 7vw;
+  margin-top: 5%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1284,7 +1313,8 @@ section#workstation > div:first-child img {
     margin-bottom: 5%;
     margin-left: 2%;
     z-index: 1;
-    width: 50%;
+    min-width: 50%;
+    width: 45%;
   }
 }
 
@@ -1297,7 +1327,7 @@ section#workstation > div#contactUs {
 
 @media only screen and (min-width: 768px) {
   section#workstation > div#contactUs {
-    max-height: 350px;
+    max-height: 500px;
     padding: 5% 7vw;
     margin: -30% 7vw 0;
     -webkit-transform: translateY(60%);

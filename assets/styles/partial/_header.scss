@@ -34,10 +34,10 @@ header {
         @include flex(row, space-between, center);
         position: static;
         max-width: 80%;
-        }
-        @include media($laptop){
-          max-width: 55%;
-        }
+      }
+      @include media($laptop) {
+        max-width: 55%;
+      }
 
       a {
         text-align: center;
@@ -64,14 +64,15 @@ header {
           @include media {
             display: flex;
             width: 25%;
-            height: 3* $paddingHeight;
-            line-height: 3* $paddingHeight;
+            height: 3 * $paddingHeight;
+            min-height: 40px;
+            max-height: 48px;
+            line-height: 2;
             text-align: center;
             justify-content: center;
           }
         }
       }
-
     }
 
     &.icon {
