@@ -53,7 +53,7 @@
   vertical-align: middle;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  font-size: 19.2px;
+  font-size: 16px;
   width: 100%;
 }
 
@@ -759,7 +759,7 @@ h2 {
 
 @media only screen and (min-width: 1024px) {
   h2 {
-    font-size: 65px;
+    font-size: 55px;
   }
 }
 
@@ -813,7 +813,7 @@ h4 {
 
 div,
 p {
-  font-size: 19.2px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 200%;
   text-align: justify;
@@ -839,7 +839,7 @@ p {
 @media only screen and (min-width: 1024px) {
   div,
   p {
-    font-size: 19.2px;
+    font-size: 16px;
   }
 }
 
@@ -1078,8 +1078,8 @@ section#acad div.tablet {
 
 section#acad div.tablet img {
   width: 24%;
-  /*           height: 50vh;
-          max-height: 500px; */
+  height: 50vh;
+  max-height: 500px;
   margin: 6vh 0.5vw;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1151,13 +1151,6 @@ section#qhse img {
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  section#qhse img {
-    -webkit-transform: translate(3.5%, -24%);
-            transform: translate(3.5%, -24%);
-  }
-}
-
 @media only screen and (min-width: 1200px) {
   section#qhse img {
     min-width: 45%;
@@ -1173,15 +1166,7 @@ section#qhse img {
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  section#qhse p {
-    min-width: 150%;
-    -webkit-transform: translateX(11vw);
-            transform: translateX(11vw);
-  }
-}
-
-@media only screen and (min-width: 1290px) {
+@media only screen and (min-width: 1200px) {
   section#qhse p {
     min-width: 100%;
     -webkit-transform: translateX(0);
@@ -1232,19 +1217,18 @@ section#steam .kids img:hover {
 }
 
 section#steam .gallery {
-  height: 12vh;
+  height: 24vh;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-18.66%, #a5a6f6), color-stop(90.15%, rgba(252, 221, 236, 0)));
   background-image: linear-gradient(0deg, #a5a6f6 -18.66%, rgba(252, 221, 236, 0) 90.15%);
   background-color: #fff;
   width: 100%;
-  margin: 12vh 0 0;
 }
 
 @media only screen and (min-width: 768px) {
   section#steam {
     background-image: url("/assets/img/airship.svg");
     background-repeat: no-repeat;
-    background-size: center center;
+    background-size: 90%;
     background-position: 60% 10%;
   }
 }
@@ -1262,12 +1246,6 @@ section#workstation > div {
 
 @media only screen and (min-width: 1024px) {
   section#workstation > div:first-child {
-    margin-top: 19%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  section#workstation > div:first-child {
     margin-top: 10%;
   }
 }
@@ -1275,18 +1253,6 @@ section#workstation > div {
 @media only screen and (min-width: 1024px) {
   section#workstation > div:first-child > div {
     width: 55%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  section#workstation > div:first-child p {
-    width: 150%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  section#workstation > div:first-child p {
-    width: 100%;
   }
 }
 
@@ -1326,18 +1292,10 @@ section#workstation > div:first-child img {
 @media only screen and (min-width: 768px) {
   section#workstation > div:first-child img {
     margin-bottom: 5%;
-    margin-left: 1%;
+    margin-left: 10%;
     z-index: 1;
-    min-width: 50%;
-    width: 50%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  section#workstation > div:first-child img {
-    -webkit-transform: translateY(-52.5%);
-            transform: translateY(-52.5%);
     min-width: 40%;
+    width: 40%;
   }
 }
 
