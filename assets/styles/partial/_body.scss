@@ -26,7 +26,7 @@ section {
       @include media {
         min-width: 53.8%;
         width: 53.8%;
-        transform: translate(0, 0) scale(1.1);
+        transform: translate(0, 0) scale(1.14);
       }
     }
     @include media {
@@ -45,8 +45,9 @@ section {
         width: 100%;
         img {
           width: 24%;
-          height: 50vh;
+          min-height: 320px;
           max-height: 700px;
+          height: 50vh;
           margin: 3 * $paddingHeight $smallMargin;
           object-fit: cover;
           border-radius: $borderRadius;
@@ -64,7 +65,7 @@ section {
           text-align: center;
         }
         @include media($laptop) {
-          width: 50%;
+          width: 60%;
         }
       }
     }
