@@ -1,6 +1,5 @@
 export default function validateInfo(values) {
     let errors = {}
-
     //Full Name
     if (!values.fullname) {
         errors.fullname = 'Please enter your Full Name'

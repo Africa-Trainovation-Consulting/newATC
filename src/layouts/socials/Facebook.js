@@ -1,16 +1,18 @@
 import React, { Component } from 'react'
-import FacebookLogin  from 'react-facebook-login/dist/facebook-login-render-props'
+import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 import FacebookLogo from '../../img/facebookLogo.svg'
 export default class Facebook extends Component {
-    
+
+
     state = {
         isLoggedIn: false,
         userID: '',
         name: '',
         email: '',
-        picture: ''
+        picture: '',
+        accessToken: '',
+        password:''
     }
-
     responseFacebook = response => {
         console.log(response)
     }
@@ -22,7 +24,7 @@ export default class Facebook extends Component {
         if (this.state.isLoggedIn) {
             fbContent = null;
         } else {
-            fbContent = (<FacebookLogin 
+            fbContent = (<FacebookLogin
                 appId="2684487048524619"
                 autoLoad={true}
                 fields="name,email,picture"
@@ -30,10 +32,10 @@ export default class Facebook extends Component {
                 callback={this.responseFacebook}
                 render={renderProps => (
                     <button className="login socials regular" type="submit" onClick={renderProps.onClick}>
-                    <img src={FacebookLogo} alt='Facebooklogo' />  facebook</button>
-                  )}
-                />
-                )
+                        <img src={FacebookLogo} alt='Facebooklogo' />  facebook</button>
+                )}
+            />
+            )
         }
         return (
             <>
