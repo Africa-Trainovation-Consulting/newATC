@@ -48,7 +48,7 @@
   height: 8vh;
   line-height: 8vh;
   border-radius: 10px;
-  border: 1px solid #150C21;
+  border: 2px solid #150C21;
   white-space: nowrap;
   vertical-align: middle;
   -webkit-transition: all 0.3s ease-in-out;
@@ -945,7 +945,7 @@ header span.navLinks a, header span.navLinks button {
 header span.navLinks a:last-child, header span.navLinks button:last-child {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #150C21;
+  border: 2px solid #150C21;
   border-radius: 10px;
   display: none;
 }
