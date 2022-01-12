@@ -717,7 +717,7 @@ img {
 
 h1 {
   font-size: 9.3vw;
-  font-weight: 700;
+  font-weight: 500;
   margin: 3vh 0 3vh;
 }
 
@@ -741,7 +741,7 @@ h1 {
 
 h2 {
   font-size: 7.3vw;
-  font-weight: 700;
+  font-weight: 500;
   margin: 3vh 0 3vh;
 }
 
@@ -814,7 +814,7 @@ h4 {
 div,
 p {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 200%;
   text-align: justify;
   word-break: keep-all;
@@ -968,14 +968,15 @@ header span.navLinks a:last-child, header span.navLinks button:last-child {
     display: -ms-flexbox;
     display: flex;
     width: 25%;
-    height: 6vh;
+    height: 42px;
     min-height: 40px;
     max-height: 48px;
-    line-height: 2;
+    line-height: 2.4;
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0;
   }
 }
 
@@ -1359,6 +1360,12 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  footer {
+    padding: 225px 0 6vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   footer {
     padding: 337.5px 0 6vh;
   }
