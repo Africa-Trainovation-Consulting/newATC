@@ -1382,7 +1382,6 @@ footer * {
 footer a, footer button,
 footer div {
   font-size: 1em;
-  font-weight: 100;
   margin: 0.5vh 0;
 }
 
