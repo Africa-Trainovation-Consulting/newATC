@@ -716,50 +716,38 @@ img {
 }
 
 h1 {
-  font-size: 9.3vw;
+  font-size: 7vw;
   font-weight: 500;
   margin: 3vh 0 3vh;
 }
 
-@media only screen and (min-width: 540px) {
-  h1 {
-    font-size: 6.6vw;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   h1 {
-    font-size: 4.2vw;
+    font-size: 4vw;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   h1 {
-    font-size: 65px;
+    font-size: 4.2vw;
   }
 }
 
 h2 {
-  font-size: 7.3vw;
+  font-size: 7vw;
   font-weight: 500;
   margin: 3vh 0 3vh;
 }
 
-@media only screen and (min-width: 540px) {
-  h2 {
-    font-size: 6.0vw;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   h2 {
-    font-size: 4.2vw;
+    font-size: 4vw;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   h2 {
-    font-size: 55px;
+    font-size: 4.2vw;
   }
 }
 
@@ -839,7 +827,7 @@ p {
 @media only screen and (min-width: 1024px) {
   div,
   p {
-    font-size: 16px;
+    font-size: 1.5vw;
   }
 }
 
@@ -1010,7 +998,7 @@ section.laptopWoman div {
 
 @media only screen and (min-width: 768px) {
   section.laptopWoman div {
-    padding-top: 150px;
+    padding-top: 112.5px;
   }
 }
 
@@ -1033,22 +1021,8 @@ section.laptopWoman img {
   width: 100%;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-section.laptopWoman img:last-child {
-  display: none;
-}
-
-@media only screen and (min-width: 768px) {
-  section.laptopWoman img:last-child {
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  section.laptopWoman img {
-    display: none;
-  }
+  -webkit-clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
 }
 
 @media only screen and (min-width: 768px) {
@@ -1080,7 +1054,7 @@ section#acad div.tablet {
 section#acad div.tablet img {
   width: 24%;
   height: 50vh;
-  max-height: 500px;
+  max-height: 700px;
   margin: 6vh 0.5vw;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1177,6 +1151,8 @@ section#qhse img {
 
 section#steam {
   padding: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-11.14%, #A5A6F6), color-stop(10.68%, rgba(252, 221, 236, 0)));
+  background: linear-gradient(0deg, #A5A6F6 -11.14%, rgba(252, 221, 236, 0) 10.68%);
 }
 
 section#steam > div {
@@ -1217,19 +1193,12 @@ section#steam .kids img:hover {
           transform: scale(1.2);
 }
 
-section#steam .gallery {
-  height: 24vh;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-18.66%, #a5a6f6), color-stop(90.15%, rgba(252, 221, 236, 0)));
-  background-image: linear-gradient(0deg, #a5a6f6 -18.66%, rgba(252, 221, 236, 0) 90.15%);
-  background-color: #fff;
-  width: 100%;
-}
-
 @media only screen and (min-width: 768px) {
   section#steam {
-    background-image: url("/assets/img/airship.svg");
+    background-image: url("/assets/img/airship.svg"), -webkit-gradient(linear, left bottom, left top, color-stop(-11.14%, #A5A6F6), color-stop(28.68%, rgba(252, 221, 236, 0)));
+    background-image: url("/assets/img/airship.svg"), linear-gradient(0deg, #A5A6F6 -11.14%, rgba(252, 221, 236, 0) 28.68%);
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 90%,100%;
     background-position: 60% 10%;
   }
 }
@@ -1316,7 +1285,6 @@ section#workstation > div#contactUs {
 
 @media only screen and (min-width: 768px) {
   section#workstation > div#contactUs {
-    max-height: 500px;
     padding: 5% 7vw;
     margin: -30% 7vw 0;
     -webkit-transform: translateY(60%);
@@ -1368,6 +1336,12 @@ footer {
 @media only screen and (min-width: 1024px) {
   footer {
     padding: 337.5px 0 6vh;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  footer {
+    padding: 562.5px 0 6vh;
   }
 }
 
@@ -1475,6 +1449,10 @@ footer .socials .follow a, footer .socials .follow button {
   footer .socials .logo svg:first-child {
     margin-right: 8px;
   }
+}
+
+footer .allRightReserved {
+  text-align: center;
 }
 
 body {

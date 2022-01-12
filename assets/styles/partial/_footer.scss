@@ -8,6 +8,9 @@ footer {
   @include media($laptop) {
     padding: 4.5 * $headerHeight 0 3 * $paddingHeight;
   }
+  @include media(1800px) {
+    padding: 7.5 * $headerHeight 0 3 * $paddingHeight;
+  }
   section {
     margin-bottom: 0;
   }
@@ -80,5 +83,8 @@ footer {
         }
       }
     }
+  }
+  .allRightReserved{
+    text-align: center;
   }
 }

@@ -3,10 +3,10 @@ section {
 
   &.laptopWoman {
     div {
-      padding-top: 1 * $headerHeight;
+      padding-top: $headerHeight;
       width: 100%;
       @include media {
-        padding-top: 2 * $headerHeight;
+        padding-top: 1.5 * $headerHeight;
       }
       @include media($laptop) {
         width: 55%;
@@ -22,7 +22,7 @@ section {
     img {
       width: 100%;
       transform: scale(1.1);
-      @include srcset;
+      clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);         
       @include media {
         min-width: 53.8%;
         width: 53.8%;
@@ -46,7 +46,7 @@ section {
         img {
           width: 24%;
           height: 50vh;
-          max-height: 500px;
+          max-height: 700px;
           margin: 3 * $paddingHeight $smallMargin;
           object-fit: cover;
           border-radius: $borderRadius;
@@ -133,28 +133,15 @@ section {
         }
       }
     }
-    .gallery {
-      height: 24vh;
-      background-image: linear-gradient(
-        0deg,
-        #a5a6f6 -18.66%,
-        rgba(252, 221, 236, 0) 90.15%
-      );
-      background-color: $white;
-      width: 100%;
-    }
     padding: 0;
+    background: linear-gradient(0deg, #A5A6F6 -11.14%, rgba(252, 221, 236, 0) 10.68%);
     @include media {
       background: {
-        image: url("/assets/img/airship.svg");
+        image: url("/assets/img/airship.svg"),linear-gradient(0deg, #A5A6F6 -11.14%, rgba(252, 221, 236, 0) 28.68%);
         repeat: no-repeat;
-        size: 90%;
+        size: 90%,100%;
         position: 60% 10%;
       }
-    }
-    @include media($laptop) {
-      // background-size: center center;
-      //background-size: 90%;
     }
   }
   &#workstation {
@@ -211,7 +198,6 @@ section {
         margin-bottom: 0vh;
         padding: 4 * $paddingHeight $paddingSide;
         @include media {
-          max-height: 500px;
           padding: 5% $paddingSide;
           margin: -30% $paddingSide 0;
           transform: translateY(60%);

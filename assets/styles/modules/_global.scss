@@ -79,34 +79,28 @@ img {
 }
 h1 {
   font: {
-    size: 9.3vw;
+    size: 7vw;
     weight: 500;
   }
   @include margin();
-  @include media(540px) {
-    font-size: 6.6vw;
-  }
   @include media {
-    font-size: 4.2vw;
+    font-size: 4vw;
   }
   @include media($laptop) {
-    font-size: 65px;
+    font-size: 4.2vw;
   }
 }
 h2 {
   font: {
-    size: 7.3vw;
+    size: 7vw;
     weight: 500;
   }
   @include margin();
-  @include media(540px) {
-    font-size: 6.0vw;
-  }
   @include media {
-    font-size: 4.2vw;
+    font-size: 4vw;
   }
   @include media($laptop) {
-    font-size: 55px;
+    font-size: 4.2vw;
   }
 }
 h3 {
@@ -160,7 +154,7 @@ p {
     font-size: 1.5vw;
   }
   @include media($laptop) {
-    font-size: $defaultFontSize;
+    font-size: 1.5vw;
   }
 }
 
