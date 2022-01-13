@@ -716,8 +716,8 @@ img {
 }
 
 h1 {
-  font-size: 7vw;
-  font-weight: 500;
+  font-size: 10.5vw;
+  font-weight: 600;
   margin: 3vh 0 3vh;
 }
 
@@ -734,8 +734,8 @@ h1 {
 }
 
 h2 {
-  font-size: 7vw;
-  font-weight: 500;
+  font-size: 10.5vw;
+  font-weight: 600;
   margin: 3vh 0 3vh;
 }
 
@@ -1071,7 +1071,7 @@ section#acad div.tablet img:hover {
 
 @media only screen and (min-width: 1024px) {
   section#acad div.note {
-    width: 60%;
+    width: 65%;
   }
 }
 
@@ -1148,14 +1148,15 @@ section#steam > div {
 }
 
 @media only screen and (min-width: 768px) {
-  section#steam .note {
+  section#steam > div.note {
     max-width: 55%;
     padding-top: 10vh;
   }
 }
 
-section#steam .kids img {
+section#steam > div.kids img {
   height: 50vh;
+  max-height: 250px;
   width: 90%;
   margin-bottom: 4vh;
   -o-object-fit: cover;
@@ -1168,17 +1169,21 @@ section#steam .kids img {
       image-rendering: pixelated;
 }
 
+section#steam > div.kids img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 @media only screen and (min-width: 768px) {
-  section#steam .kids img {
+  section#steam > div.kids img {
     height: 35vh;
     width: 30%;
     margin-top: 10vh;
   }
 }
 
-section#steam .kids img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+section#steam > div:last-child a, section#steam > div:last-child button {
+  background-color: #d7d8fb;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1287,10 +1292,6 @@ section#workstation > div#contactUs {
     border-radius: 10px;
     z-index: 10;
   }
-}
-
-section#workstation > div#contactUs p {
-  color: #A4A4A4;
 }
 
 @media only screen and (min-width: 768px) {

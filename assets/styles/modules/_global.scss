@@ -79,8 +79,8 @@ img {
 }
 h1 {
   font: {
-    size: 7vw;
-    weight: 500;
+    size: 10.5vw;
+    weight: 600;
   }
   @include margin();
   @include media {
@@ -92,8 +92,8 @@ h1 {
 }
 h2 {
   font: {
-    size: 7vw;
-    weight: 500;
+    size: 10.5vw;
+    weight: 600;
   }
   @include margin();
   @include media {

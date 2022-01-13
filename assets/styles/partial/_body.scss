@@ -33,7 +33,7 @@ section {
   &#acad {
     div {
       &.tablet {
-        width: 100%;
+        width: 100%;      
         img {
           width: 24%;
           min-height: 320px;
@@ -56,7 +56,7 @@ section {
           text-align: center;
         }
         @include media($laptop) {
-          width: 60%;
+          width: 65%;
         }
       }
     }
@@ -101,22 +101,17 @@ section {
   }
   &#steam {
     > div {
-      padding: $contentPadding;
-    }
-    .note {
+      padding: $contentPadding; 
+    &.note {
       @include media {
         max-width: 55%;
         padding-top: 10vh;
       }
     }
-    .kids {
+    &.kids {
       img {
-        @include media {
-          height: 35vh;
-          width: 30%;
-          margin-top: 10vh;
-        }
         height: 50vh;
+        max-height: 250px;
         width: 90%;
         margin-bottom: 4vh;
         object-fit: cover;
@@ -125,8 +120,17 @@ section {
         &:hover {
           transform: scale(1.2);
         }
+        @include media {
+          height: 35vh;
+          width: 30%;
+          margin-top: 10vh;
+        }
       }
     }
+    &:last-child a{
+      background-color: #d7d8fb;
+    }
+  }
     padding: 0;
     background: linear-gradient(0deg, #A5A6F6 -11.14%, rgba(252, 221, 236, 0) 10.68%);
     @include media {
@@ -201,7 +205,6 @@ section {
           z-index: 10;
         }
         p {
-          color: $footerColor;
           @include media {
             max-width: 85%;
           }
