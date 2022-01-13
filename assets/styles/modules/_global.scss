@@ -84,10 +84,10 @@ h1 {
   }
   @include margin();
   @include media {
-    font-size: 4vw;
+    font-size: 3.2vw;
   }
   @include media($laptop) {
-    font-size: 4.2vw;
+    font-size: 3.7vw;
   }
 }
 h2 {
@@ -97,10 +97,10 @@ h2 {
   }
   @include margin();
   @include media {
-    font-size: 4vw;
+    font-size: 3.2vw;
   }
   @include media($laptop) {
-    font-size: 4.2vw;
+    font-size: 3.7vw;
   }
 }
 h3 {
@@ -154,7 +154,7 @@ p {
     font-size: 1.5vw;
   }
   @include media($laptop) {
-    font-size: 1.5vw;
+    font-size: 1.25vw;
   }
 }
 

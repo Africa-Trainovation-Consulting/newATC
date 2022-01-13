@@ -7,16 +7,7 @@ section {
       width: 100%;
       @include media {
         padding-top: 1.5 * $headerHeight;
-      }
-      @include media($laptop) {
-        width: 55%;
-        h1 {
-          width: 135%;
-          // declaring media inside media makes use 2 and min-width but the 1st is ignored
-          @include media(1200px) {
-            width: 120%;
-          }
-        }
+        max-width: 45%;        
       }
     }
     img {
@@ -26,7 +17,7 @@ section {
       @include media {
         min-width: 53.8%;
         width: 53.8%;
-        transform: translate(0, 0) scale(1.14);
+        transform: translate(3.125%, 0) scale(1.1);
       }
     }
     @include media {
@@ -88,23 +79,25 @@ section {
     img {
       transform: translate(-3.125%, 0);
       @include media {
-        transform: translate(3.5%, 0);
+        transform: translate(3.5%, -2.5%);
         min-width: 50%;
+        width: 50%;
+        margin-right: 0;
       }
       @include media(1200px) {
         min-width: 45%;
+        width: 45%;
       }
     }
     @include media {
       margin-top: 8 * $paddingHeight;
-      align-items: flex-start;
-    }
-    p {
-      @include media(1200px) {
-        min-width: 100%;
-        transform: translateX(0);
+      align-items: center;
+      justify-content: space-between;
+      div{
+        max-width: 50%;
       }
     }
+  
   }
   &#steam {
     > div {
@@ -151,12 +144,13 @@ section {
       padding: $contentPadding;
       align-items: flex-start;
       &:first-child {
+        justify-content: space-between;
         @include media($laptop) {
           margin-top: 10%;
         }
         > div {
           @include media($laptop) {
-            width: 55%;
+            width: 45%;
           }
         }
         .buttons {
@@ -182,9 +176,10 @@ section {
           @include media($tablet) {
             margin-bottom: 5%;
             margin-left: 10%;
+            margin-right: 0;
             z-index: 1;
-            min-width: 40%;
-            width: 40%;
+            min-width: 30%;
+            width: 35%;
           }
           @include media(1200px) {
             transform: translateY(-30%);

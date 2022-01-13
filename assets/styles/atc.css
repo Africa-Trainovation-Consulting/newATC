@@ -723,13 +723,13 @@ h1 {
 
 @media only screen and (min-width: 768px) {
   h1 {
-    font-size: 4vw;
+    font-size: 3.2vw;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   h1 {
-    font-size: 4.2vw;
+    font-size: 3.7vw;
   }
 }
 
@@ -741,13 +741,13 @@ h2 {
 
 @media only screen and (min-width: 768px) {
   h2 {
-    font-size: 4vw;
+    font-size: 3.2vw;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   h2 {
-    font-size: 4.2vw;
+    font-size: 3.7vw;
   }
 }
 
@@ -827,7 +827,7 @@ p {
 @media only screen and (min-width: 1024px) {
   div,
   p {
-    font-size: 1.5vw;
+    font-size: 1.25vw;
   }
 }
 
@@ -999,21 +999,7 @@ section.laptopWoman div {
 @media only screen and (min-width: 768px) {
   section.laptopWoman div {
     padding-top: 112.5px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  section.laptopWoman div {
-    width: 55%;
-  }
-  section.laptopWoman div h1 {
-    width: 135%;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (min-width: 1200px) {
-  section.laptopWoman div h1 {
-    width: 120%;
+    max-width: 45%;
   }
 }
 
@@ -1029,8 +1015,8 @@ section.laptopWoman img {
   section.laptopWoman img {
     min-width: 53.8%;
     width: 53.8%;
-    -webkit-transform: translate(0, 0) scale(1.14);
-            transform: translate(0, 0) scale(1.14);
+    -webkit-transform: translate(3.125%, 0) scale(1.1);
+            transform: translate(3.125%, 0) scale(1.1);
   }
 }
 
@@ -1121,32 +1107,33 @@ section#qhse img {
 
 @media only screen and (min-width: 768px) {
   section#qhse img {
-    -webkit-transform: translate(3.5%, 0);
-            transform: translate(3.5%, 0);
+    -webkit-transform: translate(3.5%, -2.5%);
+            transform: translate(3.5%, -2.5%);
     min-width: 50%;
+    width: 50%;
+    margin-right: 0;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   section#qhse img {
     min-width: 45%;
+    width: 45%;
   }
 }
 
 @media only screen and (min-width: 768px) {
   section#qhse {
     margin-top: 16vh;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-}
-
-@media only screen and (min-width: 1200px) {
-  section#qhse p {
-    min-width: 100%;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  section#qhse div {
+    max-width: 50%;
   }
 }
 
@@ -1215,6 +1202,12 @@ section#workstation > div {
           align-items: flex-start;
 }
 
+section#workstation > div:first-child {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media only screen and (min-width: 1024px) {
   section#workstation > div:first-child {
     margin-top: 10%;
@@ -1223,7 +1216,7 @@ section#workstation > div {
 
 @media only screen and (min-width: 1024px) {
   section#workstation > div:first-child > div {
-    width: 55%;
+    width: 45%;
   }
 }
 
@@ -1264,9 +1257,10 @@ section#workstation > div:first-child img {
   section#workstation > div:first-child img {
     margin-bottom: 5%;
     margin-left: 10%;
+    margin-right: 0;
     z-index: 1;
-    min-width: 40%;
-    width: 40%;
+    min-width: 30%;
+    width: 35%;
   }
 }
 
