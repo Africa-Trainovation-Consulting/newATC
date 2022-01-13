@@ -83,6 +83,9 @@ h1 {
     weight: 600;
   }
   @include margin();
+  @include media(540px) {
+    font-size: 7.5vw;
+  }
   @include media {
     font-size: 3.2vw;
   }
@@ -96,6 +99,9 @@ h2 {
     weight: 600;
   }
   @include margin();
+  @include media(540px) {
+    font-size: 7.5vw;
+  }
   @include media {
     font-size: 3.2vw;
   }
