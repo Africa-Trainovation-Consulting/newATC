@@ -119,14 +119,19 @@
   }
 }
 // display using flexbox
-
+.mobile{
+  display: flex;
+  @include media{
+    display: none;
+  }
+}
 .none {
   display: none;
   //starts showing from on tablet
   &_m {
     display: none;
     @include media {
-      @include flex;
+      display: inline;
     }
   }
   //only shows on laptop

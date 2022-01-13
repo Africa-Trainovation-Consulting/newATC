@@ -211,6 +211,18 @@
   }
 }
 
+.mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
 .none {
   display: none;
 }
@@ -221,19 +233,7 @@
 
 @media only screen and (min-width: 768px) {
   .none_m {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: inline;
   }
 }
 
@@ -654,7 +654,7 @@
 
 :root {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -886,16 +886,6 @@ header {
           flex-direction: row;
 }
 
-header a svg:nth-child(2), header button svg:nth-child(2) {
-  display: none;
-}
-
-@media only screen and (min-width: 1024px) {
-  header a svg:nth-child(2), header button svg:nth-child(2) {
-    display: inline;
-  }
-}
-
 header a img, header button img {
   width: 80%;
   margin: 0;
@@ -903,12 +893,20 @@ header a img, header button img {
 
 header span.navLinks {
   position: absolute;
-  right: 0;
-  top: 75px;
-  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 75px 0;
+  width: 75%;
+  background-color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
+  header span.navLinks {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   header span.navLinks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -924,26 +922,25 @@ header span.navLinks {
         -ms-flex-direction: row;
             flex-direction: row;
     position: static;
-    max-width: 80%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  header span.navLinks {
     max-width: 55%;
+    padding: 0;
+    background-color: transparent;
   }
 }
 
 header span.navLinks a, header span.navLinks button {
-  text-align: center;
-  margin: 1vh 0;
+  text-align: left;
+  padding: 0 0 0 7vw;
   width: 100%;
-  border-bottom: 1px solid #150C21;
+  border-bottom: 1px solid #eeecec;
+  line-height: 2.5;
+  color: rgba(21, 12, 33, 0.59);
   border-radius: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   header span.navLinks a, header span.navLinks button {
+    padding: 0;
     border-bottom: none;
     width: auto;
   }
@@ -962,7 +959,7 @@ header span.navLinks a:last-child, header span.navLinks button:last-child {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   header span.navLinks a:last-child, header span.navLinks button:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -993,7 +990,7 @@ header span.icon svg {
   width: 22.5px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   header span.icon {
     display: none;
   }
@@ -1001,6 +998,15 @@ header span.icon svg {
 
 section {
   padding: 2vh 7vw;
+}
+
+section#overlay {
+  position: fixed;
+  background-color: #150C21;
+  opacity: 0.5;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
 }
 
 section.laptopWoman div {
@@ -1052,8 +1058,7 @@ section#acad div.tablet {
 section#acad div.tablet img {
   width: 24%;
   min-height: 320px;
-  max-height: 700px;
-  height: 55vh;
+  max-height: 350px;
   margin: 6vh 0.5vw;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1113,8 +1118,8 @@ section#qhse a, section#qhse button {
 }
 
 section#qhse img {
-  -webkit-transform: translate(-3.125%, 0);
-          transform: translate(-3.125%, 0);
+  -webkit-transform: translate(-3.125%, 0) scale(1.135);
+          transform: translate(-3.125%, 0) scale(1.135);
 }
 
 @media only screen and (min-width: 768px) {
@@ -1194,8 +1199,10 @@ section#steam > div.kids img:hover {
   }
 }
 
-section#steam > div:last-child a, section#steam > div:last-child button {
-  background-color: #d7d8fb;
+@media only screen and (min-width: 768px) {
+  section#steam > div:last-child a, section#steam > div:last-child button {
+    background-color: #d7d8fb;
+  }
 }
 
 @media only screen and (min-width: 768px) {

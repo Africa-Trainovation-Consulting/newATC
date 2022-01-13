@@ -11,13 +11,6 @@ header {
   @include flex(row, space-between, center);
 
   a {
-    svg:nth-child(2) {
-      display: none;
-      @include media($laptop) {
-        display: inline;
-      }
-    }
-
     img {
       width: 80%;
       margin: 0;
@@ -27,32 +20,38 @@ header {
   span {
     &.navLinks {
       position: absolute;
-      right: 0;
-      top: $headerHeight;
-      width: 100%;
+      left: 0;
+      top: 0;
+      padding: $headerHeight 0;
+      width: 75%;
+      background-color: $white;
       @include media {
-        @include flex(row, space-between, center);
-        position: static;
         max-width: 80%;
       }
       @include media($laptop) {
+        @include flex(row, space-between, center);
+        position: static;
         max-width: 55%;
+        padding: 0;
+        background-color: transparent;
       }
 
       a {
-        text-align: center;
-        margin: 1vh 0;
+        text-align: left;
+        padding: 0 0 0 $paddingSide;
         width: 100%;
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid #eeecec;
+        line-height: 2.5;
+        color: rgba($color: $black, $alpha: 0.59);
         border-radius: 0;
-        @include media {
+        @include media($laptop) {
+          padding: 0;
+          border-bottom: none;
+          width: auto;
           &:not(:last-child):hover {
             text-decoration: underline solid $deepBlue $smallpadding;
             text-underline-offset: $smallpadding;
           }
-
-          border-bottom: none;
-          width: auto;
         }
 
         &:last-child {
@@ -61,7 +60,7 @@ header {
           border-radius: 10px;
           display: none;
 
-          @include media {
+          @include media($laptop) {
             display: flex;
             width: 25%;
             height: 42px;
@@ -85,7 +84,7 @@ header {
         width: 0.3 * $headerHeight;
       }
 
-      @include media {
+      @include media($laptop) {
         display: none;
       }
     }

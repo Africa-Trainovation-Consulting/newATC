@@ -1,19 +1,29 @@
-let bgHeader = "#ffffff";
+let bgHeaderWhite = "#ffffff";
+let bgHeaderTransparent = "#00000000";
 let minHeight = "50";
 let navLinks = document.querySelector(".navLinks");
 window.onscroll = () => {
+  let mobile = 'none_t'
+  let svg2 = document.querySelector('.logo svg:last-child')  
   let scrolling =
     document.body.scrollTop > minHeight ||
     document.documentElement.scrollTop > minHeight;
-  document.getElementsByTagName("header")[0].style.backgroundColor = scrolling
-    ? bgHeader
-    : "#00000000";
+  headerBg = document.getElementsByTagName("header")[0]
+    if (!scrolling) { //@top
+      headerBg.style.backgroundColor = bgHeaderTransparent    
+      svg2.classList.contains(mobile) ? svg2.classList.remove(mobile): ""  
+    } else {
+      headerBg.style.backgroundColor = bgHeaderWhite      
+      !svg2.classList.contains(mobile) ? svg2.classList.add(mobile): ""
+    }
 };
 headerFunction = () => {
   navLinks.classList.toggle("none");
   navLinks.classList.toggle("bgMobileHeader");
   svgs[0].classList.toggle("none");
   svgs[1].classList.toggle("none");
+  overlay.classList.toggle("none");
+
 };
 let svgs = document.querySelectorAll(".icon svg");
 svgs.forEach((svg) => {
