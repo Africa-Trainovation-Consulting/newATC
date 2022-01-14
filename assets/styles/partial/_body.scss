@@ -5,7 +5,6 @@ section {
     background-color: $black;
     opacity: 0.5;
     z-index: 100;
-    //top: $headerHeight;
     width: 100%;
     height: 100%;
   }
@@ -112,6 +111,16 @@ section {
   
   }
   &#steam {
+    padding: 0;
+    background: linear-gradient(0deg, #A5A6F6 -11.14%, rgba(252, 221, 236, 0) 10.68%);
+    @include media {
+      background: {
+        image: url("/assets/img/airship.svg"),linear-gradient(0deg, #A5A6F6 -11.14%, rgba(252, 221, 236, 0) 28.68%);
+        repeat: no-repeat;
+        size: 90%,100%;
+        position: 60% 10%;
+      }
+    }
     > div {
       padding: $contentPadding; 
     &.note {
@@ -145,16 +154,6 @@ section {
       }
     }
   }
-    padding: 0;
-    background: linear-gradient(0deg, #A5A6F6 -11.14%, rgba(252, 221, 236, 0) 10.68%);
-    @include media {
-      background: {
-        image: url("/assets/img/airship.svg"),linear-gradient(0deg, #A5A6F6 -11.14%, rgba(252, 221, 236, 0) 28.68%);
-        repeat: no-repeat;
-        size: 90%,100%;
-        position: 60% 10%;
-      }
-    }
   }
   &#workstation {
     padding: 0;
