@@ -44,6 +44,7 @@ header {
         line-height: 2.5;
         color: rgba($color: $black, $alpha: 0.59);
         border-radius: 0;
+        font-size: 15px;
         @include media($laptop) {
           padding: 0;
           border-bottom: none;
