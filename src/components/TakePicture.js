@@ -3,6 +3,7 @@ import Backdrop from './HOC';
 import Spanning from '../layouts/Spanning';
 import ContinueBtn from "../layouts/Continuebtn_upload";
 function Takepicture() {
+    useEffect(() => { document.title = 'Take picture' })
     const videoRef = useRef(null)
     const photoRef = useRef(null)
     const [hasPhoto, setHasPhoto] = useState(false);
