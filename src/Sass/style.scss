@@ -621,6 +621,32 @@ i{
     align-self: left;
     font-size: 12px;
 }
+.camera{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    video{
+        width:80%;
+        border-radius: 10px;
+    }
+}
+.result{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    display:none;
+}
+.resulthasPhoto{
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    canvas{
+        width:80%;
+        border-radius: 10px;
+    }
+}
+
+
 @media screen and (min-width:800px) {
     h1 {
         font-size: 1.5em;
