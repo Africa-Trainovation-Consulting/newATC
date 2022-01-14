@@ -52,6 +52,10 @@ ctx.clearRect(0, 0, photo.width, photo.height)
         <Spanning heading='Upload Picture' />
             
             <form action="post">
+            <label className='imageUpload regular' htmlFor='myphoto'  >
+                    <input type='file' name='myphoto' /* onChange={loadfile} */ accept="image/*" className='inputImage' />
+                    <img id='output' alt='myImage' />
+                </label>
             <span className="camera">
                 <video ref={videoRef}></video>
                 <input type='button' value='Take picture' className="takePicture regular" onClick={takePhoto} />
