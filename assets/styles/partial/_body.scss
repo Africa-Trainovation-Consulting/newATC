@@ -43,24 +43,33 @@ section {
   }
   &#acad {
     div {
-      &.tablet {
+      &.tablet,&.flex {
         width: 100%;
-        img {
-          width: 24%;
-          min-height: 320px;
-          max-height: 350px;
-          // height: 50vh;
-          margin: 3 * $paddingHeight $smallMargin;
-          object-fit: cover;
-          border-radius: $borderRadius;
-          image-rendering: pixelated;
-          &:hover {
-            transform: scale(1.1);
-            filter: sepia(100%) hue-rotate(90deg) drop-shadow(8px 8px 10px gray);
-            filter: grayscale(100%);
-          }
-          @include media(1440px) {
-            //height: 55vh;
+        overflow: hidden;
+        &:not(.academy) img {
+          filter: opacity(0.3);
+          //max-width: 10%;
+          object-fit: scale-down;
+        }
+        &.academy {
+          img {
+            width: 24%;
+            min-height: 320px;
+            max-height: 350px;
+             height: 50vh;
+            margin: 3 * $paddingHeight $smallMargin;
+            object-fit: cover;
+            border-radius: $borderRadius;
+            image-rendering: pixelated;
+            &:hover {
+              transform: scale(1.1);
+              filter: sepia(100%) hue-rotate(90deg)
+                drop-shadow(8px 8px 10px gray);
+              filter: grayscale(100%);
+            }
+            @include media(1440px) {
+              //height: 55vh;
+            }
           }
         }
       }
