@@ -1224,6 +1224,10 @@ section#steam > div.kids img:hover {
   }
 }
 
+section#steam > div:last-child a, section#steam > div:last-child button {
+  margin-top: 0;
+}
+
 @media only screen and (min-width: 768px) {
   section#steam > div:last-child a, section#steam > div:last-child button {
     background-color: #d7d8fb;

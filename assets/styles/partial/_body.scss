@@ -156,6 +156,7 @@ section {
         }
       }
       &:last-child a {
+        margin-top: 0;
         @include media {
           background-color: #d7d8fb;
         }
