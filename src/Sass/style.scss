@@ -501,12 +501,10 @@ a {
 
 @mixin upload {
     border-radius: 5px;
-
     margin: {
         top: 3em;
     }
-
-    width: 100%;
+    width: 50%;
     padding: 0.2em 0;
     text-align: center;
     border: 1px solid grey;
@@ -635,6 +633,9 @@ i {
         width: 100%;
         border-radius: 10px;
     }
+    .takePicture{
+        width: 100%;
+    }
 }
 
 .result {
@@ -648,10 +649,14 @@ i {
     align-items: center;
     display: flex;
     flex-direction: column;
+    width: 100%;
     canvas {
         width: 80%;
         border-radius: 10px;
         display: none;
+    }
+    .takePicture{
+        width: 50%;
     }
 }
 
