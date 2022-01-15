@@ -181,7 +181,8 @@ $input-bg-color:#Fff;
         opacity: 0.8;
         border: 1px solid #F5F7FA;
     }
-    a{
+
+    a {
         text-decoration: none;
         color: #423A4B;
     }
@@ -316,7 +317,8 @@ button {
 .active {
     border: none;
     @include active-btn();
-    a{
+
+    a {
         text-decoration: none;
         color: white;
     }
@@ -462,7 +464,6 @@ h1 {
     height: 25vh;
     min-height: 100px;
     width: 50%;
-
     img {
         background: $input-bg-color;
         border: 1px solid #DFDFDF;
@@ -475,15 +476,14 @@ h1 {
     }
 }
 
-.imageUpload::before {
+/* .imageUpload::before {
     color: #939393;
     width: 60%;
     line-height: 1.5;
     text-align: center;
-    content: url(../img/Group.svg);
     align-content: center;
 }
-
+ */
 
 a {
     width: 100%;
@@ -506,7 +506,7 @@ a {
         top: 3em;
     }
 
-    width: 40%;
+    width: 100%;
     padding: 0.2em 0;
     text-align: center;
     border: 1px solid grey;
@@ -613,37 +613,45 @@ form {
         @include continue_btn();
     }
 }
-.flex_link{
-    margin-top:2em;
+
+.flex_link {
+    margin-top: 2em;
 }
-i{
-    color:red;
+
+i {
+    color: red;
     text-align: left;
     align-self: left;
     font-size: 12px;
 }
-.camera{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    video{
-        width:80%;
+
+.camera {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border-radius: 10px;
+    video {
+        width: 100%;
         border-radius: 10px;
     }
 }
-.result{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    display:none;
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
 }
-.resulthasPhoto{
-    align-items:center;
-    display:flex;
-    flex-direction:column;
-    canvas{
-        width:80%;
+
+.resulthasPhoto {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    canvas {
+        width: 80%;
         border-radius: 10px;
+        display: none;
     }
 }
 
@@ -726,7 +734,7 @@ i{
 
     .flex_btn {
         @include flex_btn2();
-        
+
     }
 
     button {
