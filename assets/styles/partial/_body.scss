@@ -43,7 +43,8 @@ section {
   }
   &#acad {
     div {
-      &.tablet,&.flex {
+      &.tablet,
+      &.flex {
         width: 100%;
         overflow: hidden;
         &:not(.academy) img {
@@ -54,18 +55,18 @@ section {
         &.academy {
           img {
             width: 24%;
-            min-height: 320px;
-            max-height: 350px;
-             height: 50vh;
+            height: 320px;
             margin: 3 * $paddingHeight $smallMargin;
-            object-fit: cover;
-            border-radius: $borderRadius;
+            object-fit: contain;
+            border-radius: 2 * $borderRadius;
             image-rendering: pixelated;
             &:hover {
               transform: scale(1.1);
-              filter: sepia(100%) hue-rotate(90deg)
-                drop-shadow(8px 8px 10px gray);
+              /* filter: sepia(100%) hue-rotate(90deg)
+                drop-shadow(8px 8px 10px gray); */
               filter: grayscale(100%);
+              object-fit: cover;
+              box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
             }
             @include media(1440px) {
               //height: 55vh;

@@ -1080,13 +1080,11 @@ section#acad div.tablet:not(.academy) img, section#acad div.flex:not(.academy) i
 
 section#acad div.tablet.academy img, section#acad div.flex.academy img {
   width: 24%;
-  min-height: 320px;
-  max-height: 350px;
-  height: 50vh;
+  height: 320px;
   margin: 6vh 0.5vw;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 20px;
   -ms-interpolation-mode: nearest-neighbor;
       image-rendering: -webkit-optimize-contrast;
       image-rendering: -moz-crisp-edges;
@@ -1097,10 +1095,14 @@ section#acad div.tablet.academy img, section#acad div.flex.academy img {
 section#acad div.tablet.academy img:hover, section#acad div.flex.academy img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-filter: sepia(100%) hue-rotate(90deg) drop-shadow(8px 8px 10px gray);
-          filter: sepia(100%) hue-rotate(90deg) drop-shadow(8px 8px 10px gray);
+  /* filter: sepia(100%) hue-rotate(90deg)
+                drop-shadow(8px 8px 10px gray); */
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 @media only screen and (min-width: 768px) {
