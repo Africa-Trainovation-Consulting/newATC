@@ -42,6 +42,7 @@ footer {
         a {
           margin: 2vh 0;
           color: $footerColor;
+          width: 100%;
           svg {
             width: 10%;
             vertical-align: middle;
@@ -50,7 +51,7 @@ footer {
         }
       }
       @include media {       
-        justify-content: space-between;
+      justify-content: space-between;
       }
     }
     &.socials {

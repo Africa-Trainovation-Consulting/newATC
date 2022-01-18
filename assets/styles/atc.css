@@ -1462,6 +1462,7 @@ footer section.links > div hr {
 footer section.links > div a, footer section.links > div button {
   margin: 2vh 0;
   color: #A4A4A4;
+  width: 100%;
 }
 
 footer section.links > div a svg, footer section.links > div button svg {
