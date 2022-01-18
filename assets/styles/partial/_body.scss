@@ -20,9 +20,10 @@ section {
     }
     img {
       width: 100%;
-      transform: scale(1.1);
+      transform: scale(1.15);
       clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
       @include media {
+        transform: scale(1.1);
         &:last-child {
           display: none;
         }
@@ -44,12 +45,19 @@ section {
   &#acad {
     div {
       &.tablet,
-      &.flex {
+      &.flex_r {
         width: 100%;
-        overflow: hidden;
+        justify-content: center;
+        align-content: center;
+        &.affiliates{
+          flex-wrap: wrap;
+          &:first-child{
+            margin-top: 5vh;
+          }
+        }
         &:not(.academy) img {
           filter: opacity(0.3);
-          //max-width: 10%;
+          max-width: 30%;
           object-fit: scale-down;
         }
         &.academy {

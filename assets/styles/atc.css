@@ -1035,14 +1035,16 @@ section.laptopWoman div {
 
 section.laptopWoman img {
   width: 100%;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
   -webkit-clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
 }
 
 @media only screen and (min-width: 768px) {
   section.laptopWoman img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
     min-width: 53.8%;
     width: 53.8%;
     -webkit-transform: translate(3.125%, 0) scale(1.1);
@@ -1066,19 +1068,33 @@ section.laptopWoman img {
   }
 }
 
-section#acad div.tablet, section#acad div.flex {
+section#acad div.tablet, section#acad div.flex_r, section#acad div.flex_rc, section#acad div.flex_rC {
   width: 100%;
-  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-section#acad div.tablet:not(.academy) img, section#acad div.flex:not(.academy) img {
+section#acad div.tablet.affiliates, section#acad div.flex_r.affiliates, section#acad div.affiliates.flex_rc, section#acad div.affiliates.flex_rC {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#acad div.tablet.affiliates:first-child, section#acad div.flex_r.affiliates:first-child, section#acad div.affiliates.flex_rc:first-child, section#acad div.affiliates.flex_rC:first-child {
+  margin-top: 5vh;
+}
+
+section#acad div.tablet:not(.academy) img, section#acad div.flex_r:not(.academy) img, section#acad div.flex_rc:not(.academy) img, section#acad div.flex_rC:not(.academy) img {
   -webkit-filter: opacity(0.3);
           filter: opacity(0.3);
+  max-width: 30%;
   -o-object-fit: scale-down;
      object-fit: scale-down;
 }
 
-section#acad div.tablet.academy img, section#acad div.flex.academy img {
+section#acad div.tablet.academy img, section#acad div.flex_r.academy img, section#acad div.academy.flex_rc img, section#acad div.academy.flex_rC img {
   width: 24%;
   height: 320px;
   margin: 6vh 0.5vw;
@@ -1092,7 +1108,7 @@ section#acad div.tablet.academy img, section#acad div.flex.academy img {
       image-rendering: pixelated;
 }
 
-section#acad div.tablet.academy img:hover, section#acad div.flex.academy img:hover {
+section#acad div.tablet.academy img:hover, section#acad div.flex_r.academy img:hover, section#acad div.academy.flex_rc img:hover, section#acad div.academy.flex_rC img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   /* filter: sepia(100%) hue-rotate(90deg)
