@@ -1382,6 +1382,8 @@ section#workstation > div#contactUs a, section#workstation > div#contactUs butto
 }
 
 footer {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   padding: 6vh 0 2vh;
   background-color: #150C21;
 }
@@ -1406,29 +1408,29 @@ footer {
 
 footer section {
   margin-bottom: 0;
+}
+
+footer * {
+  color: #A4A4A4;
+}
+
+footer a, footer button,
+footer div {
   font-size: 1em;
+  margin: 0.5vh 0;
 }
 
-footer section.links {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-footer section.links > div {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-@media only screen and (min-width: 768px) {
-  footer section.links > div {
-    width: auto;
-  }
-}
-
-footer section.links > div span {
+footer span {
   color: #fff;
+}
+
+footer .links {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .links span {
   margin: 2vh 0 4vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1439,52 +1441,60 @@ footer section.links > div span {
   width: 100%;
 }
 
-footer section.links > div span svg {
+footer .links span svg {
   width: 5%;
 }
 
 @media only screen and (min-width: 768px) {
-  footer section.links > div span svg {
+  footer .links span svg {
     display: none;
   }
 }
 
-footer section.links > div hr {
-  margin: -3vh 0 0;
-}
-
-@media only screen and (min-width: 768px) {
-  footer section.links > div hr {
-    display: none;
-  }
-}
-
-footer section.links > div a, footer section.links > div button {
+footer .links a, footer .links button {
   margin: 2vh 0;
-  color: #A4A4A4;
-  width: 100%;
 }
 
-footer section.links > div a svg, footer section.links > div button svg {
+footer .links svg {
   width: 10%;
   vertical-align: middle;
   margin-right: 0.5vw;
 }
 
+footer .links hr {
+  margin: -3vh 0 0;
+}
+
 @media only screen and (min-width: 768px) {
-  footer section.links {
+  footer .links {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  footer .links div {
+    width: auto;
+  }
+  footer .links hr {
+    display: none;
+  }
 }
 
-footer section.socials {
+footer div.flex_c, footer div.flex_cr, footer div.flex_cR {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .socials {
   margin-top: 6vh;
 }
 
+footer .socials .follow a, footer .socials .follow button {
+  margin: 0 8px;
+}
+
 @media only screen and (min-width: 768px) {
-  footer section.socials {
+  footer .socials {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1492,22 +1502,17 @@ footer section.socials {
         -ms-flex-align: center;
             align-items: center;
   }
-  footer section.socials .logo {
+  footer .socials .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  footer section.socials .logo svg:first-child {
+  footer .socials .logo svg:first-child {
     margin-right: 8px;
   }
 }
 
-footer section.socials .follow a, footer section.socials .follow button {
-  margin: 0 8px;
-}
-
-footer section.socials .allRightReserved {
-  color: #A4A4A4;
+footer .allRightReserved {
   text-align: center;
 }
 
