@@ -62,9 +62,9 @@ section {
         }
         &.academy {
           img {
-            width: 24%;
-            height: 320px;
-            margin: 3 * $paddingHeight $smallMargin;
+            //width: 24%;
+            //height: 320px;
+            margin: 3 * $paddingHeight 1.5* $smallMargin;
             object-fit: contain;
             border-radius: 2 * $borderRadius;
             image-rendering: pixelated;
@@ -73,7 +73,7 @@ section {
               /* filter: sepia(100%) hue-rotate(90deg)
                 drop-shadow(8px 8px 10px gray); */
               filter: grayscale(100%);
-              object-fit: cover;
+             // object-fit: cover;
               box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
             }
             @include media(1440px) {
@@ -167,7 +167,8 @@ section {
             transform: scale(1.2);
           }
           @include media {
-            height: 35vh;
+            height: 35vh;            
+            max-height: 25%;
             width: 30%;
             margin-top: 10vh;
           }

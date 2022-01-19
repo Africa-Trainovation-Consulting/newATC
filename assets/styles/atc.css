@@ -43,12 +43,20 @@
 .linkButton, button {
   color: #fff;
   text-align: center;
-  display: block;
   margin: 8vh 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   min-height: 40px;
   max-height: 80px;
   height: 8vh;
-  line-height: 8vh;
   border-radius: 10px;
   border: 2px solid #150C21;
   white-space: nowrap;
@@ -56,7 +64,6 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 16px;
-  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -978,13 +985,6 @@ header span.navLinks a:last-child, header span.navLinks button:last-child {
     display: flex;
     width: 25%;
     height: 42px;
-    min-height: 40px;
-    max-height: 48px;
-    line-height: 2.4;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding: 0;
   }
 }
@@ -1095,9 +1095,7 @@ section#acad div.tablet:not(.academy) img, section#acad div.flex_r:not(.academy)
 }
 
 section#acad div.tablet.academy img, section#acad div.flex_r.academy img, section#acad div.academy.flex_rc img, section#acad div.academy.flex_rC img {
-  width: 24%;
-  height: 320px;
-  margin: 6vh 0.5vw;
+  margin: 6vh 0.75vw;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 20px;
@@ -1115,8 +1113,6 @@ section#acad div.tablet.academy img:hover, section#acad div.flex_r.academy img:h
                 drop-shadow(8px 8px 10px gray); */
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
-  -o-object-fit: cover;
-     object-fit: cover;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
@@ -1246,6 +1242,7 @@ section#steam > div.kids img:hover {
 @media only screen and (min-width: 768px) {
   section#steam > div.kids img {
     height: 35vh;
+    max-height: 25%;
     width: 30%;
     margin-top: 10vh;
   }
@@ -1490,7 +1487,17 @@ footer .socials {
 }
 
 footer .socials .follow a, footer .socials .follow button {
-  margin: 0 8px;
+  margin: 0 12px;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+@media only screen and (min-width: 768px) {
+  footer .socials .follow a, footer .socials .follow button {
+    margin: 0 8px;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {

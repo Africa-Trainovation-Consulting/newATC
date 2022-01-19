@@ -31,19 +31,20 @@
 .linkButton {
   color: #fff;
   text-align: center;
-  display: block;
   margin: 4 * $paddingHeight 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   min-height: 40px;
   max-height: 80px;
   height: 4 * $paddingHeight;
-  line-height: 4 * $paddingHeight;
   border-radius: $borderRadius;
   border: 2px solid $black;
   white-space: nowrap;
   vertical-align: middle;
   transition: all 0.3s ease-in-out;
   font-size: $defaultFontSize;
-  width: 100%;
   @include media {
     width: 24vw;
   }
