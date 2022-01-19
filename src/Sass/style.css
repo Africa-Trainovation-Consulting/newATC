@@ -105,6 +105,11 @@
   border: 1px solid #F5F7FA;
 }
 
+.regular a {
+  text-decoration: none;
+  color: #423A4B;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -208,7 +213,7 @@ button {
   background: none;
   border-radius: 5px;
   border: 1px solid #423A4B;
-  width: 47%;
+  width: 45%;
   height: 6vh;
   cursor: pointer;
   white-space: nowrap;
@@ -226,6 +231,11 @@ button {
   color: #f8f8fa;
   background-color: #220f77;
   opacity: 0.9;
+}
+
+.active a {
+  text-decoration: none;
+  color: white;
 }
 
 .continueWith {
@@ -272,16 +282,34 @@ button {
 }
 
 .spanning .Madbtn i {
+  /* text-decoration: none;
+            font-style: normal;
+            border: 1px solid #AAAAAA;
+            color: #AAAAAA;
+            border-radius: 50%;
+            text-align: center;
+            padding: {
+                top:0.2em;
+                left: 0.5em;
+                right: 0.5em;
+                bottom: -1em;
+            } */
   text-decoration: none;
   font-style: normal;
   border: 1px solid #AAAAAA;
   color: #AAAAAA;
   border-radius: 50%;
+  font-size: 15px;
   text-align: center;
-  padding-top: 0.2em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  padding-bottom: -1em;
+  height: 3.5vh;
+  padding: 0 0.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 .spanning .Madbtn i:hover {
@@ -409,14 +437,14 @@ h1 {
   display: none;
 }
 
-.imageUpload::before {
-  color: #939393;
-  width: 60%;
-  line-height: 1.5;
-  text-align: center;
-  content: 'Click here to upload file';
+/* .imageUpload::before {
+    color: #939393;
+    width: 60%;
+    line-height: 1.5;
+    text-align: center;
+    align-content: center;
 }
-
+ */
 a {
   width: 100%;
   -ms-flex-item-align: center;
@@ -436,7 +464,7 @@ a {
 .upload {
   border-radius: 5px;
   margin-top: 3em;
-  width: 40%;
+  width: 50%;
   padding: 0.2em 0;
   text-align: center;
   border: 1px solid grey;
@@ -445,7 +473,7 @@ a {
 .takePicture {
   border-radius: 5px;
   margin-top: 3em;
-  width: 40%;
+  width: 50%;
   padding: 0.2em 0;
   text-align: center;
   border: 1px solid grey;
@@ -586,7 +614,7 @@ form button {
   background: none;
   border-radius: 5px;
   border: 1px solid #423A4B;
-  width: 47%;
+  width: 45%;
   height: 6vh;
   cursor: pointer;
   white-space: nowrap;
@@ -608,6 +636,79 @@ form button:hover {
   color: #f8f8fa;
   background-color: #220f77;
   opacity: 0.9;
+}
+
+.flex_link {
+  margin-top: 2em;
+}
+
+i {
+  color: red;
+  text-align: left;
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+  font-size: 12px;
+}
+
+.camera {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.camera video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.camera .takePicture {
+  width: 100%;
+}
+
+.result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.resulthasPhoto {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.resulthasPhoto canvas {
+  width: 80%;
+  border-radius: 10px;
+  display: none;
+}
+
+.resulthasPhoto .takePicture {
+  width: 50%;
 }
 
 @media screen and (min-width: 800px) {
@@ -718,7 +819,7 @@ form button:hover {
     background: none;
     border-radius: 5px;
     border: 1px solid #423A4B;
-    width: 47%;
+    width: 45%;
     height: 6vh;
     cursor: pointer;
     white-space: nowrap;
@@ -803,7 +904,7 @@ form button:hover {
     background: none;
     border-radius: 5px;
     border: 1px solid #423A4B;
-    width: 47%;
+    width: 45%;
     height: 6vh;
     cursor: pointer;
     white-space: nowrap;
@@ -813,7 +914,7 @@ form button:hover {
     background: none;
     border-radius: 5px;
     border: 1px solid #423A4B;
-    width: 47%;
+    width: 45%;
     height: 6vh;
     cursor: pointer;
     white-space: nowrap;
@@ -839,7 +940,7 @@ form button:hover {
     background: none;
     border-radius: 5px;
     border: 1px solid #423A4B;
-    width: 47%;
+    width: 45%;
     height: 6vh;
     cursor: pointer;
     white-space: nowrap;
@@ -849,7 +950,7 @@ form button:hover {
     background: none;
     border-radius: 5px;
     border: 1px solid #423A4B;
-    width: 47%;
+    width: 45%;
     height: 6vh;
     cursor: pointer;
     white-space: nowrap;

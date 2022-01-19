@@ -492,12 +492,9 @@ a {
 }
 
 .inputImage {
-    display: none;
+    color:pink;
 }
 
-.upload::before {
-    content: 'Upload file';
-}
 
 @mixin upload {
     border-radius: 5px;
