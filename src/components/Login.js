@@ -24,7 +24,7 @@ function Login(props) {
             </span>
             <span className="flex_btn">
                 <Google />
-                OR
+                <small> OR </small>
                 <Facebook />
                 {/* <button className="signUp socials regular">
                     <img src={FacebookLogo} alt='facebooklogo' />  Facebook

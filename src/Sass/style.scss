@@ -129,6 +129,9 @@ $input-bg-color:#Fff;
 @mixin flex_btn2 {
     @include flex_btn();
     width: 70%;
+    small{
+        font-size: 18px;
+    }
 }
 
 .socials {
@@ -290,7 +293,9 @@ body {
 
 .flex_btn {
     @include flex_btn();
-
+    small{
+        font-size: 10px;
+    }
     h3 {
         font-size: 16px;
 
