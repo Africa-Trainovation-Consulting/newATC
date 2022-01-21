@@ -43,7 +43,7 @@
 .linkButton, button {
   color: #fff;
   text-align: center;
-  margin: 8vh 0;
+  margin: 4vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,6 +64,12 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .linkButton, button {
+    margin: 8vh 0;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -761,6 +767,7 @@ h2 {
   font-size: 10.5vw;
   font-weight: 600;
   margin: 3vh 0 3vh;
+  margin-top: 0;
 }
 
 @media only screen and (min-width: 540px) {
@@ -1038,6 +1045,8 @@ section.laptopWoman img {
   width: 100%;
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
 }
@@ -1084,7 +1093,13 @@ section#acad > div.tablet.affiliates, section#acad > div.flex_r.affiliates, sect
 }
 
 section#acad > div.tablet.affiliates:first-child img, section#acad > div.flex_r.affiliates:first-child img, section#acad > div.affiliates.flex_rc:first-child img, section#acad > div.affiliates.flex_rC:first-child img {
-  margin-top: 4vw;
+  margin-top: 9vw;
+}
+
+@media only screen and (min-width: 768px) {
+  section#acad > div.tablet.affiliates:first-child img, section#acad > div.flex_r.affiliates:first-child img, section#acad > div.affiliates.flex_rc:first-child img, section#acad > div.affiliates.flex_rC:first-child img {
+    margin-top: 4vw;
+  }
 }
 
 section#acad > div.tablet.affiliates img, section#acad > div.flex_r.affiliates img, section#acad > div.affiliates.flex_rc img, section#acad > div.affiliates.flex_rC img {
@@ -1094,11 +1109,13 @@ section#acad > div.tablet.affiliates img, section#acad > div.flex_r.affiliates i
      object-fit: scale-down;
   -o-object-position: left;
      object-position: left;
-  width: 30.3%;
+  width: 25.3%;
+  margin-top: 4vw;
 }
 
 @media only screen and (min-width: 768px) {
   section#acad > div.tablet.affiliates img, section#acad > div.flex_r.affiliates img, section#acad > div.affiliates.flex_rc img, section#acad > div.affiliates.flex_rC img {
+    margin-top: 0vw;
     width: 16%;
     -o-object-position: center;
        object-position: center;
@@ -1223,6 +1240,10 @@ section#steam > div {
   padding: 2vh 7vw;
 }
 
+section#steam > div.note h4 {
+  margin: 0 0 4.5vh;
+}
+
 @media only screen and (min-width: 768px) {
   section#steam > div.note {
     max-width: 55%;
@@ -1327,8 +1348,6 @@ section#workstation > div:first-child img {
       image-rendering: -moz-crisp-edges;
       image-rendering: -o-pixelated;
       image-rendering: pixelated;
-  -webkit-transform: translateY(-20%);
-          transform: translateY(-20%);
 }
 
 @media only screen and (min-width: 768px) {

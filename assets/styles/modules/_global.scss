@@ -99,6 +99,7 @@ h2 {
     weight: 600;
   }
   @include margin();
+  margin-top: 0;
   @include media(540px) {
     font-size: 7.5vw;
   }

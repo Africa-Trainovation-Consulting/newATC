@@ -31,7 +31,10 @@
 .linkButton {
   color: #fff;
   text-align: center;
-  margin: 4 * $paddingHeight 0;
+  margin: 2 * $paddingHeight 0;
+  @include media{
+    margin: 4 * $paddingHeight 0;
+  }
   display: flex;
   justify-content: center;
   align-items: center;

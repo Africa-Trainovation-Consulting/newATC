@@ -21,6 +21,7 @@ section {
     img {
       width: 100%;
       transform: scale(1.15);
+      animation-duration: 4s;
       clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
       @include media {
         transform: scale(1.1);
@@ -54,15 +55,20 @@ section {
           &:first-child {
             //margin-top: 5vh;
             img {
-              margin-top: 8 * $smallMargin;
+              margin-top: 18 * $smallMargin;
+              @include media{
+                margin-top: 8 * $smallMargin;
+              }
             }
           }
           img {
             filter: opacity(0.3);
             object-fit: scale-down;
             object-position: left;
-            width: 30.3%;
+            width: 25.3%;
+            margin-top: 8 * $smallMargin;
             @include media {
+              margin-top: 0 * $smallMargin;
               width: 16%;
               object-position: center;
             }
@@ -157,6 +163,9 @@ section {
     > div {
       padding: $contentPadding;
       &.note {
+        h4{
+          margin: 0 0 4.5vh;
+        }
         @include media {
           max-width: 55%;
           padding-top: 10vh;
@@ -224,7 +233,6 @@ section {
         }
         img {
           image-rendering: pixelated;
-          transform: translateY(-20%);
           @include media($tablet) {
             margin-bottom: 5%;
             margin-left: 10%;
