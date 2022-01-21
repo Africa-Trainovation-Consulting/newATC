@@ -1069,7 +1069,7 @@ section.laptopWoman img {
   }
 }
 
-section#acad div.tablet, section#acad div.flex_r, section#acad div.flex_rc, section#acad div.flex_rC {
+section#acad > div.tablet, section#acad > div.flex_r, section#acad > div.flex_rc, section#acad > div.flex_rC {
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1078,23 +1078,34 @@ section#acad div.tablet, section#acad div.flex_r, section#acad div.flex_rc, sect
       align-content: center;
 }
 
-section#acad div.tablet.affiliates, section#acad div.flex_r.affiliates, section#acad div.affiliates.flex_rc, section#acad div.affiliates.flex_rC {
+section#acad > div.tablet.affiliates, section#acad > div.flex_r.affiliates, section#acad > div.affiliates.flex_rc, section#acad > div.affiliates.flex_rC {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-section#acad div.tablet.affiliates:first-child, section#acad div.flex_r.affiliates:first-child, section#acad div.affiliates.flex_rc:first-child, section#acad div.affiliates.flex_rC:first-child {
-  margin-top: 5vh;
+section#acad > div.tablet.affiliates:first-child img, section#acad > div.flex_r.affiliates:first-child img, section#acad > div.affiliates.flex_rc:first-child img, section#acad > div.affiliates.flex_rC:first-child img {
+  margin-top: 4vw;
 }
 
-section#acad div.tablet.affiliates img, section#acad div.flex_r.affiliates img, section#acad div.affiliates.flex_rc img, section#acad div.affiliates.flex_rC img {
+section#acad > div.tablet.affiliates img, section#acad > div.flex_r.affiliates img, section#acad > div.affiliates.flex_rc img, section#acad > div.affiliates.flex_rC img {
   -webkit-filter: opacity(0.3);
           filter: opacity(0.3);
-  max-width: 30%;
-  width: 16%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: left;
+     object-position: left;
+  width: 30.3%;
 }
 
-section#acad div.tablet.academy img, section#acad div.flex_r.academy img, section#acad div.academy.flex_rc img, section#acad div.academy.flex_rC img {
+@media only screen and (min-width: 768px) {
+  section#acad > div.tablet.affiliates img, section#acad > div.flex_r.affiliates img, section#acad > div.affiliates.flex_rc img, section#acad > div.affiliates.flex_rC img {
+    width: 16%;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+
+section#acad > div.tablet.academy img, section#acad > div.flex_r.academy img, section#acad > div.academy.flex_rc img, section#acad > div.academy.flex_rC img {
   margin: 6vh 0.75vw;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1106,7 +1117,7 @@ section#acad div.tablet.academy img, section#acad div.flex_r.academy img, sectio
       image-rendering: pixelated;
 }
 
-section#acad div.tablet.academy img:hover, section#acad div.flex_r.academy img:hover, section#acad div.academy.flex_rc img:hover, section#acad div.academy.flex_rC img:hover {
+section#acad > div.tablet.academy img:hover, section#acad > div.flex_r.academy img:hover, section#acad > div.academy.flex_rc img:hover, section#acad > div.academy.flex_rC img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   /* filter: sepia(100%) hue-rotate(90deg)
@@ -1118,14 +1129,14 @@ section#acad div.tablet.academy img:hover, section#acad div.flex_r.academy img:h
 }
 
 @media only screen and (min-width: 768px) {
-  section#acad div.note {
+  section#acad > div.note {
     width: 70%;
     text-align: center;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  section#acad div.note {
+  section#acad > div.note {
     width: 65%;
   }
 }
@@ -1488,8 +1499,8 @@ footer .socials {
 
 footer .socials .follow a, footer .socials .follow button {
   margin: 0 12px;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media only screen and (min-width: 768px) {

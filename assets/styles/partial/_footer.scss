@@ -69,7 +69,7 @@ footer {
     .follow {
       a {
         margin: 0 3 * $smallpadding;       
-        transform: scale(1.4);
+        transform: scale(1.2);
         @include media{
           margin: 0 2 * $smallpadding;       
           transform: none;
