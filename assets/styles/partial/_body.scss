@@ -76,7 +76,7 @@ section {
         }
         &.academy {
           img {
-            //width: 24%;
+            width: 24%;
             //height: 320px;
             margin: 3 * $paddingHeight 1.5 * $smallMargin;
             object-fit: contain;
@@ -240,6 +240,7 @@ section {
             z-index: 1;
             min-width: 30%;
             width: 35%;
+            transform: translateY(-20%);
           }
           @include media(1200px) {
             transform: translateY(-30%);

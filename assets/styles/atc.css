@@ -1123,6 +1123,7 @@ section#acad > div.tablet.affiliates img, section#acad > div.flex_r.affiliates i
 }
 
 section#acad > div.tablet.academy img, section#acad > div.flex_r.academy img, section#acad > div.academy.flex_rc img, section#acad > div.academy.flex_rC img {
+  width: 24%;
   margin: 6vh 0.75vw;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1358,6 +1359,8 @@ section#workstation > div:first-child img {
     z-index: 1;
     min-width: 30%;
     width: 35%;
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
   }
 }
 
