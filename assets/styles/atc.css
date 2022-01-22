@@ -43,7 +43,6 @@
 .linkButton, button {
   color: #fff;
   text-align: center;
-  margin: 4vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,16 +63,16 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 16px;
+  margin: 4vh 0;
+}
+
+.linkButton:hover, button:hover {
+  background-color: white;
 }
 
 @media only screen and (min-width: 768px) {
   .linkButton, button {
     margin: 8vh 0;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .linkButton, button {
     width: 24vw;
   }
 }
@@ -639,7 +638,7 @@
 .back-to-top:hover {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  background-color: #0b5ed7;
+  background-color: #0b5ed7 !important;
   border-color: #0a58ca;
 }
 
@@ -1029,19 +1028,19 @@ section#overlay {
   height: 100%;
 }
 
-section.laptopWoman div {
+section#academy div {
   padding-top: 75px;
   width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-  section.laptopWoman div {
+  section#academy div {
     padding-top: 112.5px;
     max-width: 45%;
   }
 }
 
-section.laptopWoman img {
+section#academy img {
   width: 100%;
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
@@ -1052,7 +1051,7 @@ section.laptopWoman img {
 }
 
 @media only screen and (min-width: 768px) {
-  section.laptopWoman img {
+  section#academy img {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     min-width: 53.8%;
@@ -1060,13 +1059,13 @@ section.laptopWoman img {
     -webkit-transform: translate(3.125%, 0) scale(1.1);
             transform: translate(3.125%, 0) scale(1.1);
   }
-  section.laptopWoman img:last-child {
+  section#academy img:last-child {
     display: none;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  section.laptopWoman {
+  section#academy {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1366,7 +1365,7 @@ section#workstation > div:first-child img {
 @media only screen and (min-width: 1024px) {
   section#workstation > div:first-child img {
     padding-bottom: 20%;
-    margin: -20% 0 5% 10%;
+    margin: -15% 0 5% 10%;
   }
 }
 
@@ -1377,7 +1376,7 @@ section#workstation > div:first-child img {
   }
 }
 
-section#workstation > div#contactUs {
+section#workstation > div#contact {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-bottom: 0vh;
@@ -1385,7 +1384,7 @@ section#workstation > div#contactUs {
 }
 
 @media only screen and (min-width: 768px) {
-  section#workstation > div#contactUs {
+  section#workstation > div#contact {
     padding: 5% 7vw;
     margin: -30% 7vw 0;
     -webkit-transform: translateY(60%);
@@ -1396,21 +1395,21 @@ section#workstation > div#contactUs {
 }
 
 @media only screen and (min-width: 768px) {
-  section#workstation > div#contactUs p {
+  section#workstation > div#contact p {
     max-width: 85%;
   }
 }
 
-section#workstation > div#contactUs h4 {
+section#workstation > div#contact h4 {
   color: #a6efff;
 }
 
-section#workstation > div#contactUs a, section#workstation > div#contactUs button {
+section#workstation > div#contact a, section#workstation > div#contact button {
   border: 1px solid #fff;
 }
 
 @media only screen and (min-width: 768px) {
-  section#workstation > div#contactUs a, section#workstation > div#contactUs button {
+  section#workstation > div#contact a, section#workstation > div#contact button {
     width: 50%;
     margin: 0 0 0 4vw;
     padding: 0 5px;

@@ -9,7 +9,7 @@ section {
     height: 100%;
   }
 
-  &.laptopWoman {
+  &#academy {
     div {
       padding-top: $headerHeight;
       width: 100%;
@@ -243,7 +243,7 @@ section {
           }
           @include media($laptop){
             padding-bottom: 20%;
-            margin: -20% 0 5% 10%;
+            margin: -15% 0 5% 10%;
 
           }
           @include media(1200px) {
@@ -251,7 +251,7 @@ section {
           }
         }
       }
-      &#contactUs {
+      &#contact {
         border-top: {
           left-radius: 10px;
           right-radius: 10px;
